@@ -4,38 +4,28 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <cite>First edition. November 20, 2017.</cite>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-05. Discussing Data Types
+<h3>05. Discussing Data Types</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Problem: Discuss the various data types available in JavaScript and provide examples of each.
+<h4>Problem: Discuss the various data types available in JavaScript and provide examples of each.</h4>
+<h4>Solution: JavaScript offers a range of data types for storing values:</h4>
 
-Solution: JavaScript offers a range of data types for storing values:
-
-String: A sequence of characters enclosed in quotes (single or double).
-
-let myString = “Hello World”
-
-Number: Numeric values, including integers and floating-point numbers.
-
-let myNumber = 42;
-
-Boolean: Represents true or false values.
-
-let myBoolean = true;
-
-Array: An ordered collection of values.
-
+<h5>String: A sequence of characters enclosed in quotes (single or double).</h5>
+<pre>let myString = “Hello World”</pre>
+<h5>Number: Numeric values, including integers and floating-point numbers.</h5>
+<pre>let myNumber = 42;</pre>
+<h5>Boolean: Represents true or false values.</h5>
+<pre>let myBoolean = true;</pre>
+<h5>Array: An ordered collection of values.</h5>
+<pre>
 let myArray = [1, 2, 3];
 null:
+</pre>
+<h5>Intentionally represents no value.</h5>
+<pre>let myNull = null;</pre>
 
-Intentionally represents no value.
-
-let myNull = null;
-
-Object:
-Holds key-value pairs.
-Keys are strings, and values can be any data type.
-
-let myObject = { name: “John”, age: 30 };
+<h5>Object: Holds key-value pairs.</h5>
+<h5>Keys are strings, and values can be any data type.</h5>
+<pre>let myObject = { name: “John”, age: 30 };</pre>
 
 undefined: Signifies an uninitialized variable.
 
