@@ -1,22 +1,37 @@
-# JS-InterviewQuestions-JS
-341 JS Interview Questions You'll Most Likely Be Asked.
+<h1>JS-InterviewQuestions-JS</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>341 JS Interview Questions You'll Most Likely Be Asked</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<cite>First edition. November 20, 2017.</cite>
 
-JavaScript Interview Questions You'll Most Likely Be Asked
-JAVASCRIPT INTERVIEW QUESTIONS YOU'LL MOST LIKELY BE ASKED
-First edition. November 20, 2017.
-
-INTRODUCTION TO JAVASCRIPT
-01. Change the title of the page
-Problem: Changing Page Title
-Answer: Using document.title Property
-You can change the title of a webpage using the document.title property in JavaScript.
-document.title = "My New Title";
-This is a straightforward task in JavaScript. Changing the page title is as simple as assigning a new value to the document.title property. It's a basic operation that most web developers should be familiar with, making it an easy problem. However, it's still an important concept to understand when working on web development projects.
-02. Understanding JSON
-Problem: Explain what JSON (JavaScript Object Notation) is and its purpose in web development.
-Solution: JSON, short for JavaScript Object Notation, is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. It is often used for exchanging data between a server and a web application, as well as between different parts of an application.
-JSON is represented as key-value pairs, where keys are strings and values can be strings, numbers, Booleans, arrays, or other JSON objects.
-The basic syntax of a JSON object looks like this:
+<h3>INTRODUCTION TO JAVASCRIPT</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>01. Change the title of the page</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Problem:</h5>
+<p>Changing Page Title</p>
+<h5>Answer:</h5>
+<p>Using document.title Property</p>
+<p>You can change the title of a webpage using the document.title property in JavaScript.</p>
+<pre>document.title = "My New Title";</pre>
+<p>This is a straightforward task in JavaScript. Changing the page title is as simple as assigning 
+a new value to the document.title property. It's a basic operation that most web developers should 
+be familiar with, making it an easy problem. However, it's still an important concept to understand 
+when working on web development projects.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>02. Understanding JSON</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h5>Problem:</h5>
+<p>Explain what JSON (JavaScript Object Notation) is and its purpose in web development.</p>
+<h5>Solution:</h5>
+<p>JSON, short for JavaScript Object Notation, is a lightweight data interchange format that is 
+easy for humans to read and write, and easy for machines to parse and generate. It is often used 
+for exchanging data between a server and a web application, as well as between different parts 
+of an application.</p>
+<p>JSON is represented as key-value pairs, where keys are strings and values can be strings, 
+numbers, Booleans, arrays, or other JSON objects.</p>
+<p>The basic syntax of a JSON object looks like this:</p>
+<pre>
 {
   "key1": "value1",
   "key2": 123,
@@ -26,32 +41,43 @@ The basic syntax of a JSON object looks like this:
     "nestedKey": "nestedValue"
   }
 }
-JSON is widely used because of its simplicity, ease of use, and compatibility with various programming languages. It is a common format for sending and receiving data in web APIs, configuring applications, and storing configuration settings.
+</pre>
+<p>JSON is widely used because of its simplicity, ease of use, and compatibility with various 
+programming languages. It is a common format for sending and receiving data in web APIs, 
+configuring applications, and storing configuration settings.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 3: What is JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript is a scripting language that adds interactivity to HTML pages.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 4: What kind of language is JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript is an interpreted language that executes scripts without preliminary compilation.
-3: Is there any connection between Java and JavaScript?
-Answer:
-No. They are different in every way and JavaScript is not as powerful and
-complex as Java.
-4: What is the official name of JavaScript and is it supported by all browsers?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+5: What is the official name of JavaScript and is it supported by all browsers?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The official name of JavaScript is ECMA (European Computer Manufacturer's Association) and with it, Internet Explorer 4 and Mozilla Firefox 1.5 fully supported.
-5: What does JavaScript do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+6: What does JavaScript do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript is meant to be an easy scripting language that helps the non-
 programmers with its simple syntax. JavaScript is smart enough that it can
 put dynamic text into HTML pages, it can react to events (like when a page
 has finished downloading), and it can read and write HTML elements,
 create cookies and so forth.
-6: Does prior knowledge of JAVA ease the use of JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+7: Does prior knowledge of JAVA ease the use of JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes. Being modeled after Java, which in turn is modeled after C++,
 JavaScript should be easier to familiarize and work with.
-7: Is JavaScript case sensitive?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+8: Is JavaScript case sensitive?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes. Unlike HTML, JavaScript has to have all variables and function names
 (etc.) in capital letters.
@@ -1303,16 +1329,19 @@ Example:
 <option value=”xml1”> Xml </option>
 </optgroup>
 </select>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 175: Compare between session state and view state.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
-176: Which function is better for fast execution: window.onload or
-window.onDocumentReady?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+176: Which function is better for fast execution: window.onload or window.onDocumentReady?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 window.onDocumentReady is better for fast execution because it executes
 the code once DOM is loaded by the browser and will not wait for the
-
 object such as images to be loaded whereas onLoad executes only when the
 browser loads DOM and all other resources such as images gets loaded.
+
 177: What is the purpose of “visibility” property in JavaScript?
 Answer:
 a) “Visibility”: Makes the element either visible or invisible
@@ -1934,7 +1963,9 @@ a) Perform repeating operations while setting up similar objects
 
 b) Create objects without actually knowing the specific object type during
 compile time
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 256: How will you create a Factory pattern?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 In JavaScript, Factory pattern could be created as follows:
 var myCorolla = MakeCar.factory('Compact');
@@ -1943,7 +1974,9 @@ In the above code snippet, we have a method that accepts a string at runtime
 and then creates and returns objects of the requested type. There are no
 constructors used with new or any object literals, but just a function that
 creates objects based on a type identified by a string.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 257: Explain about Iterator pattern.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 In Iterator pattern, the object holds aggregate data. The data could be stored
 in a complex structure, and we have to provide access to each element. The
@@ -1956,7 +1989,9 @@ console.log(myElement);
 
 In the above code, myData has collection of data and each element of them
 could be accessed by simply calling the next() method in a loop.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 258: Explain about Decorator Pattern.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 In Decorator pattern, a new or additional functionality could be added to an
 object dynamically during runtime. Objects are mutable in JavaScript, so
@@ -1969,7 +2004,9 @@ mySale.getModifiedPrice(); // "Rs1012.88"
 In the above code, we decorate the code (add additional
 functionality) with a tax for the mySale object and then get the
 modified price.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 259: What is the importance of Strategy Pattern?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The strategy pattern enables you to select algorithms at runtime. The clients
 of your code can work with the same interface but pick from a number of
@@ -1980,7 +2017,9 @@ pattern. You can create one validator object with a validate() method. This
 is the method that will be called regardless of the concrete type of form and
 will always return the same result. The result will be list of data that didn’t
 validate and return any error messages.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 260: Explain data validation using strategy pattern.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Let’s say you have the following piece of data, probably coming from a
 form on a page, and you want to verify whether it’s valid:
@@ -2012,7 +2051,9 @@ Invalid value for *age*, the value can only be a valid number, e.g. 1, 3 10,
 etc.,
 Invalid value for *username*, the value can only contain characters and
 numbers, and no special symbols
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 261: Explain Facade pattern with example.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The facade is a simple pattern; it provides an alternative interface to an
 object. It’s a good design practice to keep the methods short and not have
@@ -2036,7 +2077,9 @@ e.stopPropagation();
 };
 In the above code, myEvent is a Façade that invokes 2 methods when it’s
 triggered.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 262: Explain about Proxy Pattern.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 In Proxy design pattern, one object acts as an interface to another object.
 The proxy sits between the client object and the object itself and protects
@@ -2048,7 +2091,9 @@ the real subject do as little work as possible.
 Network request is one of the expensive operation you could perform in
 web application. Proxy pattern is useful to make this expensive operation
 and it’s necessary to combine HTTP requests as often as possible.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 263: Explain about Mediator pattern.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Irrespective of the applications are small or large, applications are made of
 unique objects. All these unique objects need a way to communicate among
@@ -2065,9 +2110,10 @@ affecting many others. Then even the simplest change in an application is
 no longer trivial, and it’s virtually impossible to estimate the time a change
 might take. The mediator pattern alleviates this situation by promoting
 loose coupling and helping to improve maintainability.
-264 Explain about Observer Pattern.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+264: Explain about Observer Pattern.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
-
 The Observer pattern is mainly used in client-side JavaScript programming.
 All the browser events like key-press, mouse-over, and so on are examples
 of Observer pattern.
@@ -2089,8 +2135,8 @@ answer them. Read the answers listed; you will find best possible answers
 along with strategies and suggestions
 *****
 
-1: Tell me about a time when you worked additional hours to finish a
-project.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+1: Tell me about a time when you worked additional hours to finish a project.
 Answer:
 It's important for your employer to see that you are dedicated to your work,
 and willing to put in extra hours when required or when a job calls for it.
@@ -2100,14 +2146,15 @@ goals poorly earlier in the process? Or on a more positive note, were you
 working additional hours because a client requested for a deadline to be
 moved up on short notice? Stress your competence and willingness to give
 110% every time.
-2: Tell me about a time when your performance exceeded the duties
-and requirements of your job.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+2: Tell me about a time when your performance exceeded the duties and requirements of your job.
 Answer:
 If you're a great candidate for the position, this should be an easy question
 to answer – choose a time when you truly went above and beyond the call
 of duty, and put in additional work or voluntarily took on new responsib-
 ilities. Remain humble, and express gratitude for the learning opportunity,
 as well as confidence in your ability to give a repeat performance.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 3: What is your driving attitude about work?
 Answer:
 There are many possible good answers to this question, and the interviewer
@@ -2116,6 +2163,7 @@ primarily wants to see that you have a great passion for the job and that you
 will remain motivated in your career if hired. Some specific driving forces
 behind your success may include hard work, opportunity, growth potential,
 or success.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 4: Do you take work home with you?
 Answer:
 It is important to first clarify that you are always willing to take work home
@@ -2123,6 +2171,7 @@ when necessary, but you want to emphasize as well that it has not been an
 issue for you in the past. Highlight skills such as time management, goal-
 setting, and multi-tasking, which can all ensure that work is completed at
 work.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 5: Describe a typical work day to me.
 Answer:
 There are several important components in your typical work day, and an
@@ -2132,22 +2181,22 @@ beginning of your day and proceed chronologically, making sure to
 emphasize steady productivity, time for review, goal-setting, and
 prioritizing, as well as some additional time to account for unexpected
 things that may arise.
-6: Tell me about a time when you went out of your way at your
-previous job.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+6: Tell me about a time when you went out of your way at your previous job.
 Answer:
-
 Here it is best to use a specific example of the situation that required you to
 go out of your way, what your specific position would have required that
 you did, and how you went above that. Use concrete details, and be sure to
 include the results, as well as reflection on what you learned in the process.
-7: Are you open to receiving feedback and criticisms on your job
-performance, and adjusting as necessary?
+7: Are you open to receiving feedback and criticisms on your job performance, and adjusting as 
+   necessary?
 Answer:
 This question has a pretty clear answer – yes – but you'll need to display a
 knowledge as to why this is important. Receiving feedback and criticism is
 one thing, but the most important part of that process is to then implement it
 into your daily work. Keep a good attitude, and express that you always
 appreciate constructive feedback.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 8: What inspires you?
 Answer:
 You may find inspiration in nature, reading success stories, or mastering a
@@ -2156,15 +2205,16 @@ that you're able to listen and tune into it when it appears. Keep this answer
 generally based in the professional world, but where applicable, it may
 stretch a bit into creative exercises in your personal life that, in turn, help
 you in achieving career objectives.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 9: How do you inspire others?
 Answer:
-
 This may be a difficult question, as it is often hard to discern the effects of
 inspiration in others. Instead of offering a specific example of a time when
 you inspired someone, focus on general principles such as leading by
 example that you employ in your professional life. If possible, relate this to
 a quality that someone who inspired you possessed, and discuss the way
 you have modified or modeled it in your own work.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 10: What has been your biggest success?
 Answer:
 Your biggest success should be something that was especially meaningful to
@@ -2172,6 +2222,7 @@ you, and that you can talk about passionately – your interviewer will be
 able to see this. Always have an answer prepared for this question, and be
 sure to explain how you achieved success, as well as what you learned from
 the experience.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 11: What motivates you?
 Answer:
 It's best to focus on a key aspect of your work that you can target as a
@@ -2179,14 +2230,15 @@ It's best to focus on a key aspect of your work that you can target as a
 making a difference, or the chance to further your skills and gain
 experience, it's important that the interviewer can see the passion you hold
 for your career and the dedication you have to the position.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 12: What do you do when you lose motivation?
 Answer:
-
 The best candidates will answer that they rarely lose motivation, because
 they already employ strategies to keep themselves inspired, and because
 they remain dedicated to their objectives. Additionally, you may impress
 the interviewer by explaining that you are motivated by achieving goals and
 advancing, so small successes are always a great way to regain momentum.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 13: What do you like to do in your free time?
 Answer:
 What you do answer here is not nearly as important as what you don't
@@ -2197,6 +2249,7 @@ your ability to show up to work and be productive, such as reading,
 cooking, or photography. This is also a great opportunity to show your
 interviewer that you are a well-rounded, interesting, and dynamic
 personality that they would be happy to hire.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 14: What sets you apart from other workers?
 Answer:
 This question is a great opportunity to highlight the specific skill sets and
@@ -2204,7 +2257,7 @@ passion you bring to the company that no one else can. If you can't outline
 exactly what sets you apart from other workers, how will the interviewer
 see it? Be prepared with a thorough outline of what you will bring to the
 table, in order to help the company achieve their goals.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 15: Why are you the best candidate for that position?
 Answer:
 Have a brief response prepared in advance for this question, as this is
@@ -2216,6 +2269,7 @@ qualities that show the interviewer why he or she must hire you above all
 the other candidates. Include specific details about your experience and
 special projects or recognition you've received that set you apart, and show
 your greatest passion, commitment, and enthusiasm for the position.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 16: What does it take to be successful?
 Answer:
 Hard work, passion, motivation, and a dedication to learning – these are all
@@ -2224,6 +2278,7 @@ much which of these values you choose as the primary means to success, or
 if you choose a combination of them. It is, however, absolutely key that
 whichever value you choose, you must clearly display in your attitude,
 experience, and goals.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 17: What would be the biggest challenge in this position for you?
 Answer:
 Keep this answer positive, and remain focused on the opportunities for
@@ -2232,6 +2287,7 @@ growth and learning that the position can provide. Be sure that no matter
 what the challenge is, it's obvious that you're ready and enthusiastic to
 tackle it, and that you have a full awareness of what it will take to get the
 job done.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 18: Would you describe yourself as an introvert or an extrovert?
 Answer:
 There are beneficial qualities to each of these, and your answer may depend
@@ -2239,6 +2295,7 @@ on what type of work you're involved in. However, a successful leader may
 be an introvert or extrovert, and similarly, solid team members may also be
 either. The important aspect of this question is to have the level of self-
 awareness required to accurately describe yourself.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 19: What are some positive character traits that you don't possess?
 Answer:
 If an interviewer asks you a tough question about your weaknesses, or lack
@@ -2246,15 +2303,16 @@ of positive traits, it's best to keep your answer light-hearted and simple – f
 instance, express your great confidence in your own abilities, followed by a
 (rather humble) admittance that you could occasionally do to be more
 humble.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 20: What is the greatest lesson you've ever learned?
 Answer:
 While this is a very broad question, the interviewer will be more interested
 in hearing what kind of emphasis you place on this value. Your greatest
-
 lesson may tie in with something a mentor, parent, or professor once told
 you, or you may have gleaned it from a book written by a leading expert in
 your field. Regardless of what the lesson is, it is most important that you
 can offer an example of how you've incorporated it into your life.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 21: Have you ever been in a situation where one of your strengths
 became a weakness in an alternate setting?
 Answer:
@@ -2263,6 +2321,7 @@ question, but you want to make sure that the weakness is relatively minor,
 and that it would still remain a strength in most settings. For instance, you
 may be an avid reader who reads anything and everything you can find, but
 reading billboards while driving to work may be a dangerous idea.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 22: Who has been the most influential person in your life?
 Answer:
 Give a specific example (and name) to the person who has influenced your
@@ -2272,7 +2331,7 @@ life, but this particular question opens up the possibility to discuss
 inspiration in your personal life as well. The interviewer wants to see that
 you're able to make strong connections with other individuals, and to work
 under the guiding influence of another person.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 23: Do you consider yourself to be a “detailed” or “big picture” type of
 person?
 Answer:
@@ -2280,6 +2339,7 @@ Both of these are great qualities, and it's best if you can incorporate each
 into your answer. Choose one as your primary type, and relate it to
 experience or specific items from your resume. Then, explain how the
 other type fits into your work as well.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 24: What is your greatest fear?
 Answer:
 Disclosing your greatest fear openly and without embarrassment is a great
@@ -2289,6 +2349,7 @@ impossible to the interviewer for someone such as yourself, with such clear
 goals and actions plans outlined. As tempting as it may be to stick with an
 easy answer such as spiders, stay away from these, as they don't really tell
 the interviewer anything about yourself that's relevant.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 25: What sort of challenges do you enjoy?
 Answer:
 The challenges you enjoy should demonstrate some sort of initiative or
@@ -2296,7 +2357,7 @@ growth potential on your part, and should also be in line with your career
 objectives. Employers will evaluate consistency here, as they analyze
 critically how the challenges you look forward to are related to your
 ultimate goals.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 26: Tell me about a time you were embarrassed. How did you handle
 it?
 Answer:
@@ -2305,6 +2366,7 @@ and it's probably best to avoid an anecdote here. However, don't shy away
 from offering a brief synopsis, followed by a display of your ability to laugh
 it off. Show the interviewer that it was not an event that impacted you
 significantly.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 27: What is your greatest weakness?
 Answer:
 This is another one of the most popular questions asked in job interviews,
@@ -2315,16 +2377,17 @@ correctly, so I sometimes have difficulty in delegating tasks to others.”
 However, don't try to mask obvious weaknesses – if you have little practical
 experience in the field, mention that you're looking forward to great
 opportunities to further your knowledge.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 28: What are the three best adjectives to describe you in a work
 setting?
 Answer:
-
 While these three adjectives probably already appear somewhere on your
 resume, don't be afraid to use them again in order to highlight your best
 qualities. This is a chance for you to sell yourself to the interviewer, and to
 point out traits you possess that other candidates do not. Use the most
 specific and accurate words you can think of, and elaborate shortly on how
 you embody each.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 29: What are the three best adjectives to describe you in your personal
 life?
 Answer:
@@ -2333,6 +2396,7 @@ similar to the adjectives that describe you in your professional life.
 Employers appreciate consistency, and while they may be understanding of
 you having an alternate personality outside of the office, it's best if you
 employ similar principles in your actions both on and off the clock.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 30: What type of worker are you?
 Answer:
 This is an opportunity for you to highlight some of your greatest assets.
@@ -2340,6 +2404,7 @@ Characterize some of your talents such as dedicated, self-motivated, detail-
 oriented, passionate, hard-working, analytical, or customer service focused.
 Stay away from your weaker qualities here, and remain on the target of all
 the wonderful things that you can bring to the company.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 31: Tell me about your happiest day at work.
 
 Answer:
@@ -2347,6 +2412,7 @@ Your happiest day at work should include one of your greatest professional
 successes, and how it made you feel. Stay focused on what you
 accomplished, and be sure to elaborate on how rewarding or satisfying the
 achievement was for you.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 32: Tell me about your worst day at work.
 Answer:
 It may have been the worst day ever because of all the mistakes you made,
@@ -2357,6 +2423,7 @@ important member of a team quit unexpectedly, which ruined your team's
 meeting with a client), and focus on the frustration of not being in control of
 the situation. Keep this answer brief, and be sure to end with a reflection on
 what you learned from the day.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 33: What are you passionate about?
 Answer:
 Keep this answer professionally-focused where possible, but it may also be
@@ -2365,15 +2432,16 @@ appropriate to discuss personal issues you are passionate about as well
 that are non-controversial, and allow your passion to shine through as you
 explain what inspires you about the topic and how you stay actively
 engaged in it. Additionally, if you choose a personal passion, make sure it
-
 is one that does not detract from your availability to work or to be
 productive.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 34: What is the piece of criticism you receive most often?
 Answer:
 An honest, candid answer to this question can greatly impress an
 interviewer (when, of course, it is coupled with an explanation of what
 you're doing to improve), but make sure the criticism is something minimal
 or unrelated to your career.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 35: What type of work environment do you succeed the most in?
 Answer:
 Be sure to research the company and the specific position before heading
@@ -2381,15 +2449,16 @@ into the interview. Tailor your response to fit the job you'd be working in,
 and explain why you enjoy that type of environment over others. However,
 it's also extremely important to be adaptable, so remain flexible to other
 environments as well.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 36: Are you an emotional person?
 Answer:
 It's best to focus on your positive emotions – passion, happiness,
 motivations – and to stay away from other extreme emotions that may cause
 you to appear unbalanced. While you want to display your excitement for
 the job, be sure to remain level-headed and cool at all times, so that the
-
 interviewer knows you're not the type of person who lets emotions take you
 over and get in the way of your work.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 37: How do you make decisions?
 Answer:
 This is a great opportunity for you to wow your interviewer with your
@@ -2398,6 +2467,7 @@ outline a process for decision-making, and that you stress the importance of
 weighing your options, as well as in trusting intuition. If you answer this
 question skillfully and with ease, your interviewer will trust in your
 capability as a worker.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 38: What are the most difficult decisions for you to make?
 Answer:
 Explain your relationship to decision-making, and a general synopsis of the
@@ -2405,14 +2475,15 @@ process you take in making choices. If there is a particular type of decision
 that you often struggle with, such as those that involve other people, make
 sure to explain why that type of decision is tough for you, and how you are
 currently engaged in improving your skills.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 39: When making a tough decision, how do you gather information?
 Answer:
 If you're making a tough choice, it's best to gather information from as
 many sources as possible. Lead the interviewer through your process of
-
 taking information from people in different areas, starting first with advice
 from experts in your field, feedback from coworkers or other clients, and by
 looking analytically at your own past experiences.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 40: Tell me about a decision you made that did not turn out well.
 Answer:
 Honesty and transparency are great values that your interviewer will
@@ -2420,12 +2491,14 @@ appreciate – outline the choice you made, why you made it, the results of
 your poor decision – and finally (and most importantly!) what you learned
 from the decision. Give the interviewer reason to trust that you wouldn't
 make a decision like that again in the future.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 41: Are you able to make decisions quickly?
 Answer:
 You may be able to make decisions quickly, but be sure to communicate
 your skill in making sound, thorough decisions as well. Discuss the
 importance of making a decision quickly, and how you do so, as well as the
 necessity for each decision to first be well-informed.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 42: Tell me about your favorite book or newspaper.
 Answer:
 The interviewer will look at your answer to this question in order to
@@ -2434,6 +2507,7 @@ choose something that is on a topic related to your field or that embodies a
 
 theme important to your work, and be able to explain how it relates. Stay
 away from controversial subject matter, such as politics or religion.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 43: If you could be rich or famous, which would you choose?
 Answer:
 This question speaks to your ability to think creatively, but your answer
@@ -2444,6 +2518,7 @@ you choose famous, your interviewer may gather that you like to be well-
 known and to deal with people, and to have the platform to deliver your
 message to others. Either way, it's important to back up your answer with
 sound reasoning.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 44: If you could trade places with anyone for a week, who would it be
 and why?
 Answer:
@@ -2451,15 +2526,16 @@ This question is largely designed to test your ability to think on your feet,
 and to come up with a reasonable answer to an outside the box question.
 Whoever you choose, explain your answer in a logical manner, and offer
 specific professional reasons that led you to choose the individual.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 45: What would you say if I told you that just from glancing over your
 resume, I can already see three spelling mistakes?
 Answer:
-
 Clearly, your resume should be absolutely spotless – and you should be
 confident that it is. If your interviewer tries to make you second-guess
 yourself here, remain calm and poised and assert with a polite smile that
 you would be quite surprised as you are positive that your resume is error-
 free.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 46: Tell me about your worldview.
 Answer:
 This question is designed to offer insight into your personality, so be aware
@@ -2469,6 +2545,7 @@ For example, discuss your beliefs on the ways that hard work and
 dedication can always bring success, or in how learning new things is one
 of life's greatest gifts. It's okay to expand into general life principles here,
 but try to keep your thoughts related to the professional field as well.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 47: What is the biggest mistake someone could make in an interview?
 Answer:
 The biggest mistake that could be made in an interview is to be caught off
@@ -2478,7 +2555,7 @@ asking too early in the hiring process about job benefits, not having
 questions prepared when the interviewer asks if you have questions,
 arriving late, dressing casually or sloppily, or showing ignorance of the
 position.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 48: If you won the $50m lottery, what would you do with the money?
 Answer:
 While a question such as this may seem out of place in a job interview, it's
@@ -2487,6 +2564,7 @@ spot. It's also helpful if you choose something admirable, yet believable, to
 do with the money such as donate the first seventy percent to a charitable
 cause, and divide the remainder among gifts for friends, family, and of
 course, yourself.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 49: Is there ever a time when honesty isn't appropriate in the
 workplace?
 Answer:
@@ -2496,6 +2574,7 @@ another emotion that is best kept to yourself. If this is the case, explain
 simply that it is best to put some thoughts aside, and clarify that the process
 of keeping some thoughts quiet is often enough to smooth over any
 unsettled emotions, thus eliminating the problem.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 50: If you could travel anywhere in the world, where would it be?
 Answer:
 This question is meant to allow you to be creative – so go ahead and stretch
@@ -2504,6 +2583,7 @@ your answer professionally-minded. For example, choose somewhere rich
 
 with culture or that would expose you to a new experience, rather than
 going on an expensive cruise through the Bahamas.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 51: What would I find in your refrigerator right now?
 Answer:
 An interviewer may ask a creative question such as this in order to discern
@@ -2512,6 +2592,7 @@ insight into your personality. For example, candidates with a refrigerator
 full of junk food or take-out may be more likely to be under stress or have
 health issues, while a candidate with a balanced refrigerator full of
 nutritious staples may be more likely to lead a balanced mental life, as well.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 52: If you could play any sport professionally, what would it be and
 what aspect draws you to it?
 Answer:
@@ -2524,7 +2605,7 @@ because you consider yourself to be a go-getter with a solid work ethic and
 great dedication to perfecting your craft. Explain your choice simply to the
 interviewer without elaborating on drawn-out sports metaphors, and be sure
 to point out specific areas or skills in which you excel.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 53: Who were the presidential and vice-presidential candidates in the
 recent elections?
 Answer:
@@ -2532,6 +2613,7 @@ This question, plain and simple, is intended as a gauge of your intelligence
 and awareness. If you miss this question, you may well fail the interview.
 Offer your response with a polite smile, because you understand that there
 are some individuals who probably miss this question.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 54: Explain X task in a few short sentences as you would to a second-
 grader.
 Answer:
@@ -2541,6 +2623,7 @@ your knowledge of the task's inner workings – but in larger part, to test your
 ability to explain a process in simple, basic terms. While you and your
 coworkers may be able to converse using highly technical language, being
 able to simplify a process is an important skill for any employee to have.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 55: If you could compare yourself to any animal, what would it be?
 Answer:
 Many interviewers ask this question, and it's not to determine which
@@ -2548,7 +2631,7 @@ character traits you think you embody – instead, the interviewer wants to
 see that you can think outside the box, and that you're able to reason your
 way through any situation. Regardless of what animal you answer, be sure
 that you provide a thorough reason for your choice.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 56: Who is your hero?
 Answer:
 Your hero may be your mother or father, an old professor, someone
@@ -2557,6 +2640,7 @@ reasoning for your choice professional, and be prepared to offer a logical
 train of thought. Choose someone who embodies values that are important
 in your chosen career field, and answer the question with a smile and sense
 of passion.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 57: Who would play you in the movie about your life?
 Answer:
 As with many creative questions that challenge an interviewee to think
@@ -2564,6 +2648,7 @@ outside the box, the answer to this question is not as important as how you
 answer it. Choose a professional, and relatively non-controversial actor or
 actress, and then be prepared to offer specific reasoning for your choice,
 employing important skills or traits you possess.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 58: Name five people, alive or dead, that would be at your ideal dinner
 party.
 Answer:
@@ -2574,6 +2659,7 @@ what each of them would have to offer to the conversation. Don't forget to
 
 include yourself, and to talk about what you would bring to the
 conversation as well!
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 59: What is customer service?
 Answer:
 Customer service can be many things – and the most important
@@ -2583,6 +2669,7 @@ answer that goes past a basic definition, and that shows you have truly
 considered your own individual view of what it means to take care of your
 customers. The thoughtful consideration you hold for customers will speak
 for itself.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 60: Tell me about a time when you went out of your way for a customer.
 Answer:
 It's important that you offer an example of a time you truly went out of your
@@ -2590,14 +2677,15 @@ way – be careful not to confuse something that felt like a big effort on your
 part, with something your employer would expect you to do anyway. Offer
 an example of the customer's problems, what you did to solve it, and the
 way the customer responded after you took care of the situation.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 61: How do you gain confidence from customers?
 Answer:
-
 This is a very open-ended question that allows you to show your customer
 service skills to the interviewer. There are many possible answers, and it is
 best to choose something that you've had great experience with, such as “by
 handling situations with transparency,” “offering rewards,” or “focusing on
 great communication.” Offer specific examples of successes you've had.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 62: Tell me about a time when a customer was upset or agitated – how
 did you handle the situation?
 Answer:
@@ -2608,6 +2696,7 @@ the way the conflict was resolved. Be sure that in answering questions
 about your own conflict resolution style, that you emphasize the importance
 of open communication and understanding from both parties, as well as a
 willingness to reach a compromise or other solution.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 63: When can you make an exception for a customer?
 Answer:
 Exceptions for customers can generally be made when in accordance with
@@ -2615,7 +2704,7 @@ company policy or when directed by a supervisor. Display an
 understanding of the types of situations in which an exception should be
 considered, such as when a customer has endured a particular hardship, had
 a complication with an order, or at a request.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 64: What would you do in a situation where you were needed by both a
 customer and your boss?
 Answer:
@@ -2625,6 +2714,7 @@ attend to your customer first – however, the key is explaining to your boss
 why you are needed urgently by the customer, and then to assure your boss
 that you will attend to his or her needs as soon as possible (unless it's
 absolutely an urgent matter).
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 65: What is the most important aspect of customer service?
 Answer:
 While many people would simply state that customer satisfaction is the
@@ -2633,6 +2723,7 @@ elaborate on other important techniques in customer service situations.
 Explain why customer service is such a key part of business, and be sure to
 expand on the aspect that you deem to be the most important in a way that
 is reasoned and well-thought out.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 66: Is it best to create low or high expectations for a customer?
 Answer:
 You may answer this question either way (after, of course, determining that
@@ -2642,6 +2733,7 @@ thought process, and very clear reasoning for the option you chose. Offer
 
 pros and cons of each, and include the ultimate point that tips the scale in
 favor of your chosen answer.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 67: Why would your skills be a good match with X objective of our
 company?
 Answer:
@@ -2652,6 +2744,7 @@ them. Also, think about ways that your experience and skills can translate
 to helping the company expand upon these objectives, and to reach further
 goals. If your old company had a similar objective, give a specific example
 of how you helped the company to meet it.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 68: What do you think this job entails?
 Answer:
 Make sure you've researched the position well before heading into the
@@ -2670,11 +2763,13 @@ trends, and engage the interviewer in interesting, relevant conversation.
 Additionally, clear up anything else you need to know about the specific
 position before leaving – so that if the interviewer calls with an offer, you'll
 be prepared to answer.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 70: Are you the best candidate for this position?
 Answer:
 Yes! Offer specific details about what makes you qualified for this position,
 and be sure to discuss (and show) your unbridled passion and enthusiasm
 for the new opportunity, the job, and the company.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 71: How did you prepare for this interview?
 Answer:
 The key part of this question is to make sure that you have prepared! Be
@@ -2682,6 +2777,7 @@ sure that you've researched the company, their objectives, and their services
 prior to the interview, and know as much about the specific position as you
 possibly can. It's also helpful to learn about the company's history and key
 players in the current organization.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 72: If you were hired here, what would you do on your first day?
 Answer:
 
@@ -2692,6 +2788,7 @@ addition to things like going through training or orientation, emphasize how
 much you would enjoy meeting your supervisors and coworkers, or how
 you would spend a lot of the day asking questions and taking in all of your
 new surroundings.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 73: Have you viewed our company's website?
 Answer:
 Clearly, you should have viewed the company's website and done some
@@ -2701,6 +2798,7 @@ you by asking a specific question about it. If you did look at the company's
 website, this is an appropriate time to bring up something you saw there
 that was of particular interest to you, or a value that you especially
 supported.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 74: How does X experience on your resume relate to this position?
 Answer:
 Many applicants will have some bit of experience on their resume that does
@@ -2716,6 +2814,8 @@ allow you to further your skills, offer new experience, or that will be an
 opportunity for you to do something that you particularly enjoy. Don't tell
 the interviewer that you've been looking for a job for a long time, or that the
 pay is very appealing, or you will appear unmotivated and opportunistic.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 76: How is your background relevant to this position?
 Answer:
 Ideally, this should be obvious from your resume. However, in instances
@@ -2727,40 +2827,42 @@ specifically how your skills will translate, and use words to describe your
 background such as “preparation” and “learning.” Your prospective
 position should be described as an “opportunity” and a chance for “growth
 and development.”
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 77: How do you feel about X mission of our company?
 Answer:
 It's important to have researched the company prior to the interview – and if
 you've done so, this question won't catch you off guard. The best answer is
 one that is simple, to the point, and shows knowledge of the mission at
-
 hand. Offer a few short statements as to why you believe in the mission's
 importance, and note that you would be interested in the chance to work
 with a company that supports it.
 *****
 
-INDEX
-JavaScript Interview Questions
-Introduction to JavaScript
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h1>INDEX</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>JavaScript Interview Questions</h2>
+<h3>Introduction to JavaScript</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1: What is JavaScript?
 2: What kind of language does JavaScript provide?
 3: Is there any connection between Java and JavaScript?
-4: What is the official name of JavaScript and is it supported by all
-browsers?
+4: What is the official name of JavaScript and is it supported by all browsers?
 5: What does JavaScript do?
 6: Does prior knowledge of JAVA ease the use of JavaScript?
 7: Is JavaScript case sensitive?
 8: How do you place JavaScript?
 9: Where do you place JavaScript?
-Statements, Comments and Variables
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Statements, Comments and Variables</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 10: Where do you place JavaScript?
 11: Why are comments used in JavaScript and how are they inserted?
 12: What are variables and how are they inserted?
 13: What does a variable of var y=10; and var catname= "Tomcat"; do?
-14: How many statements types can we find in JavaScript? Give some
-examples?
-
-15: What are conditional statements and how are they implemented in
-JavaScript?
+14: How many statements types can we find in JavaScript? Give some examples?
+15: What are conditional statements and how are they implemented in JavaScript?
 16: How will you determine a variable type in JavaScript?
 17: What is the difference in evaluating [“8”+5+2] and [8+5+”2”]?
 18: Is it possible to assign a string to a floating point variable?
@@ -2769,32 +2871,29 @@ JavaScript?
 21: How will you search a particular pattern in a string?
 22: Which property is used to match the pattern at the start of the string?
 23: Which property is used to match the pattern at the end of the string?
-Operators and Functions
-24: What are operators? Which are the most important operators in
-JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Operators and Functions</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+24: What are operators? Which are the most important operators in JavaScript?
 25: Why comparison and logical operators are used?
-26: How many types of pop-up boxes does JavaScript have? What are
-those?
-27: Does creating an alert box prompt the user to respond with OK or
-Cancel?
+26: How many types of pop-up boxes does JavaScript have? What are those?
+27: Does creating an alert box prompt the user to respond with OK or Cancel?
 28: What are functions in JavaScript and where are they placed?
-Values, Arrays and Operators
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Values, Arrays and Operators</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 29: What does the keyword null mean in JavaScript?
-
 30: What does the value undefined mean in JavaScript?
-31: Do the null and undefined values have the same conversion in Boolean,
-numeric and string context?
+31: Do the null and undefined values have the same conversion in Boolean, numeric and string context?
 32: What are Boolean values?
 33: Can a Boolean value be converted into numeric context?
-34: What happens when a number is dropped where a Boolean value is
-expected to be?
+34: What happens when a number is dropped where a Boolean value is expected to be?
 35: What are objects in JavaScript?
 36: What is an array in JavaScript?
-37: From which version forward has JavaScript stopped using ASCII
-character set?
+37: From which version forward has JavaScript stopped using ASCII character set?
 38: What is the scope of a variable in JavaScript?
-39: In the body of the code which variable with the same name has more
-importance over the other: the local or the global variable?
+39: In the body of the code which variable with the same name has more importance over the other: 
+    the local or the global variable?
 40: How many types of undefined variables can we find in JavaScript?
 41: What does (==) & (===) operators do in JavaScript?
 42: How many types of operators can we find in JavaScript?
@@ -2804,7 +2903,6 @@ importance over the other: the local or the global variable?
 46: Does JavaScript contain classes?
 47: What is the purpose of an object in JavaScript?
 48: How are classes and objects in JavaScript named and why?
-
 49: What are class properties in JavaScript?
 50: What are class methods in JavaScript?
 51: Do class properties and class methods have a global and local range?
@@ -2813,22 +2911,21 @@ importance over the other: the local or the global variable?
 54: What is the difference between “===” and “==”? Give examples
 55: What is the function of delete operator in JavaScript?
 56: How will you clip the particular portion of an element?
-Modules, Characters and Attributes
-57: How is a module in JavaScript written so that it can be used by any
-script or module?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Modules, Characters and Attributes</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+57: How is a module in JavaScript written so that it can be used by any script or module?
 58: How are regular expressions represented and created in JavaScript?
 59: How do you combine literal characters in JavaScript?
 60: What document properties does a document contain?
-61: How many types of DOM document object collections can we find in
-JavaScript?
-62: Does use of DOM properties allow you to change the structure of a
-document?
+61: How many types of DOM document object collections can we find in JavaScript?
+62: Does use of DOM properties allow you to change the structure of a document?
 63: How are document objects named in JavaScript?
-Event Handlers and DOM
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Event Handlers and DOM</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 64: How are event handlers defined in JavaScript?
-65: What do the HTMLInputElement and HTMLFormElementinterfaces
-define in HTML DOM?
+65: What do the HTMLInputElement and HTMLFormElementinterfaces define in HTML DOM?
 66: How many levels of DOM standard are currently released?
 67: Are there any more levels of DOM?
 68: What does the Node interface define in DOM?
@@ -2840,16 +2937,22 @@ define in HTML DOM?
 74: What is the difference between getAttribute() and getAttributeNode()?
 75: What are the event handlers in JavaScript?
 76: Can you use two or more functions in onclick event?
-Keywords, CSS and CSS2
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Keywords, CSS and CSS2</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 77: What is the “this” keyword in JavaScript?
 78: What does lexically scoped in JavaScript mean?
 79: Is the following expression correct: element.style.font-family= "arial";?
-Statements and Functions
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Statements and Functions</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 80: How can you replace an if-else statement in JavaScript?
-
 81: What is a "memoization" method in JavaScript?
 82: What does 2+3+”1” evaluate to?
-Roles of JavaScript, Scripts and Events
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Roles of JavaScript, Scripts and Events</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 83: Give some examples of the role that JavaScript has on the Web.
 84: Give an example on how JavaScript can be used in URLs.
 85: How are scripts in JavaScript executed?
@@ -2867,53 +2970,45 @@ Roles of JavaScript, Scripts and Events
 97: What is void 0 in JavaScript?
 98: What is the best practice to place the JavaScript codes?
 99: How to prevent caching of web pages in temporary internet files folder?
-
-100: Why adding of meta tag in first header will not prevent caching of the
-Web page?
+100: Why adding of meta tag in first header will not prevent caching of the Web page?
 101: What is the purpose of meta tag?
 102: How will you resolve looping problem in JavaScript?
 103: Give any example for resolving looping problem.
-104: When is the Execution context created and what are the primary
-components?
+104: When is the Execution context created and what are the primary components?
 105: When is the Execution context stack created?
 106: How is the outer scope environment references maintained?
 107: How will you read or write in a file using JavaScript?
 108: How will you create rich, responsive display and editor user interface?
-109: Which is the new JavaScript engine developed for internet explorer9
-by Microsoft?
+109: Which is the new JavaScript engine developed for internet explorer9 by Microsoft?
 110: What is Node.js?
 111: Which is alternative to XML for data exchange in JavaScript?
 112: What are the sub-components of dynamic component in JavaScript?
-Opening and Manipulating Windows
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Opening and Manipulating Windows</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 113: How can you open a new window using JavaScript?
 114: How can you close a window using JavaScript?
 115: What does the “location” function do in JavaScript?
-116: What other properties besides Href can we find in the “location”
-function in JavaScript?
-
-117: What happens when a string value is added to the location function in
-JavaScript?
+116: What other properties besides Href can we find in the “location” function in JavaScript?
+117: What happens when a string value is added to the location function in JavaScript?
 118: What is the history object in JavaScript?
 119: Which are the methods supported by the history object in JavaScript?
-120: How many and which are the coordinates of a browser within the
-HTML document?
-Objects and their Properties in JavaScript
+120: How many and which are the coordinates of a browser within the HTML document?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Objects and their Properties in JavaScript</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 121: Name the properties of Navigator in JavaScript.
-122: What happens when confirm() or prompt() methods are used in
-JavaScript?
-123: What happens when the mouse is moved over a hyperlink in
-JavaScript?
+122: What happens when confirm() or prompt() methods are used in JavaScript?
+123: What happens when the mouse is moved over a hyperlink in JavaScript?
 124: What does the “defaultStatus” property do in JavaScript?
 125: What is the “onerror” property in JavaScript?
-126: What arguments does the error handler receive when an error occurs in
-JavaScript?
-127: In addition to the three arguments that the error handler receives, is its
-return value of any importance?
+126: What arguments does the error handler receive when an error occurs in JavaScript?
+127: In addition to the three arguments that the error handler receives, is its return value of 
+     any importance?
 128: How can JavaScript code refer to a window or frame object?
 129: What is a DOM (Document Object Model)?
 130: What does the method write() of the Document object do?
 131: How will you determine an object type?
-
 132: What is alert and confirm box in JavaScript?
 133: What are the properties of array object?
 134: What are the sub objects of the windows object in JavaScript?
@@ -2923,29 +3018,26 @@ return value of any importance?
 138: What are the advantages of JSON over XML?
 139: How can the properties of JavaScript objects be accessed?
 140: What are the objects of navigator objects?
-141: How to access the properties of main window from the secondary
-window?
+141: How to access the properties of main window from the secondary window?
 142: How will you load the previous and next url from the history list?
 143: How will you determine whether the browser has cookies enabled?
-JavaScript and HTML
-144: How can you change the font size of an Element in JavaScript? Give
-an example.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>JavaScript and HTML</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+144: How can you change the font size of an Element in JavaScript? Give an example.
 145: How can you submit a form using JavaScript?
 146: How can you set the background color of an HMTL document?
 147: Name the Boolean operators in JavaScript.
 148: How can we determine the state of a checkbox in JavaScript?
-
-149: How can you create an HTML button and what is the event called
-when the button is pressed?
-150: How will you make loading of JavaScript code after Html by the
-browser?
+149: How can you create an HTML button and what is the event called when the button is pressed?
+150: How will you make loading of JavaScript code after Html by the browser?
 151: Which popup allows the user to enter the input?
 152: What are the ways to display the message on screen?
 153: How will you reload the page from server using JavaScript?
 154: How will you display large tables effectively in JavaScript?
 155: How will you create pop window using JavaScript?
-156: How will you fix the errors that make the JavaScript engines difficult
-to perform optimization?
+156: How will you fix the errors that make the JavaScript engines difficult to perform 
+     optimization?
 157: How will you make secure JavaScript code?
 158: How will you add the external JavaScript file?
 159: Is it possible to break up a string in a JavaScript code?
@@ -2953,14 +3045,14 @@ to perform optimization?
 161: What are the properties that can be set in the background properties?
 162: What are the ways to set the background color?
 163: How will you add JavaScript files dynamically?
-164: How will you get the current “x and y” co-ordinate value of the
-window when it is scrolled?
+164: How will you get the current “x and y” co-ordinate value of the window when it is scrolled?
 165: What are the methods to create remote window?
 166: How will you get the height of the browser window?
 167: How will you get the language code of the linked page?
-
 168: How would you input a file?
-JavaScript Forms
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>JavaScript Forms</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 169: What is the importance of the “name” attribute of a <form> tag?
 170: What are the event handlers of the form element?
 171: What does “onchange” event handler do?
@@ -2968,25 +3060,22 @@ JavaScript Forms
 173: What does the “new” operator do?
 174: What does <optgroup> tag do in JavaScript?
 175: Comparison between session state and view state.
-176: Which function is best for fast execution: window.onload or
-onDocumentReady?
+176: Which function is best for fast execution: window.onload or onDocumentReady?
 177: What is the purpose of “visibility” property in JavaScript?
 178: What are the ways to make an element visible/hidden?
-179: How will you disable the html form fields, for instance password
-field?
+179: How will you disable the html form fields, for instance password field?
 180: How will you select the contents in the text field, say password?
-181: How will you display the id of the form and the name attribute of the
-hidden element?
+181: How will you display the id of the form and the name attribute of the hidden element?
 182: How will you get the last row from a table in JavaScript?
 183: How will you create and delete caption to a table?
 184: How will you create a text area and make it read-only?
-
 185: How will you change the caption display position of a table?
-JavaScript Constructors
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>JavaScript Constructors</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 186: What does a JavaScript constructor do?
 187: What is the value that the constructor function returns?
-188: How many types of common object methods can we find in
-JavaScript?
+188: How many types of common object methods can we find in JavaScript?
 189: How does class hierarchy manifest themselves in JavaScript?
 190: What does “overriding method” mean?
 191: How can you create an XML document in Firefox using JavaScript?
@@ -2994,85 +3083,71 @@ JavaScript?
 193: Where is the arguments() array placed in JavaScript?
 194: Which are the properties of the arguments object in JavaScript?
 195: What happens when a function is invoked with the arguments object?
-Miscellaneous Arguments, Functions and Methods in JavaScript
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Miscellaneous Arguments, Functions and Methods in JavaScript</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 196: What does arguments.callee do in JavaScript?
 197: What does arguments.length do in JavaScript?
-198: What other JavaScript method you know that is similar with shift()
-method?
+198: What other JavaScript method you know that is similar with shift() method?
 199: How can you remove a page from the browser history?
 200: How can you pass data between pages using cookies?
-
 201: What is the difference between resizeTo() and resizeBy() methods?
 202: What’s the difference between moveTo() and moveBy() methods?
-203: How can a window that is buried beneath other windows be brought
-back to the front?
-204: What happens when a string argument is passed with the Date()
-constructor in JavaScript?
+203: How can a window that is buried beneath other windows be brought back to the front?
+204: What happens when a string argument is passed with the Date() constructor in JavaScript?
 205: Which are the arguments of the Date() constructor in JavaScript?
 206: What does URIError indicate in JavaScript?
 207: What does the encodeURIComponent function do in JavaScript?
 208: What does the string argument do in JavaScript?
 209: What is and what does the escape() function do in JavaScript?
-210: What does the apply() function do in JavaScript and which are its
-arguments?
+210: What does the apply() function do in JavaScript and which are its arguments?
 211: What does the getClass() function do in JavaScript?
 212: What is Infinity in JavaScript?
 213: What does the exec() method do in JavaScript?
-214: What happens when the exec() method is invoked on a nonglobal
-pattern?
-215: Does exec() include full details of every match even if regexp is not
-global?
+214: What happens when the exec() method is invoked on a nonglobal pattern?
+215: Does exec() include full details of every match even if regexp is not global?
 216: What is an anchor in JavaScript?
 217: What does the focus() method do in JavaScript?
 218: Is JSObject a JavaScript object?
-
 219: What does the call() method of JSObject class do?
 220: What does the eval() method of the JSObject do?
 221: What does the getSlot() method of the JSObject do?
 222: What does the removeMember() method of the JSObject do?
 223: What does the setMember() method of the JSObject do?
 224: What does the toString() method of JSObject do?
-225: What does the (n) argument represent in isFinite(n) and what does it
-return?
+225: What does the (n) argument represent in isFinite(n) and what does it return?
 226: What does the isNaN() function do in JavaScript?
 227: What does the setYear() function do in JavaScript?
 228: What does the join() method do in JavaScript?
 229: How will you pop the last element from an existing array?
 230: How to pop the first element from an existing array?
-231: How will you add one or more elements to the end of the existing
-array?
-232: How will you add one or more elements to the beginning of the
-existing array?
+231: How will you add one or more elements to the end of the existing array?
+232: How will you add one or more elements to the beginning of the existing array?
 233: How will you reverse the elements in an array?
-234: What does the Array.slice(start,end) method do in JavaScript and how
-to retrieve the elements within the selected position in an array?
+234: What does the Array.slice(start,end) method do in JavaScript and how to retrieve the elements 
+     within the selected position in an array?
 235: What does the Array.sort() method do in JavaScript?
 236: What is encodeURI( ) and encodeURIComponent( )?
 237: What is decodeURI( ) and decodeURIComponent( )?
-
 238: What does the splice( ) function do in JavaScript?
 239: How will you print the current window using JavaScript?
-240: How will you get default value when an argument is not passed in
-calling function?
+240: How will you get default value when an argument is not passed in calling function?
 241: How will you encode and decode a string?
 242: How will you pass a function as argument to another function?
 243: What is the need for callback function?
 244: How will you get a substring from a string in JavaScript?
-245: How will you get the function (fn1) which recently called the current
-function (fn2)?
-246: How will you execute the page that is about to be unloaded, before the
-execution of onload()?
+245: How will you get the function (fn1) which recently called the current function (fn2)?
+246: How will you execute the page that is about to be unloaded, before the execution of onload()?
 247: How will you find whether the window is closed or not?
-248: How will you call a function repeatedly for a particular interval of
-time?
+248: How will you call a function repeatedly for a particular interval of time?
 249: What is the difference between test and exec function?
-JavaScript Design Patterns
-250: What is a Pattern and explain about design patterns in software
-programming?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>JavaScript Design Patterns</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+250: What is a Pattern and explain about design patterns in software programming?
 251: Why is it important to identify patterns?
 252: What is Singleton Pattern and what is its importance in JavaScript?
 253: How will you create singleton in JavaScript?
-
 254: How will you create 2 equal objects in JavaScript?
 255: What is the purpose of Factory pattern?
 256: How will you create a Factory pattern?
@@ -3086,18 +3161,17 @@ programming?
 264: Explain about Observer Pattern.
 *****
 
-HR Questions
-1: Tell me about a time when you worked additional hours to finish a
-project.
-2: Tell me about a time when your performance exceeded the duties and
-requirements of your job.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>HR Questions</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+1: Tell me about a time when you worked additional hours to finish a project.
+2: Tell me about a time when your performance exceeded the duties and requirements of your job.
 3: What is your driving attitude about work?
 4: Do you take work home with you?
 5: Describe a typical work day to me.
-6: Tell me about a time when you went out of your way at your previous
-job.
-7: Are you open to receiving feedback and criticisms on your job
-performance, and adjusting as necessary?
+6: Tell me about a time when you went out of your way at your previous job.
+7: Are you open to receiving feedback and criticisms on your job performance, and adjusting as 
+   necessary?
 8: What inspires you?
 9: How do you inspire others?
 10: What has been your biggest success?
@@ -3109,14 +3183,12 @@ performance, and adjusting as necessary?
 16: What does it take to be successful?
 17: What would be the biggest challenge in this position for you?
 18: Would you describe yourself as an introvert or an extrovert?
-
 19: What are some positive character traits that you don't possess?
 20: What is the greatest lesson you've ever learned?
-21: Have you ever been in a situation where one of your strengths became a
-weakness in an alternate setting?
+21: Have you ever been in a situation where one of your strengths became a weakness in an 
+    alternate setting?
 22: Who has been the most influential person in your life?
-23: Do you consider yourself to be a “detailed” or “big picture” type of
-person?
+23: Do you consider yourself to be a “detailed” or “big picture” type of person?
 24: What is your greatest fear?
 25: What sort of challenges do you enjoy?
 26: Tell me about a time you were embarrassed. How did you handle it?
@@ -3132,46 +3204,36 @@ person?
 36: Are you an emotional person?
 37: How do you make decisions?
 38: What are the most difficult decisions for you to make?
-
 39: When making a tough decision, how do you gather information?
 40: Tell me about a decision you made that did not turn out well.
 41: Are you able to make decisions quickly?
 42: Tell me about your favorite book or newspaper.
 43: If you could be rich or famous, which would you choose?
-44: If you could trade places with anyone for a week, who would it be and
-why?
-45: What would you say if I told you that just from glancing over your
-resume, I can already see three spelling mistakes?
+44: If you could trade places with anyone for a week, who would it be and why?
+45: What would you say if I told you that just from glancing over your resume, I can already see 
+    three spelling mistakes?
 46: Tell me about your worldview.
 47: What is the biggest mistake someone could make in an interview?
 48: If you won the $50m lottery, what would you do with the money?
 49: Is there ever a time when honesty isn't appropriate in the workplace?
 50: If you could travel anywhere in the world, where would it be?
 51: What would I find in your refrigerator right now?
-52: If you could play any sport professionally, what would it be and what
-aspect draws you to it?
-53: Who were the presidential and vice-presidential candidates in the recent
-elections?
-54: Explain X task in a few short sentences as you would to a second-
-grader.
+52: If you could play any sport professionally, what would it be and what aspect draws you to it?
+53: Who were the presidential and vice-presidential candidates in the recent elections?
+54: Explain X task in a few short sentences as you would to a second-grader.
 55: If you could compare yourself to any animal, what would it be?
 56: Who is your hero?
-
 57: Who would play you in the movie about your life?
-58: Name five people, alive or dead, that would be at your ideal dinner
-party.
+58: Name five people, alive or dead, that would be at your ideal dinner party.
 59: What is customer service?
 60: Tell me about a time when you went out of your way for a customer.
 61: How do you gain confidence from customers?
-62: Tell me about a time when a customer was upset or agitated – how did
-you handle the situation?
+62: Tell me about a time when a customer was upset or agitated – how did you handle the situation?
 63: When can you make an exception for a customer?
-64: What would you do in a situation where you were needed by both a
-customer and your boss?
+64: What would you do in a situation where you were needed by both a customer and your boss?
 65: What is the most important aspect of customer service?
 66: Is it best to create low or high expectations for a customer?
-67: Why would your skills be a good match with X objective of our
-company?
+67: Why would your skills be a good match with X objective of our company?
 68: What do you think this job entails?
 69: Is there anything else about the job or company you'd like to know?
 70: Are you the best candidate for this position?
@@ -3180,16 +3242,16 @@ company?
 73: Have you viewed our company's website?
 74: How does X experience on your resume relate to this position?
 75: Why do you want this position?
-
 76: How is your background relevant to this position?
 77: How do you feel about X mission of our company?
 *****
 
-Some of the following titles might also be handy:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>Some of the following titles might also be handy:</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1. .NET Interview Questions You'll Most Likely Be Asked
 2. 200 Interview Questions You'll Most Likely Be Asked
-3. Access VBA Programming Interview Questions You'll Most Likely Be
-Asked
+3. Access VBA Programming Interview Questions You'll Most Likely Be Asked
 4. Adobe ColdFusion Interview Questions You'll Most Likely Be Asked
 5. Advanced C++ Interview Questions You'll Most Likely Be Asked
 6. Advanced Excel Interview Questions You'll Most Likely Be Asked
@@ -3197,42 +3259,31 @@ Asked
 8. Advanced SAS Interview Questions You'll Most Likely Be Asked
 9. AJAX Interview Questions You'll Most Likely Be Asked
 10. Algorithms Interview Questions You'll Most Likely Be Asked
-11. Android Development Interview Questions You'll Most Likely Be
-Asked
+11. Android Development Interview Questions You'll Most Likely Be Asked
 12. Ant & Maven Interview Questions You'll Most Likely Be Asked
 13. Apache Web Server Interview Questions You'll Most Likely Be Asked
 14. Artificial Intelligence Interview Questions You'll Most Likely Be Asked
 15. ASP.NET Interview Questions You'll Most Likely Be Asked
-16. Automated Software Testing Interview Questions You'll Most Likely Be
-Asked
+16. Automated Software Testing Interview Questions You'll Most Likely Be Asked
 17. Base SAS Interview Questions You'll Most Likely Be Asked
-18. BEA WebLogic Server Interview Questions You'll Most Likely Be
-Asked
-
+18. BEA WebLogic Server Interview Questions You'll Most Likely Be Asked
 19. C & C++ Interview Questions You'll Most Likely Be Asked
 20. C# Interview Questions You'll Most Likely Be Asked
 21. CCNA Interview Questions You'll Most Likely Be Asked
 22. Cloud Computing Interview Questions You'll Most Likely Be Asked
-23. Computer Architecture Interview Questions You'll Most Likely Be
-Asked
+23. Computer Architecture Interview Questions You'll Most Likely Be Asked
 24. Computer Networks Interview Questions You'll Most Likely Be Asked
 25. Core JAVA Interview Questions You'll Most Likely Be Asked
-26. Data Structures & Algorithms Interview Questions You'll Most Likely
-Be Asked
+26. Data Structures & Algorithms Interview Questions You'll Most Likely Be Asked
 27. EJB 3.0 Interview Questions You'll Most Likely Be Asked
 28. Entity Framework Interview Questions You'll Most Likely Be Asked
 29. Fedora & RHEL Interview Questions You'll Most Likely Be Asked
-30. Hibernate, Spring & Struts Interview Questions You'll Most Likely Be
-Asked
-31. HTML, XHTML and CSS Interview Questions You'll Most Likely Be
-Asked
+30. Hibernate, Spring & Struts Interview Questions You'll Most Likely Be Asked
+31. HTML, XHTML and CSS Interview Questions You'll Most Likely Be Asked
 32. HTML5 Interview Questions You'll Most Likely Be Asked
-33. IBM WebSphere Application Server Interview Questions You'll Most
-Likely Be Asked
+33. IBM WebSphere Application Server Interview Questions You'll Most Likely Be Asked
 34. iOS SDK Interview Questions You'll Most Likely Be Asked
-35. Java / J2EE Design Patterns Interview Questions You'll Most Likely Be
-Asked
-
+35. Java / J2EE Design Patterns Interview Questions You'll Most Likely Be Asked
 36. Java / J2EE Interview Questions You'll Most Likely Be Asked
 37. JavaScript Interview Questions You'll Most Likely Be Asked
 38. JavaServer Faces Interview Questions You'll Most Likely Be Asked
@@ -3241,131 +3292,35 @@ Asked
 41. JSP-Servlet Interview Questions You'll Most Likely Be Asked
 42. JUnit Interview Questions You'll Most Likely Be Asked
 43. Linux Interview Questions You'll Most Likely Be Asked
-44. Linux System Administrator Interview Questions You'll Most Likely Be
-Asked
+44. Linux System Administrator Interview Questions You'll Most Likely Be Asked
 45. Mac OS X Lion Interview Questions You'll Most Likely Be Asked
-46. Mac OS X Snow Leopard Interview Questions You'll Most Likely Be
-Asked
+46. Mac OS X Snow Leopard Interview Questions You'll Most Likely Be Asked
 47. Microsoft Access Interview Questions You'll Most Likely Be Asked
-48. Microsoft Powerpoint Interview Questions You'll Most Likely Be
-Asked
+48. Microsoft Powerpoint Interview Questions You'll Most Likely Be Asked
 49. Microsoft Word Interview Questions You'll Most Likely Be Asked
 50. MySQL Interview Questions You'll Most Likely Be Asked
 51. Networking Interview Questions You'll Most Likely Be Asked
 52. OOPS Interview Questions You'll Most Likely Be Asked
 53. Operating Systems Interview Questions You'll Most Likely Be Asked
-54. Oracle Database Administration Interview Questions You'll Most Likely
-Be Asked
-
-55. Oracle E-Business Suite Interview Questions You'll Most Likely Be
-Asked
+54. Oracle Database Administration Interview Questions You'll Most Likely Be Asked
+55. Oracle E-Business Suite Interview Questions You'll Most Likely Be Asked
 56. ORACLE PL/SQL Interview Questions You'll Most Likely Be Asked
 57. Perl Programming Interview Questions You'll Most Likely Be Asked
 58. PHP Interview Questions You'll Most Likely Be Asked
 59. Python Interview Questions You'll Most Likely Be Asked
-60. RESTful JAVA Web Services Interview Questions You'll Most Likely
-Be Asked
+60. RESTful JAVA Web Services Interview Questions You'll Most Likely Be Asked
 61. SAP HANA Interview Questions You'll Most Likely Be Asked
-62. SAS Programming Guidelines Interview Questions You'll Most Likely
-Be Asked
-63. Selenium Testing Tools Interview Questions You'll Most Likely Be
-Asked
+62. SAS Programming Guidelines Interview Questions You'll Most Likely Be Asked
+63. Selenium Testing Tools Interview Questions You'll Most Likely Be Asked
 64. Silverlight Interview Questions You'll Most Likely Be Asked
-65. Software Repositories Interview Questions You'll Most Likely Be
-Asked
+65. Software Repositories Interview Questions You'll Most Likely Be Asked
 66. Software Testing Interview Questions You'll Most Likely Be Asked
 67. SQL Server Interview Questions You'll Most Likely Be Asked
 68. Tomcat Interview Questions You'll Most Likely Be Asked
 69. UML Interview Questions You'll Most Likely Be Asked
 70. Unix Interview Questions You'll Most Likely Be Asked
-71. UNIX Shell Programming Interview Questions You'll Most Likely Be
-Asked
-
-72. Windows Server 2008 R2 Interview Questions You'll Most Likely Be
-Asked
-73. XLXP, XSLT, XPATH, XFORMS & XQuery Interview Questions You'll
-Most Likely Be Asked
+71. UNIX Shell Programming Interview Questions You'll Most Likely Be Asked
+72. Windows Server 2008 R2 Interview Questions You'll Most Likely Be Asked
+73. XLXP, XSLT, XPATH, XFORMS & XQuery Interview Questions You'll Most Likely Be Asked
 74. XML Interview Questions You'll Most Likely Be Asked
-For complete list visit
-www.vibrantpublishers.com
-###
-
-Also by Vibrant Publishers
-Job Interview Questions Series
-Java/J2EE Interview Questions You'll Most Likely Be Asked
-Hibernate, Spring & Struts Interview Questions You'll Most Likely Be Asked
-Python Interview Questions You'll Most Likely Be Asked
-Unix Shell Programming Interview Questions You'll Most Likely Be Asked
-IBM WebSphere Application Server Interview Questions You'll Most Likely Be Asked
-Operating Systems Interview Questions You'll Most Likely Be Asked
-SAS Programming Guidelines Interview Questions You'll Most Likely Be Asked
-SAP HANA Interview Questions You'll Most Likely Be Asked
-Oracle Database Administration Interview Questions You'll Most Likely Be Asked
-Software Testing Interview Questions You'll Most Likely Be Asked
-Advanced Java Interview Questions You'll Most Likely Be Asked
-C & C++ Interview Questions You'll Most Likely Be Asked
-SQL Server Interview Questions You'll Most Likely Be Asked
-C# Interview Questions You'll Most Likely Be Asked
-Data Structures Interview Questions You'll Most Likely Be Asked
-JSP-Servlet Interview Questions You'll Most Likely Be Asked
-Oracle PL/SQL Interview Questions You'll Most Likely Be Asked
-Hadoop Big Data Interview Questions You'll Most Likely Be Asked
-Advanced C++ Interview Questions You'll Most Likely Be Asked
-JavaScript Interview Questions You'll Most Likely Be Asked
-Automated Software Testing Interview Questions You'll Most Likely Be Asked
-Advanced SAS Interview Questions You'll Most Likely Be Asked
-Base SAS Interview Questions You'll Most Likely Be Asked
-CCNA Interview Questions You'll Most Likely Be Asked
-Linux System Administrator Interview Questions You'll Most Likely Be Asked
-SAS Interview Questions You’ll Most Likely Be Asked
-
-Java/J2EE Design Patterns Interview Questions You'll Most Likely Be Asked
-Selenium Testing Tools Interview Questions You'll Most Likely Be Asked
-Cloud Computing Interview Questions You'll Most Likely Be Asked
-Restful Java Web Services Interview Questions You'll Most Likely Be Asked
-Leadership Interview Questions You'll Most Likely Be Asked
-HR Interview Questions You'll Most Likely Be Asked
-Innovative Interview Questions You'll Most Likely Be Asked
-Administrator and Helpdesk Interview Questions You'll Most Likely Be Asked
-Core Java Interview Questions You'll Most Likely Be Asked
-Self Learning Management
-Operations and Supply Chain Management Essentials You Always Wanted To Know
-Human Resource Management Essentials You Always Wanted To Know
-Business Strategy Essentials You Always Wanted To Know
-Marketing Management Essentials You Always Wanted To Know
-Digital Marketing Essentials You Always Wanted To Know
-Agile Essentials You Always Wanted To Know
-Decision Making Essentials You Always Wanted To Know
-Leadership Essentials You Always Wanted To Know
-HR Analytics Essentials You Always Wanted To Know
-Organizational Behavior Essentials You Always Wanted To Know
-Project Management Essentials You Always Wanted To Know
-Sales Management Essentials You Always Wanted To Know
-Financial Accounting Essentials You Always Wanted to Know: 5th Edition
-Financial Management Essentials You Always Wanted to Know: 5th Edition
-Business Plan Essentials You Always Wanted To Know
-Microeconomics Essentials You Always Wanted to Know
-Cost Accounting and Management Essentials You Always Wanted to Know: 5th Edition
-Diversity in the Workplace Essentials You Always Wanted To Know
-Principles of Management Essentials You Always Wanted To Know
-Stakeholder Engagement Essentials You Always Wanted To Know
-
-Organizational Development Essentials You Always Wanted To Know
-Time Management Essentials You Always Wanted To Know
-Entrepreneurship Essentials You Always Wanted To Know
-Business Law Essentials You Always Wanted To Know (Coming Soon)
-Test Prep Series
-Winning Strategies For ACT Essay Writing: With 15 Sample Prompts
-Conquer the GRE®: Stress Management and a Perfect Study Plan
-GRE Analytical Writing: Solutions to the Real Essay Topics - Book 1
-GRE Master Wordlist: 1535 Words for Verbal Mastery
-GRE Text Completion and Sentence Equivalence Practice Questions
-GMAT Analytical Writing: Solutions to the Real Argument Topics
-GRE Analytical Writing: Solutions to the Real Essay Topics - Book 2
-GRE Words In Context: The Complete List
-GRE Verbal Reasoning Supreme: Study Guide with Practice Questions
-GRE Reading Comprehension: Detailed Solutions to 325 Questions
-GRE Analytical Writing Supreme: Solutions to the Real Essay Topics
-
-ABOUT THE PUBLISHER
 
