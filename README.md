@@ -151,22 +151,23 @@ numbers, Booleans, arrays, or other JSON objects.</p>
 programming languages. It is a common format for sending and receiving data in web APIs, 
 configuring applications, and storing configuration settings.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-3: What is JavaScript?
+<h4>3: What is JavaScript?</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript is a scripting language that adds interactivity to HTML pages.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-4: What kind of language is JavaScript?
+<h4>4: What kind of language is JavaScript?</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript is an interpreted language that executes scripts without preliminary compilation.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-5: What is the official name of JavaScript and is it supported by all browsers?
+<h4>5: What is the official name of JavaScript and is it supported by all browsers?</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
-The official name of JavaScript is ECMA (European Computer Manufacturer's Association) and with it, Internet Explorer 4 and Mozilla Firefox 1.5 fully supported.
+The official name of JavaScript is ECMA (European Computer Manufacturer's Association) and with it, 
+Internet Explorer 4 and Mozilla Firefox 1.5 fully supported.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-6: What does JavaScript do?
+<h4>6: What does JavaScript do?</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript is meant to be an easy scripting language that helps the non-
@@ -175,88 +176,123 @@ put dynamic text into HTML pages, it can react to events (like when a page
 has finished downloading), and it can read and write HTML elements,
 create cookies and so forth.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-7: Does prior knowledge of JAVA ease the use of JavaScript?
+<h4>7: Does prior knowledge of JAVA ease the use of JavaScript?</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes. Being modeled after Java, which in turn is modeled after C++,
 JavaScript should be easier to familiarize and work with.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-8: Is JavaScript case sensitive?
+<h4>8: Is JavaScript case sensitive?</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes. Unlike HTML, JavaScript has to have all variables and function names
 (etc.) in capital letters.
-8: How do you place JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>9: How do you place JavaScript?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
-Scripts can be placed in the <body> , or in the <head> section of an HTML page, or in both. JavaScript in <head>. JavaScript may be inserted into code with the following syntax:
-<script type="text/JavaScript">
-
-9: Where do you place JavaScript?
+Scripts can be placed in the &lt;body&gt; , or in the &lt;head&gt; section of an HTML page, or in both. 
+JavaScript in &lt;head&gt;. JavaScript may be inserted into code with the following syntax:
+&lt;script type="text/JavaScript"&gt;
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>10: Where do you place JavaScript?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript may be placed in the <head> or <body> section of HTML code,
 but it is usually a good practice to place it in <head> as to not hinder your
 code later on.
 
 STATEMENTS, COMMENTS AND VARIABLES
-10: How do you terminate statements in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>11: How do you terminate statements in JavaScript?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 In JavaScript, statements are terminated by semicolons (;) and although
 they are not mandatory they are a good practice to pick up.
-11: Why are comments used in JavaScript and how are they inserted?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>12: Why are comments used in JavaScript and how are they inserted?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Usually comments are added to make the code more readable but they can
 also be used to explain the code. They are inserted with // (for single line
 comments) and /* */ for multiple lines comments.
-12. Explain equality
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>13. Explain equality</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Problem: JavaScript has both strict and type–converting comparisons:
 Strict comparison (e.g., ===) checks for value equality without allowing coercion.
 Abstract comparison (e.g., ==) checks for value equality with coercion allowed.
 Answer:
+```
 const a = "42";
 const b = 42;
 console.log(a == b); // true
 console.log(a === b); // false
-Some simple equality rules: If either value (also known as side) in a comparison could be the true or false value, avoid == and use ===.
-If either value in a comparison could be of these specific values (0, "", or [] — empty array), avoid == and use ===.
-In all other cases, you’re safe to use ==. Not only is it safe, but in many cases, it simplifies your code in a way that improves readability.
-13: What are variables and how are they inserted?
+```
+Some simple equality rules: If either value (also known as side) in a comparison could be the 
+true or false value, avoid == and use ===.
+If either value in a comparison could be of these specific values (0, "", or [] — empty array), 
+avoid == and use ===.
+In all other cases, you’re safe to use ==. Not only is it safe, but in many cases, it simplifies 
+your code in a way that improves readability.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>14: What are variables and how are they inserted?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
-Variables are storing containers used for holding expressions and values. They can have a short letter or a longer name and are inserted with the statement: var. Because the variables are loosely typed, they can hold any type of data.
-14: What does a variable of var y=10; and var catname= "Tomcat"; do?
+Variables are storing containers used for holding expressions and values. They can have a short 
+letter or a longer name and are inserted with the statement: var. Because the variables are 
+loosely typed, they can hold any type of data.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>15: What does a variable of var y=10; and var catname= "Tomcat"; do?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 With the execution of the above code, we have variables that hold values of 10(for y) and Tomcat (for catname).
 Note that the inclusion of text warrants " " being used.
-15: How many statements types can we find in JavaScript? Give some examples?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>15: How many statements types can we find in JavaScript? Give some examples?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The statement types found in JavaScript are: Expression statements, compound, empty and labeled statements. 
 Example: break, continue, default, do, for, etc.
-16. Understanding Exponential Operator
-Problem: Explain the usage of the exponential (**) operator in JavaScript, including when and how to use it to perform exponentiation calculations.
-Answer: The exponential operator (**) in JavaScript is used to perform exponentiation, which is raising a number to a power. It's a concise and intuitive way to perform such calculations.
+<h4>16. Understanding Exponential Operator</h4>
+Problem: Explain the usage of the exponential (&ast;&ast;) operator in JavaScript, including when and how to use it to perform exponentiation calculations.
+Answer: The exponential operator (&ast;&ast;) in JavaScript is used to perform exponentiation, which is raising a number to a power. It's a concise and intuitive way to perform such calculations.
 Here's how to use it:
+```
 // Using the exponential operator
-const result1 = 2 ** 3;  // raised to the power of 3 
+const result1 = 2 &ast;&ast; 3;  // raised to the power of 3 
 console.log(result1);  // 8
-const result2 = 4 ** 8.5;  // Square root of 4 
+const result2 = 4 &ast;&ast; 8.5;  // Square root of 4 
 console.log(result2);  // 131072
-const result3 = 10 ** -2; // 10 raised to the power of -2
+const result3 = 10 &ast;&ast; -2; // 10 raised to the power of -2
 console.log(result3) // 0.01
-The exponential operator can be used with both integer and floating-point exponents. It's particularly useful when you need to perform exponentiation calculations in a clear and concise manner.
-17: What are conditional statements and how are they implemented in JavaScript?
+```
+The exponential operator can be used with both integer and floating-point exponents. It's 
+particularly useful when you need to perform exponentiation calculations in a clear and 
+concise manner.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>17: What are conditional statements and how are they implemented in JavaScript?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Conditional statements are used to perform and act on different sets of conditions declared by the programmer. They are the following: if statement; if...else statement; if...else if...else statement and the switch statement.
-18: How will you determine a variable type in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>18: How will you determine a variable type in JavaScript?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 A variable type in JavaScript is determined using Typeof operator. When the object is String, Number, Function, undefined and Boolean, the operator returns the same type. And when the object is null and array, the operator returns “object”.
 Example:
 var count=100;
 typeof count; // (returns “number”)
-17: What is the difference in evaluating [“8”+5+2] and [8+5+”2”]?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>19: What is the difference in evaluating [“8”+5+2] and [8+5+”2”]?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 In [“8”+5+2],”8” is a String. So anything that trail the string will be changed to string. Hence the result will be”852”. 
 In [8+5+”2”], 8 and 5 are integer, so it gets added up (13).And “2” is treated as String. Hence the concatenation takes place and the result will be “132”.
-18: Is it possible to assign a string to a floating point variable?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>20: Is it possible to assign a string to a floating point variable?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes. Any variable can be assigned to another data type. For example,
 var a1=10.39;
@@ -266,7 +302,9 @@ a1=”hai”;
 document.write(a1);
 
 hai
-19: Will variable redeclaration affect the value of that variable?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>21: Will variable redeclaration affect the value of that variable?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 No. The same value will be retained in the variable.
 Example:
@@ -276,7 +314,9 @@ var status;
 document.write(“status”); //cool
 status=”chill”;
 document.write(“status”); //chill
-20: How will you search a matching pattern globally in a string?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>22: How will you search a matching pattern globally in a string?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 A matching pattern can be globally searched in a string using “g” modifier
 in Regular Expression.
@@ -286,14 +326,18 @@ var q1=”/First/g”;
 document.write(“Pattern_Match:” + p1.match(q1)); //
 Pattern_Match:First,First
 
-21: How will you search a particular pattern in a string?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>23: How will you search a particular pattern in a string?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 A particular pattern in string can be searched using test function. If the
 match is found it returns true, else false.
 Example:
 var my_pattern1=new RegExp(“pp”);
 document.write(my_pattern1.test(“Happy_Days”); //true
-22: Which property is used to match the pattern at the start of the string?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>24: Which property is used to match the pattern at the start of the string?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 “^” symbol is used for position matching.
 Example:
@@ -301,7 +345,9 @@ var p1=”First_Regular_ Expression_First”;
 var q1=”/First/^”;
 document.write(“Pattern_Match:” + p1.match(q1)); //Pattern_Match:First
 First_Regular
-23: Which property is used to match the pattern at the end of the string?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>25: Which property is used to match the pattern at the end of the string?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 “$” symbol is used for end position matching.
@@ -313,26 +359,36 @@ Expression_First
 *****
 
 OPERATORS AND FUNCTIONS
-24: What are operators? Which are the most important operators in
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>26: What are operators? Which are the most important operators in</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 JavaScript?
 Answer:
 Operators in JavaScript are used to combine values that form expressions.
 The most important are: = and +. The first is used to assign values and the
 second one is used to add values together.
-25: Why comparison and logical operators are used?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>27: Why comparison and logical operators are used?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Comparison operators are used to determine if there is a difference between
 variables, and also their equality, while the logical operators are used to
 determine the logic of variables.
-26: How many types of pop-up boxes does JavaScript have? What are those?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>26: How many types of pop-up boxes does JavaScript have? What are those?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript has three types of pop-up boxes and they are: alert, confirm and
 prompt.
-27: Does creating an alert box prompt the user to respond with OK or Cancel?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>27: Does creating an alert box prompt the user to respond with OK or Cancel?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 No. An alert box only gives the user the option of choosing OK to proceed.
-28: What are functions in JavaScript and where are they placed?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>28: What are functions in JavaScript and where are they placed?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Functions contain code that is executed before an event thus stopping the
 browser from loading a script when the page opens. Functions can be
@@ -341,68 +397,88 @@ in the <head> section.
 *****
 
 VALUES, ARRAYS AND OPERATORS
-29: What does the keyword null mean in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>29: What does the keyword null mean in JavaScript?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The keyword null is a special value that indicates no value. It is unique
 from other values and also fully distinct.
-30: What does the value undefined mean in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>30: What does the value undefined mean in JavaScript?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Undefined is a special value in JavaScript, it means the variable used in the
 code does not exist or is not assigned any value or the property does not
 exist.
-31: Do the null and undefined values have the same conversion in
-Boolean, numeric and string context?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>31: Do the null and undefined values have the same conversion in Boolean, numeric and string context?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 No. The undefined value changes into Nan in numeric context and
 undefined in a string context. They share the same conversion in Boolean.
-32: What are Boolean values?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>32: What are Boolean values?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Boolean values are datatypes that only have two types of values: true or
 false; a value of Boolean type only represents the truth: it says if it true or
 not.
-
-33: Can a Boolean value be converted into numeric context?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>33: Can a Boolean value be converted into numeric context?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes. If it is converted into numeric context the true value becomes 1 and if
 it is a false value it becomes a 0.
-34: What happens when a number is dropped where a Boolean value is
-expected to be?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>34: What happens when a number is dropped where a Boolean value is expected to be?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The number is converted into a true value, but only if it not equal to 0 or
 NaN which in turn is converted into a false value.
-35: What are objects in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>35: What are objects in JavaScript?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Objects are collections of named values that most of the times are referred
 to as properties of an object.
-36: What is an array in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>36: What is an array in JavaScript?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 An array is a collection of data values which can handle more than one
 value at a time, the difference being that each data in an array has a number
 or index.
-
-37: From which version forward has JavaScript stopped using ASCII
-character set?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>37: From which version forward has JavaScript stopped using ASCII character set?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 From v.3 JavaScript started using Unicode character sets: identifiers can
 now contain letters and digits from the Unicode complete character set.
-38: What is the scope of a variable in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>38: What is the scope of a variable in JavaScript?</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The scope of a variable is the region in which your program in which it is
 defined. Thus a global variable has a global scope meaning it is defined
 everywhere in your JavaScript code. The local variables have a local scope
 meaning they are defined only in the body section of your code.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 39: In the body of the code which variable with the same name has
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 more importance over the other: the local or the global variable?
 Answer:
 In the body of a function a local variable will always take precedence over a
 global variable hiding it all together.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 40: How many types of undefined variables can we find in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 There are two kinds of undefined variables: the first is the one that has
 never been declared and the second is the kind of undefined variable that
 has been declared but has never had a value assigned to it.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 41: What does (==) & (===) operators do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The first (==) is the equality operator and it checks if its two operands are
 equal. The second (===) is called the identity operator and it checks if two
@@ -2147,13 +2223,14 @@ userName: 'isAlphaNum'
 };
 Now that the validator object is configured to handle data, we call the
 validate() method and print any validation errors to the console:
+
 validator.validate(myData);
 if (validator.hasErrors()) {
 console.log(validator.messages.join("\n"));
 }
+
 This could print the following error messages:
-Invalid value for *age*, the value can only be a valid number, e.g. 1, 3 10,
-etc.,
+Invalid value for *age*, the value can only be a valid number, e.g. 1, 3 10, etc.,
 Invalid value for *username*, the value can only contain characters and
 numbers, and no special symbols
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2163,25 +2240,24 @@ Answer:
 The facade is a simple pattern; it provides an alternative interface to an
 object. It’s a good design practice to keep the methods short and not have
 them handle too much work.
-For example, when handling browser events, we have the following
-methods:
-stopPropagation(); //Traps the event and doesn’t let it bubble up to the
-parent nodes
+For example, when handling browser events, we have the following methods:
 
-preventDefault(); //Doesn’t let the browser do the default action (for
-example, following a link or submitting a form)
+stopPropagation(); //Traps the event and doesn’t let it bubble up to the parent nodes
+preventDefault(); //Doesn’t let the browser do the default action (for example, following a link or submitting a form)
+
 The above are two different methods with unique purpose, but the above
 two methods are often called together at the same time. So rather than
 duplicating the above two method calls all over the application, we could
 create a façade method and that invokes both the methods.
+
 var myEvent = {
 stop: function (e) {
 e.preventDefault();
 e.stopPropagation();
 }
 };
-In the above code, myEvent is a Façade that invokes 2 methods when it’s
-triggered.
+
+In the above code, myEvent is a Façade that invokes 2 methods when it’s triggered.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 262: Explain about Proxy Pattern.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
