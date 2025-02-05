@@ -3,6 +3,111 @@
 <h2>341 JS Interview Questions You'll Most Likely Be Asked</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <cite>First edition. November 20, 2017.</cite>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+05. Discussing Data Types
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Problem: Discuss the various data types available in JavaScript and provide examples of each.
+
+Solution: JavaScript offers a range of data types for storing values:
+
+String: A sequence of characters enclosed in quotes (single or double).
+
+let myString = “Hello World”
+
+Number: Numeric values, including integers and floating-point numbers.
+
+let myNumber = 42;
+
+Boolean: Represents true or false values.
+
+let myBoolean = true;
+
+Array: An ordered collection of values.
+
+let myArray = [1, 2, 3];
+null:
+
+Intentionally represents no value.
+
+let myNull = null;
+
+Object:
+Holds key-value pairs.
+Keys are strings, and values can be any data type.
+
+let myObject = { name: “John”, age: 30 };
+
+undefined: Signifies an uninitialized variable.
+
+let myUndefined;
+console.log(myUndefined); // undefined
+
+These JavaScript data types enable value storage and manipulation in various ways, forming the 
+foundation for dynamic and versatile programming.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+06. Mixins and Achieving Multiple
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Inheritance Problem: 
+In JavaScript, there's no built-in multiple inheritance support, making it challenging
+to share functionalities across different objects efficiently. Traditional class 
+hierarchies can become complex and rigid, hindering code maintainability.
+
+Solution: Mixins offer a solution by enabling code reuse
+and achieving a form of multiple inheritance. A mixin is a
+way to incorporate methods and properties from one object
+into another. This enhances modularity and flexibility in code design.
+
+Implementation: To implement mixins, you can use the
+Object.assign() method to copy methods and properties
+from a source object to a target object.
+
+Here's a brief example:
+
+const greetingsMixin = {
+  sayHello() {
+    console.log("Hello from mixin");
+  }
+};
+const objectA = {};
+Object.assign(objectA, greetingsMixin);
+objectA.sayHello(); // "Hello from mixin"
+const objectB = {};
+Object.assign(objectB, greetingsMixin);
+objectB.sayHello(); // "Hello from mixin"
+
+By applying mixins, you can achieve code reusability and avoid deep class hierarchies. However, 
+be cautious of potential method conflicts and unintended overwrites when using multiple mixins.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+07. How to Implement Polymorphism
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Problem: Polymorphism is a fundamental concept in Object-Oriented Programming that enables 
+objects to take on multiple forms. In JavaScript, polymorphism can be achieved using function 
+overloading, where a function can have multiple implementations based on the number and
+type of arguments it receives.
+
+Here's a simple example illustrating how function overloading can be implemented in JavaScript:
+
+function greet(name, language
+  = 'English') { 
+  if (language === 'English') {
+    console.log(`Hello ${name}`);
+  } else if (language === 'Spanish') {
+    console.log(`Hola
+    ${name}`);
+  }
+}
+greet('John'); // Hello John
+greet('Juan', 'Spanish'); //
+
+Hello Juan
+Solution: In this example, the greet function accepts two
+arguments: name and language. The default value for
+language is set to English. If you call the function with only
+one argument, it will utilize the default language. However,
+when you call the function with two arguments, it will use
+the specified language.
+This mechanism demonstrates how polymorphism can be achieved in JavaScript through function
+overloading, allowing a single function to exhibit different behaviors based on the input provided.
 
 <h3>INTRODUCTION TO JAVASCRIPT</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
