@@ -181,7 +181,7 @@ can read and write HTML elements, create cookies and so forth.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>11: Is JavaScript case sensitive?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer: Yes. Unlike HTML, JavaScript has to have all variables and function names
+<p><b>Answer:</b> Yes. Unlike HTML, JavaScript has to have all variables and function names
 (etc.) in capital letters.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>12: How do you place JavaScript?</h3>
@@ -259,8 +259,8 @@ const result1 = 2 &ast;&ast; 3;  // raised to the power of 3
 console.log(result1);  // 8
 const result2 = 4 &ast;&ast; 8.5;  // Square root of 4 
 console.log(result2);  // 131072
-const result3 = 10 &ast;&ast; -2; // 10 raised to the power of -2
-console.log(result3) // 0.01
+const result3 = 10 &ast;&ast; -2;  // 10 raised to the power of -2
+console.log(result3)  // 0.01
 </pre>
 The exponential operator can be used with both integer and floating-point exponents. It's 
 particularly useful when you need to perform exponentiation calculations in a clear and 
@@ -280,7 +280,7 @@ And when the object is null and array, the operator returns “object”.</p>
 <p><b>Example:</b></p>
 <pre>
 var count=100;
-typeof count; // (returns “number”)
+typeof count;  // (returns “number”)
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>23: What is the difference in evaluating [“8”+5+2] and [8+5+”2”]?</h3>
@@ -309,11 +309,11 @@ hai
 <p><b>Example:</b></p>
 <pre>
 var status=”cool”;
-document.write(“status”); //cool
+document.write(“status”);  // cool
 var status;
-document.write(“status”); //cool
+document.write(“status”);  // cool
 status=”chill”;
-document.write(“status”); //chill
+document.write(“status”);  // chill
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>26: How will you search a matching pattern globally in a string?</h3>
@@ -324,8 +324,7 @@ in Regular Expression.</p>
 <pre>
 var p1=”First_Regular_ Expression_First”;
 var q1=”/First/g”;
-document.write(“Pattern_Match:” + p1.match(q1)); //
-Pattern_Match:First,First
+document.write(“Pattern_Match:” + p1.match(q1)); // Pattern_Match:First,First
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>27: How will you search a particular pattern in a string?</h3>
@@ -335,7 +334,7 @@ match is found it returns true, else false.</p>
 <p><b>Example:</b></p>
 <pre>
 var my_pattern1=new RegExp(“pp”);
-document.write(my_pattern1.test(“Happy_Days”); //true
+document.write(my_pattern1.test(“Happy_Days”);  // true
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>28: Which property is used to match the pattern at the start of the string?</h3>
@@ -345,7 +344,7 @@ document.write(my_pattern1.test(“Happy_Days”); //true
 <pre>
 var p1=”First_Regular_ Expression_First”;
 var q1=”/First/^”;
-document.write(“Pattern_Match:” + p1.match(q1)); //Pattern_Match:First First_Regular
+document.write(“Pattern_Match:” + p1.match(q1));  // Pattern_Match:First First_Regular
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>29: Which property is used to match the pattern at the end of the string?</h3>
@@ -355,7 +354,7 @@ document.write(“Pattern_Match:” + p1.match(q1)); //Pattern_Match:First First
 <pre>
 var p1=”First_Regular_ Expression_First”;
 var q1=”/First/$”;
-document.write(“Pattern_Match:” + p1.match(q1)); //Pattern_Match:First Expression_First
+document.write(“Pattern_Match:” + p1.match(q1));  // Pattern_Match:First Expression_First
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>OPERATORS AND FUNCTIONS</h2>
