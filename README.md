@@ -3,11 +3,13 @@
 ![image](https://github.com/user-attachments/assets/bd34fe1f-532c-433b-8ebd-f24aae728f95)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>341 JS Interview Questions You'll Most Likely Be Asked</h2>
+<h2>341+ JS Interview Questions You'll Most Likely Be Asked</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <cite>First edition. November 20, 2017.</cite>
 
-<h3>1. Understanding IIFEs</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>01. Understanding IIFEs</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Problem: Explain the concept of IIFEs (Immediately Invoked Function Expressions) in JavaScript. 
 Provide an example of how to create and use an IIFE and discuss why they are commonly used in 
 JavaScript.</p>
@@ -20,7 +22,7 @@ IIFEs have the following syntax:</p>
 console.log("Hello!");
 })(); // Hello!
 </pre>
-<p>IIFEs are used for several reasons:</p>
+<h4>IIFEs are used for several reasons:</h4>
 <p><b>Encapsulation:</b> They create a new scope for variables, preventing variable name clashes 
 with other parts of the code. This helps avoid polluting the global scope.</p>
 <p><b>Data Privacy:</b> Variables declared within an IIFE are not accessible from the outside, 
@@ -32,7 +34,7 @@ variables and functions.</p>
 <p><b>Module Pattern:</b> IIFEs are often used to implement the Module Pattern in JavaScript, which
 allows you to create encapsulated modules with private and public members.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>05. Discussing Data Types</h3>
+<h3>02. Discussing Data Types</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Problem: Discuss the various data types available in JavaScript and provide examples of each.</h4>
 <h4>Solution: JavaScript offers a range of data types for storing values:</h4>
@@ -55,32 +57,30 @@ null:
 <h5>Keys are strings, and values can be any data type.</h5>
 <pre>let myObject = { name: “John”, age: 30 };</pre>
 
-undefined: Signifies an uninitialized variable.
-
+<p>undefined: Signifies an uninitialized variable.</p>
+<pre>
 let myUndefined;
 console.log(myUndefined); // undefined
-
-These JavaScript data types enable value storage and manipulation in various ways, forming the 
-foundation for dynamic and versatile programming.
+</pre>
+<p>These JavaScript data types enable value storage and manipulation in various ways, forming the 
+foundation for dynamic and versatile programming.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-06. Mixins and Achieving Multiple
+<h3>03. Mixins and Achieving Multiple</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Inheritance Problem: 
-In JavaScript, there's no built-in multiple inheritance support, making it challenging
+<h4>Inheritance Problem:</h4>
+<p>In JavaScript, there's no built-in multiple inheritance support, making it challenging
 to share functionalities across different objects efficiently. Traditional class 
 hierarchies can become complex and rigid, hindering code maintainability.
 
-Solution: Mixins offer a solution by enabling code reuse
-and achieving a form of multiple inheritance. A mixin is a
-way to incorporate methods and properties from one object
-into another. This enhances modularity and flexibility in code design.
+<p><b>Solution:</b> Mixins offer a solution by enabling code reuse and achieving a form of multiple 
+inheritance. A mixin is a way to incorporate methods and properties from one object into another. 
+This enhances modularity and flexibility in code design.</p>
 
-Implementation: To implement mixins, you can use the
-Object.assign() method to copy methods and properties
-from a source object to a target object.
+<p><b>Implementation:</b> To implement mixins, you can use the Object.assign() method to copy methods 
+and properties from a source object to a target object.</p>
 
-Here's a brief example:
-
+<p>Here's a brief example:</p>
+<pre>
 const greetingsMixin = {
   sayHello() {
     console.log("Hello from mixin");
@@ -92,19 +92,19 @@ objectA.sayHello(); // "Hello from mixin"
 const objectB = {};
 Object.assign(objectB, greetingsMixin);
 objectB.sayHello(); // "Hello from mixin"
-
-By applying mixins, you can achieve code reusability and avoid deep class hierarchies. However, 
-be cautious of potential method conflicts and unintended overwrites when using multiple mixins.
+</pre>
+<p>By applying mixins, you can achieve code reusability and avoid deep class hierarchies. However, 
+be cautious of potential method conflicts and unintended overwrites when using multiple mixins.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-07. How to Implement Polymorphism
+<h3>04. How to Implement Polymorphism</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Problem: Polymorphism is a fundamental concept in Object-Oriented Programming that enables 
+<p><b>Problem:</b> Polymorphism is a fundamental concept in Object-Oriented Programming that enables 
 objects to take on multiple forms. In JavaScript, polymorphism can be achieved using function 
 overloading, where a function can have multiple implementations based on the number and
-type of arguments it receives.
+type of arguments it receives.</p>
 
-Here's a simple example illustrating how function overloading can be implemented in JavaScript:
-
+<p>Here's a simple example illustrating how function overloading can be implemented in JavaScript:</p>
+<pre>
 function greet(name, language
   = 'English') { 
   if (language === 'English') {
@@ -116,20 +116,16 @@ function greet(name, language
 }
 greet('John'); // Hello John
 greet('Juan', 'Spanish'); //
-
 Hello Juan
-Solution: In this example, the greet function accepts two
-arguments: name and language. The default value for
-language is set to English. If you call the function with only
-one argument, it will utilize the default language. However,
-when you call the function with two arguments, it will use
-the specified language.
-This mechanism demonstrates how polymorphism can be achieved in JavaScript through function
-overloading, allowing a single function to exhibit different behaviors based on the input provided.
-
-<h3>INTRODUCTION TO JAVASCRIPT</h3>
+</pre>
+<p><b>Solution:</b> In this example, the greet function accepts two arguments: name and language. 
+The default value for language is set to English. If you call the function with only one argument, 
+it will utilize the default language. However, when you call the function with two arguments, it 
+will use the specified language.</p>
+<p>This mechanism demonstrates how polymorphism can be achieved in JavaScript through function
+overloading, allowing a single function to exhibit different behaviors based on the input provided.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>01. Change the title of the page</h4>
+<h3>05. Change the title of the page</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5>Problem:</h5>
 <p>Changing Page Title</p>
@@ -3444,4 +3440,82 @@ with a company that supports it.
 76: How is your background relevant to this position?
 77: How do you feel about X mission of our company?
 *****
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>Some of the following titles might also be handy:</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+1. .NET Interview Questions You'll Most Likely Be Asked
+2. 200 Interview Questions You'll Most Likely Be Asked
+3. Access VBA Programming Interview Questions You'll Most Likely Be Asked
+4. Adobe ColdFusion Interview Questions You'll Most Likely Be Asked
+5. Advanced C++ Interview Questions You'll Most Likely Be Asked
+6. Advanced Excel Interview Questions You'll Most Likely Be Asked
+7. Advanced JAVA Interview Questions You'll Most Likely Be Asked
+8. Advanced SAS Interview Questions You'll Most Likely Be Asked
+9. AJAX Interview Questions You'll Most Likely Be Asked
+10. Algorithms Interview Questions You'll Most Likely Be Asked
+11. Android Development Interview Questions You'll Most Likely Be Asked
+12. Ant & Maven Interview Questions You'll Most Likely Be Asked
+13. Apache Web Server Interview Questions You'll Most Likely Be Asked
+14. Artificial Intelligence Interview Questions You'll Most Likely Be Asked
+15. ASP.NET Interview Questions You'll Most Likely Be Asked
+16. Automated Software Testing Interview Questions You'll Most Likely Be Asked
+17. Base SAS Interview Questions You'll Most Likely Be Asked
+18. BEA WebLogic Server Interview Questions You'll Most Likely Be Asked
+19. C & C++ Interview Questions You'll Most Likely Be Asked
+20. C# Interview Questions You'll Most Likely Be Asked
+21. CCNA Interview Questions You'll Most Likely Be Asked
+22. Cloud Computing Interview Questions You'll Most Likely Be Asked
+23. Computer Architecture Interview Questions You'll Most Likely Be Asked
+24. Computer Networks Interview Questions You'll Most Likely Be Asked
+25. Core JAVA Interview Questions You'll Most Likely Be Asked
+26. Data Structures & Algorithms Interview Questions You'll Most Likely Be Asked
+27. EJB 3.0 Interview Questions You'll Most Likely Be Asked
+28. Entity Framework Interview Questions You'll Most Likely Be Asked
+29. Fedora & RHEL Interview Questions You'll Most Likely Be Asked
+30. Hibernate, Spring & Struts Interview Questions You'll Most Likely Be Asked
+31. HTML, XHTML and CSS Interview Questions You'll Most Likely Be Asked
+32. HTML5 Interview Questions You'll Most Likely Be Asked
+33. IBM WebSphere Application Server Interview Questions You'll Most Likely Be Asked
+34. iOS SDK Interview Questions You'll Most Likely Be Asked
+35. Java / J2EE Design Patterns Interview Questions You'll Most Likely Be Asked
+36. Java / J2EE Interview Questions You'll Most Likely Be Asked
+37. JavaScript Interview Questions You'll Most Likely Be Asked
+38. JavaServer Faces Interview Questions You'll Most Likely Be Asked
+39. JDBC Interview Questions You'll Most Likely Be Asked
+40. jQuery Interview Questions You'll Most Likely Be Asked
+41. JSP-Servlet Interview Questions You'll Most Likely Be Asked
+42. JUnit Interview Questions You'll Most Likely Be Asked
+43. Linux Interview Questions You'll Most Likely Be Asked
+44. Linux System Administrator Interview Questions You'll Most Likely Be Asked
+45. Mac OS X Lion Interview Questions You'll Most Likely Be Asked
+46. Mac OS X Snow Leopard Interview Questions You'll Most Likely Be Asked
+47. Microsoft Access Interview Questions You'll Most Likely Be Asked
+48. Microsoft Powerpoint Interview Questions You'll Most Likely Be Asked
+49. Microsoft Word Interview Questions You'll Most Likely Be Asked
+50. MySQL Interview Questions You'll Most Likely Be Asked
+51. Networking Interview Questions You'll Most Likely Be Asked
+52. OOPS Interview Questions You'll Most Likely Be Asked
+53. Operating Systems Interview Questions You'll Most Likely Be Asked
+54. Oracle Database Administration Interview Questions You'll Most Likely Be Asked
+55. Oracle E-Business Suite Interview Questions You'll Most Likely Be Asked
+56. ORACLE PL/SQL Interview Questions You'll Most Likely Be Asked
+57. Perl Programming Interview Questions You'll Most Likely Be Asked
+58. PHP Interview Questions You'll Most Likely Be Asked
+59. Python Interview Questions You'll Most Likely Be Asked
+60. RESTful JAVA Web Services Interview Questions You'll Most Likely Be Asked
+61. SAP HANA Interview Questions You'll Most Likely Be Asked
+62. SAS Programming Guidelines Interview Questions You'll Most Likely Be Asked
+63. Selenium Testing Tools Interview Questions You'll Most Likely Be Asked
+64. Silverlight Interview Questions You'll Most Likely Be Asked
+65. Software Repositories Interview Questions You'll Most Likely Be Asked
+66. Software Testing Interview Questions You'll Most Likely Be Asked
+67. SQL Server Interview Questions You'll Most Likely Be Asked
+68. Tomcat Interview Questions You'll Most Likely Be Asked
+69. UML Interview Questions You'll Most Likely Be Asked
+70. Unix Interview Questions You'll Most Likely Be Asked
+71. UNIX Shell Programming Interview Questions You'll Most Likely Be Asked
+72. Windows Server 2008 R2 Interview Questions You'll Most Likely Be Asked
+73. XLXP, XSLT, XPATH, XFORMS & XQuery Interview Questions You'll Most Likely Be Asked
+74. XML Interview Questions You'll Most Likely Be Asked
 
