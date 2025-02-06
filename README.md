@@ -409,51 +409,51 @@ Undefined is a special value in JavaScript, it means the variable used in the
 code does not exist or is not assigned any value or the property does not
 exist.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>31: Do the null and undefined values have the same conversion in Boolean, numeric and string context?</h4>
+<h3>31: Do the null and undefined values have the same conversion in Boolean, numeric and string context?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 No. The undefined value changes into Nan in numeric context and
 undefined in a string context. They share the same conversion in Boolean.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>32: What are Boolean values?</h4>
+<h3>32: What are Boolean values?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Boolean values are datatypes that only have two types of values: true or
 false; a value of Boolean type only represents the truth: it says if it true or
 not.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>33: Can a Boolean value be converted into numeric context?</h4>
+<h3>33: Can a Boolean value be converted into numeric context?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes. If it is converted into numeric context the true value becomes 1 and if
 it is a false value it becomes a 0.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>34: What happens when a number is dropped where a Boolean value is expected to be?</h4>
+<h3>34: What happens when a number is dropped where a Boolean value is expected to be?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The number is converted into a true value, but only if it not equal to 0 or
 NaN which in turn is converted into a false value.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>35: What are objects in JavaScript?</h4>
+<h3>35: What are objects in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Objects are collections of named values that most of the times are referred
 to as properties of an object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>36: What is an array in JavaScript?</h4>
+<h3>36: What is an array in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 An array is a collection of data values which can handle more than one
 value at a time, the difference being that each data in an array has a number
 or index.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>37: From which version forward has JavaScript stopped using ASCII character set?</h4>
+<h3>37: From which version forward has JavaScript stopped using ASCII character set?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 From v.3 JavaScript started using Unicode character sets: identifiers can
 now contain letters and digits from the Unicode complete character set.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>38: What is the scope of a variable in JavaScript?</h4>
+<h3>38: What is the scope of a variable in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The scope of a variable is the region in which your program in which it is
@@ -461,80 +461,102 @@ defined. Thus a global variable has a global scope meaning it is defined
 everywhere in your JavaScript code. The local variables have a local scope
 meaning they are defined only in the body section of your code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-39: In the body of the code which variable with the same name has
+<h3>39: In the body of the code which variable with the same name has</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 more importance over the other: the local or the global variable?
 Answer:
 In the body of a function a local variable will always take precedence over a
 global variable hiding it all together.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-40: How many types of undefined variables can we find in JavaScript?
+<h3>40: How many types of undefined variables can we find in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 There are two kinds of undefined variables: the first is the one that has
 never been declared and the second is the kind of undefined variable that
 has been declared but has never had a value assigned to it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-41: What does (==) & (===) operators do in JavaScript?
+<h3>41: What does (==) & (===) operators do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The first (==) is the equality operator and it checks if its two operands are
 equal. The second (===) is called the identity operator and it checks if two
 operands are identical by using a strict definition.
-42: How many types of operators can we find in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>42: How many types of operators can we find in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 There are eight types of operators in JavaScript. These are as follows:
 operator, arithmetic, equality, relational, string, logical, bitwise and
 miscellaneous.
-43: How many types of comparison operators does JavaScript contain?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>43: How many types of comparison operators does JavaScript contain?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 There are four types of comparison operators in JavaScript. They are: less
 than (<); greater than (>); less than or equal (<=) and greater than or equal
 (>=).
-44: Can comparison be done on any type of operands?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>44: Can comparison be done on any type of operands?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes. Operands in JavaScript that are not number or strings are converted.
 
-45: What are logical operators and how are they used in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>45: What are logical operators and how are they used in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The logical operators perform Boolean algebra and are used mostly with
 comparison operators to show complex comparisons that involve more than
 one variable.
-46: Does JavaScript contain classes?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>46: Does JavaScript contain classes?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes. Although they do not define the structure of an object like in Java and
 C++, it does approximate the classes with its constructors and their
 prototype objects.
-47: What is the purpose of an object in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>47: What is the purpose of an object in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 An object is an instance of its class. This allows us to have multiple
 instances of any class.
-48: How are classes and objects in JavaScript named and why?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>48: How are classes and objects in JavaScript named and why?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Classes are named with an initial capital letter and an object with lowercase
 letters. This ensures that classes and objects are distinct from each other.
-49: What are class properties in JavaScript?
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>49: What are class properties in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Class property is associated with a class itself and not instance of a class.
 This ensures that no matter how many instances of a class are created only
 one copy of each class property exists.
-50: What are class methods in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>50: What are class methods in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Class methods are associated with a class rather than an instance of a class,
 meaning they are invoked by the class itself and not an instance of the class.
-51: Do class properties and class methods have a global and local
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>51: Do class properties and class methods have a global and local</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 range?
 Answer:
 No. They are both only global because they do not operate on a particular
 object.
-52: How do JavaScript equality operators compare objects?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>52: How do JavaScript equality operators compare objects?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Equality operators compare objects by reference and not by value, checking
 to see if both references are to the same object. They do not check to see if
 two objects have the same property names and values.
-53: Are the null and undefined values for the variable same?
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>53: Are the null and undefined values for the variable same?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 No. Variables that are declared and not assigned any value will have
 undefined values whereas the variable that is assigned a null will have null
@@ -545,7 +567,9 @@ var qno;
 var Items=10;
 Items=null;
 ”null value”
-54: What is the difference between “===” and “==”? Give examples.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>54: What is the difference between “===” and “==”? Give examples</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) “===” returns true - if both the operands are same and are of the same
 data type
@@ -558,7 +582,9 @@ p==’3’ //true p===’3’ //false
 3==’3’ //true 3===’3’ //false
 
 P==3 //true P===3 //true
-55: What is the function of delete operator in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>55: What is the function of delete operator in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It deletes
 a) an object
@@ -567,7 +593,9 @@ b) particular element in an array
 Syntax: delete arr_ele1[index];
 c) property of an object
 Syntax: delete obj_name2.prop_name;
-56: How will you clip the particular portion of an element?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>56: How will you clip the particular portion of an element?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using clip property of the style object, we can clip a particular portion of an
 element.
@@ -577,104 +605,129 @@ my_obj1
 document object, getElementById property values
 auto(Unclip),rect(top1,right1,botttom1,left1)-pin the shape defined by
 value.
-
-*****
-
-MODULES, CHARACTERS AND ATTRIBUTES
-57: How is a module in JavaScript written so that it can be used by any
-script or module?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>MODULES, CHARACTERS AND ATTRIBUTES</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>57: How is a module in JavaScript written so that it can be used by any script or module?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The most important rule is to never define global variables as to have the
 risk of having that value overwritten by a module or another programmer.
-58: How are regular expressions represented and created in
-JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>58: How are regular expressions represented and created in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Regular expressions are represented by the RegExp objects and are created
 by the RegExp() constructor or a special literal syntax.
-59: How do you combine literal characters in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>59: How do you combine literal characters in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Literal characters can be combined into character classes by placing them
 within square brackets.
-60: What document properties does a document contain?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>60: What document properties does a document contain?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 In a document we can find the following properties: bgcolor, cookie,
 domain, lastModified, location, referrer, title and URL.
-
-61: How many types of DOM document object collections can we find
-in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>61: How many types of DOM document object collections can we find in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 There are five DOM properties that give access to special elements within a
 document: anchors, applets, forms, images and links.
-62: Does use of DOM properties allow you to change the structure of a
-document?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>62: Does use of DOM properties allow you to change the structure of a document?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 No. Using these properties you can inspect and alter a link and read values
 from a link but the text in the document cannot be changed; the structure of
 the document cannot be altered.
-63: How are document objects named in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>63: How are document objects named in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Documents are named with the name attribute of forms. You can change
 elements, links and images when the name attribute is present. Its value is
 used for exposure to the corresponding object by name.
-*****
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 EVENT HANDLERS AND DOM
-64: How are event handlers defined in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>64: How are event handlers defined in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Event handlers are defined by assigning a function to an event handler
 property, unlike HTML where event handlers are defined by giving a string
 of JavaScript code to an event handler attribute.
-65: What do the HTMLInputElement and
-HTMLFormElementinterfaces define in HTML DOM?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>65: What do the HTMLInputElement and HTMLFormElementinterfaces define in HTML DOM?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The HTMLInputElement defines focus() and blur() methods and form
 property. HTMLFormElementinterfaces defines submit() and reset()
 methods and length property.
-66: How many levels of DOM standard are currently released?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>66: How many levels of DOM standard are currently released?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 There are two levels of DOM: the first one was released in 1998 and it
 defines the core DOM interfaces. The second level that was released in
 2000 that updates the core interfaces and defines standard APIs for working
 with document events style sheets CSS.
-67: Are there any more levels of DOM?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>67: Are there any more levels of DOM?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 Yes there are. One of them is the level 3 DOM, but its features are not fully
 supported by all the web browsers and the other is the level0 DOM whish in
 fact is the legacy DOM.
-68: What does the Node interface define in DOM?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>68: What does the Node interface define in DOM?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The node interface defines the childNotes, firstChild, lastChild, nextSibling
 and previousSibling properties.
-69: How do you find document elements in a HTML document?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>69: How do you find document elements in a HTML document?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 You can find elements by using the getElementsByTagName and obtain any
 type of HTML element.
-70: How are documents created and modified in DOM?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>70: How are documents created and modified in DOM?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Documents are modified by setting attribute values on document elements
 with the element.setAttribute() method. They are created with
 document.createDocumentFragment().
-71: How can you build a DOM tree of arbitrary document content?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>71: How can you build a DOM tree of arbitrary document content?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
-
 You can achieve this by creating new Element and text nodes with the
 Document.CreateElement() and Document.CreateTextNote() methods; you
 can then add them to a document with the Note.AppendChild(),
 Note.InsertBefore() and Note.replaceChild() methods.
-72: How do you find document elements in IE4?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>72: How do you find document elements in IE4?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Because IE4 does not support the getElementById() and get
 ElementsBytagName()methods we are forced to use the array property
 named all().
-73: How to access Html attributes using DOM?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>73: How to access Html attributes using DOM?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using three methods of DOM:
 a) getAttribute(): Retrives the value of an attribute
 b) setAttribute(): Modifies the value of an attribute
 c) removeAttribute(): Removes the entire attributes from an element
-74: What is the difference between getAttribute() and
-getAttributeNode()?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>74: What is the difference between getAttribute() and getAttributeNode()?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) getAttribute(): returns the value of an attribute
 b) getAttributeNode(): returns the attribute itself
@@ -690,7 +743,9 @@ document.write(txt2.name +"&nbsp : &nbsp ");
 document.write(txt2.value);
 </script>
 </body>
-75: What are the event handlers in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>75: What are the event handlers in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Event handlers are the JavaScript code that can be used inside the Html tags
 and gets executed when any events such as form submission, page loading
@@ -700,8 +755,9 @@ b) onunload
 c) onclick
 d) onmouseout
 e) onmouseover
-
-76: Can you use two or more functions in onclick event?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>76: Can you use two or more functions in onclick event?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 By separating the functions with semicolon(;) we can use two or more
 functions. First function gets executed after onclick event. The consecutive
@@ -709,51 +765,62 @@ functions get executed only when the immediate previous function returns
 true.
 Example:
 onclick=(“my_fun1();my_fun2();my_fun3()”);
-*****
-
-KEYWORDS, CSS AND CSS2
-77: What is the “this” keyword in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>KEYWORDS, CSS AND CSS2</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>77: What is the “this” keyword in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 When an event handler with an HTML or JavaScript property is defined a
 function to a property of a document element is assigned. When the event
 handler is invoked the “this” keyword refers to the target element.
-78: What does lexically scoped in JavaScript mean?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>78: What does lexically scoped in JavaScript mean?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It means that functions run in the scope that they are defined in and not in
 the scope they are called in.
-79: Is the following expression correct: element.style.font-family=
-"arial";?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>79: Is the following expression correct: element.style.font-family="arial";?</h3>
 Answer:
 No. It is incorrect because in JavaScript many CSS style attributes contain
 hyphens in their names and these are interpreted as minus signs.
-*****
-
-STATEMENTS AND FUNCTIONS
-80: How can you replace an if-else statement in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>STATEMENTS AND FUNCTIONS</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>80: How can you replace an if-else statement in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 You can simply replace if-else statement by using the ternary operator.
 These kinds of operators require three operands. The ternary operator can
 be defined as follows:
 (condition) ? val1 :val2.
-81: What is a "memoization" method in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>81: What is a "memoization" method in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Memoization is an optimization technique used in JavaScript. Functions
 may use objects to remember the results of previous operations, in this way
 avoiding unnecessary work.
-82: What does 2+3+”1” evaluate to?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>82: What does 2+3+”1” evaluate to?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 As 2 and 3 are integers, 2+3 will evaluate to 5. Since “1” is a string, it will
 concatenate with 5 and the final result will be the string “51”
-*****
-
-ROLES OF JAVASCRIPT, SCRIPTS AND EVENTS
-83: Give some examples of the role that JavaScript has on the Web.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>ROLES OF JAVASCRIPT, SCRIPTS AND EVENTS</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>83: Give some examples of the role that JavaScript has on the Web.</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The role of JavaScript is to provide a better user browsing experience.
 JavaScript can do many things like: creating visual effects such as image
 rollovers, sorting the columns of a table, so the user can easily find what he
 needs and hiding certain content.
-84: Give an example on how JavaScript can be used in URLs.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>84: Give an example on how JavaScript can be used in URLs.</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript can be used in URLs, using “JavaScript:” pseudoprotocol
 specifier. This specifies that the body of the URL is an arbitrary string of
@@ -764,24 +831,27 @@ JavaScript:varJavaScript:varJavaScript:varJavaScript:varJavaScript:varJava
 Script:varJavaScript:varJavaScript:varJavaScript:varJavaScript:varJavaScri
 pt:varJavaScript:varJavaScript:varJavaScript:varJavaScript:varJavaScript:v
 ar today = new Date(); “<p>The date is:</p>” + today;
-85: How are scripts in JavaScript executed?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>85: How are scripts in JavaScript executed?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Scripts are executed in the order in which they appear and the code in the
 <script> tags is executed as part of document loading process.
-
-86: What do scripts placed in the <head> part of an HTML document
-do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>86: What do scripts placed in the <head> part of an HTML document do?</h3>
 Answer:
 Scripts placed in the <head> section usually define functions that are to be
 called by other code and/or declare and initialize variables used by other
 code.
-87: What do scripts placed in the <body> part of an HTML document
-do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>87: What do scripts placed in the <body> part of an HTML document do?</h3>
 Answer:
 Scripts placed in the <body> part of a document can do everything that
 those placed in a <head> section of the document do. They can also
 manipulate document elements that appear before the script.
-88: When does browser trigger the onload event?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>88: When does browser trigger the onload event?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The browser triggers the onload event and executes any registered
 JavaScript code under the following scenarios:
@@ -792,28 +862,34 @@ For all the major browsers (except IE), the JavaScript onload event does not
 trigger when the page loads as a result of a Back button operation. Rather
 
 the event is triggered only when the page is loaded.
-89: When does the onunload event trigger and what does it do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>89: When does the onunload event trigger and what does it do?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The onunload event triggers after the user navigates away from the web
 page giving the code on that page a final chance to run; the onunload event
 enables the possibility to undo effects of your onload handler or scripts in
 the web page.
-90: How can we read or write a file in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>90: How can we read or write a file in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Client-side JavaScript does not provide any way to read, write or delete
 files or directories on the client computer. This is also a security aspect –
 with no File object and no file access functions, a JavaScript program
 cannot delete a user's data.
-91: Explain about “cross-site scripting”.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>91: Explain about “cross-site scripting”.</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Cross Site Scripting (XSS) is called as the name of a security issue where
 the hacker or attacker injects the scripts or HTML tags into a website.
 Even though defending XSS attack is a job for server-side script developers,
 the JavaScript programmers should also be aware of cross site scripting and
 defend against this attack.
-
-92: What are JavaScript timers? Give examples and explain one of
-them.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>92: What are JavaScript timers? Give examples and explain one of them.</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It is very important for any programming environment to have the ability to
 schedule code to be executed at some point in the future. Client-side
@@ -821,89 +897,107 @@ JavaScript provides some global functions like: setTimeout(),
 clearTimeout(), setInterval(), clearInterval(). For example setTimeout()
 method schedules a function to run after a specific number of milliseconds
 elapses.
-93: Explain the history property in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>93: Explain the history property in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The history property of the Window object refers to the History object for
 the window. The History object supports three methods: back(), forward()
 and go(). The first 2 methods are similar with what happens when the user
 clicks on the Back and Forward browser buttons. The go() method takes an
 integer argument and can skip any number of pages
-94: What is the “Screen” object?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>94: What is the “Screen” object?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The screen property of the Window object refers to a Screen object that
 provides information about the size of the user's display, the number of
 colors available on it. The “width” and “height” properties can be used to
 specify the size of the display in pixels.
-
-95: What is the “Navigator” object?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>95: What is the “Navigator” object?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The navigator property of a Window object refers to a Navigator object that
 contains important information about the web browser, such as the version
 and the list of data formats it can display. In the past Navigator object was
 used by scripts to determine if they were running in Internet Explorer or in
 Netscape web browser.
-96: What is “onreset” in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>96: What is “onreset” in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Onreset is an event handler of a form object in JavaScript. It gets executed
 when the reset button in the form is clicked and resets the fields when it
 receives true value otherwise prevent the form elements from being reset.
 Example:
 onreset=”alert(‘AABBCC’)”
-97: What is void 0 in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>97: What is void 0 in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) JavaScript files can be executed directly in the web browsers by placing
 “JavaScript:” before the code
 b) Web browsers attempt to load the page when any value returning
 JavaScript’s code is executed
 c) void 0 is used to prevent the unwanted action
-
-98: What is the best practice to place the JavaScript codes?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>98: What is the best practice to place the JavaScript codes?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Place all JavaScript codes in one place. So it can be placed,
 a) At the end of html tag
 b) Below second header tag
 c) Before the closing of bod tag
-99: How to prevent caching of web pages in temporary internet files
-folder?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>99: How to prevent caching of web pages in temporary internet files folder?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Caching of web pages in temporary internet files folder can be prevented by
 adding <META HTTP-EQUIP=”PRAGMA” CONTENT=”NO-CACHE” >
 in the second header tag which is placed before the html’s end tag(</html>).
 Example:
-<html>
-< head >
-<META HTTP-EQUIV="REFRESH" CONTENT="3">
-</ head >
-<body>
-<p>Hellllo</p>
-</body>
-< head >
+\<html\>
+\< head \>
+\<META HTTP-EQUIV="REFRESH" CONTENT="3"\>
+\</ head \>
+\<body\>
+\<p>Hellllo\</p\>
+\</body\>
+\< head \>
 
-<META Http-equiv="PRAGMA" Content="NO-CACHE">
-</head>
-</ html >
-100: Why adding of meta tag in first header will not prevent caching of
-the Web page?
+\<META Http-equiv="PRAGMA" Content="NO-CACHE"\>
+\</head\>
+\</ html \>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>100: Why adding of meta tag in first header will not prevent caching of the Web page?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The browsing page gets cached only when the buffer is half filled. So when
 the meta tag is added in first header, the internet explorer search for that
 page in cache at that instant. Most of the time, buffer won't get half filled at
 the beginning of parsing.
-101: What is the purpose of meta tag?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>101: What is the purpose of meta tag?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 When this tag is read while parsing the html code, internet explorer
 searches for this page in cache at that instant. If it is found, it will be
 removed from the cache.
 Syntax:
 <META Http-equiv="PRAGMA" Content="NO-CACHE">
-102: How will you resolve looping problem in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>102: How will you resolve looping problem in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 Using closures which combines the function with its referencing
 environment, looping can be resolved. It keeps the local variable of the
 function alive even after the function returned the value. When there is
 function within the function, Closure is created.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 103: Give any example for resolving looping problem.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 var method1={};
 for(var k=0;k<5;k++){
@@ -925,8 +1019,8 @@ document.write(“Iteration:” + n + “<&nbsp>”);
 })(k);
 Output:
 0 1 2 3 4
-104: When is the Execution context created and what are the primary
-components?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>104: When is the Execution context created and what are the primary components?</h3>
 Answer:
 During execution of JavaScript function, the execution context is created. It
 keeps track of the execution of its related code. Global execution context is
@@ -935,13 +1029,16 @@ a) LexicalEnvironment: Resolves the identifier references
 b) VariableEnvironment: Records the variable-function declaration
 bindings
 c) ThisBinding: value of “this” keyword related with execution context
-105: When is the Execution context stack created?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>105: When is the Execution context stack created?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Global execution context: Created when executing the application
 b) New execution context: Created when the new functions are created
 c) Collection of this execution context form the execution context stack
-
-106: How is the outer scope environment references maintained?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>106: How is the outer scope environment references maintained?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using LexicalEnvironment, the outer scope environment references are
 maintained. It contains two components:
@@ -949,32 +1046,39 @@ a) Environment Record: Identifier bindings are stored for the execution
 context
 b) Outer Refernces: Points to the declaration of execution context in
 lexicalEnvironment
-107: How will you read or write in a file using JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>107: How will you read or write in a file using JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 An I/O operation such as reading or writing is not possible. However, “Java
 Applet” can be implemented to read files for script.
-108: How will you create rich, responsive display and editor user
-interface?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>108: How will you create rich, responsive display and editor user interface?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using knockout we can create rich, responsive display and editor user
 interface. It is JavaScript library which implements the model view-
 viewmodel pattern. It is used to create UI and allows dynamic updation and
 can be used with any server or client.
-109: Which is the new JavaScript engine developed for internet
-explorer9 by Microsoft?
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>109: Which is the new JavaScript engine developed for internet explorer9 by Microsoft?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Chakra is the new JavaScript engine for IE9. A distinct feature is that its JIT
 compiles scripts on separate “CPUcore”, parallel to web browsers. The
 engine also accesses the computer’s graphic processing unit for 3D videos
 and graphics. To execute scripts on traditional web pages and to improve
 JavaScript runtime and libraries, a new interpreter was included.
-110: What is Node.js?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>110: What is Node.js?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Node.js is a software designed for creating server side JavaScript
 application which is not executed in client browser. It is event based and
 runs asynchronously to provide scalability and reduce overhead.
-111: Which is alternative to XML for data exchange in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>111: Which is alternative to XML for data exchange in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JSON (JavaScript Object Notation). Light weighted, text-based data
 exchange format. Web data is imported into JavaScript applications using
@@ -983,19 +1087,20 @@ Example: JSON Object creation
 var obj_json1={“Company_name”:”ABC”,”Experiance”:”5”};
 document.write(“Co Name:” + obj_json1.Company_name); //Co
 Name:ABC
-
-112: What are the sub-components of dynamic component in
-JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>112: What are the sub-components of dynamic component in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Dynamic typing: Based on values; not associated on variable
 b) Obj-based: Properties of an object can be modified at run-time; Built-in
 functions are used for properties to maintain dynamicity
 c) Run-time evaluation: eval() is used for run time evaluation and will
 take dynamic arguments at run time
-*****
-
-OPENING AND MANIPULATING WINDOWS
-113: How can you open a new window using JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>OPENING AND MANIPULATING WINDOWS</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>113: How can you open a new window using JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 We can open a new web browser window using “open()” method of the
 Window object.Window.open() has four optional arguments and returns a
@@ -1005,87 +1110,103 @@ empty string, the window will be empty), the second argument is the name
 of the window; the third parameter is a list of features that specify the
 window size and GUI decoration. The fourth argument is useful only when
 the second argument is mentioned.
-114: How can you close a window using JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>114: How can you close a window using JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 We can close a created window object using “close()” method. The syntax
 is: Window.close()
-115: What does the “location” function do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>115: What does the “location” function do in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The location property of a window is a reference to a location object and
 represents the URL of the document that is displayed in the window. The
 Href property of the location object is a string that contains all the text of
 the URL.
-
-116: What other properties besides Href can we find in the “location”
-function in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>116: What other properties besides Href can we find in the “location” function in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Other properties that we can use are: protocol, host, pathname and search.
-117: What happens when a string value is added to the location
-function in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>117: What happens when a string value is added to the location function in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The browser interprets the string as a URL and tries to load it and display
 the document and that URL.
-118: What is the history object in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>118: What is the history object in JavaScript?</h3>
 Answer:
 The history object refers to the History of the browser window. The
 multitudes of elements that the history object incorporates are never
 accessible to scripts.
-119: Which are the methods supported by the history object in
-JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>119: Which are the methods supported by the history object in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 There are three methods supported by the history object: the back(), the
 forward() and the go().
-
-120: How many and which are the coordinates of a browser within the
-HTML document?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>120: How many and which are the coordinates of a browser within the HTML document?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 There are three types of coordinates and these are: screen, window and
 document coordinates.
-*****
-
-OBJECTS AND THEIR PROPERTIES IN JAVASCRIPT
-121: Name the properties of Navigator in JavaScript.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>OBJECTS AND THEIR PROPERTIES IN JAVASCRIPT</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>121: Name the properties of Navigator in JavaScript.</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 There are five properties for the navigator object and these are: appName,
 appVersion, userAgent, appCodeName and platform.
-122: What happens when confirm() or prompt() methods are used in
-JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>122: What happens when confirm() or prompt() methods are used in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 When these boxes are initialized the code stops running and the currently
 loading document stops loading until the user response with the requested
 input.
-123: What happens when the mouse is moved over a hyperlink in
-JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>123: What happens when the mouse is moved over a hyperlink in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript code evaluates the onmouseover attribute and sets the status
 property of the window, thus returning the “true” value telling the browser
 not to take any actions.
-124: What does the “defaultStatus” property do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>124: What does the “defaultStatus” property do in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
-
 The “defaultStatus” property enables text to be displayed in the status line
 when the browser does not find anything to display. Newer versions of the
 current browser have this property deprecated.
-125: What is the “onerror” property in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>125: What is the “onerror” property in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The “onerror” property has a special status: the function the user assigns
 becomes an error handler for the window; the function assigned to the
 property is invoked when an error occurs in that window.
-126: What arguments does the error handler receive when an error
-occurs in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>126: What arguments does the error handler receive when an error occurs in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The error handler receives three arguments: the first is the message that
 describes the error; the second is the string that contains the URL of the
 document containing the JavaScript code that caused the error and the third
 argument is line number within the document where the error occurred.
-127: In addition to the three arguments that the error handler receives,
-is its return value of any importance?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>127: In addition to the three arguments that the error handler receives, is its return value of any importance?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The return value of the error handler is significant: if the onerror handler
 returns True then the browser does not display its own error message having
 been told that the handler has taken care of the error.
-
-128: How can JavaScript code refer to a window or frame object?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>128: How can JavaScript code refer to a window or frame object?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 In JavaScript we can refer in any window or frame to its own window or
 frame using “window” or “self”. They are necessary to use when the
@@ -1093,12 +1214,16 @@ programmer needs to refer to this global object itself. In case the
 programmer wants to refer to a method or property of the window/frame, it
 is not necessary to prefix the property or method name with “window” or
 “self”.
-129: What is a DOM (Document Object Model)?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>129: What is a DOM (Document Object Model)?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 DOM (Document Object Model) is an API that defines the way to access
 the objects that compose a document. W3C defines a standard DOM that is
 reasonably well supported in all modern browsers.
-130: What does the method write() of the Document object do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>130: What does the method write() of the Document object do?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The write() method allows users to write content into the document. The
 write() method is part of DOM and it can be used in two ways. First of all,
@@ -1106,22 +1231,27 @@ it can be used within a script to output HTML into the document being
 parsed. Second, write() can be used (in conjunction with open() and close()
 methods of the Document object) to create entirely new documents in other
 windows or frames.
-
-131: How will you determine an object type?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>131: How will you determine an object type?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using “Instanceof and isprototypeof” by checking its instance and
 prototype respectively.
 Example: document.writeln(book1 instanceof Book);
 var Book = function() {...};
 Book.prototype.constructor == Book; //return true.
-132: What is alert and confirm box in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>132: What is alert and confirm box in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Alert and confirm both are pop ups in JavaScript and take the focus of
 the user from the current page to pop ups
 b) Alert provides the user with “ok” button whereas confirm provides with
 “ok” and “cancel” button where user can select any one of the options
 c) When “ok” is selected, confirm returns true else false
-133: What are the properties of array object?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>133: What are the properties of array object?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Index property
 b) Input property
@@ -1129,7 +1259,9 @@ c) Length property
 
 d) Constructor property
 e) Prototype property
-134: What are the sub objects of the windows object in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>134: What are the sub objects of the windows object in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Document object: Work with DOM and provides interface to XML and
 Html documents and allow CSS manipulations
@@ -1138,7 +1270,9 @@ created for each <frame> tag
 c) Location object: Contains the current URL information
 “window.location”
 d) History object: Contains the URL history visited by the user
-135: What is the use of userAgent of navigator object?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>135: What is the use of userAgent of navigator object?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Identifies the operating system of the client’s machine
 b) “appVersion” and “userAgent” can also be used
@@ -1147,8 +1281,9 @@ agent header sent by the browser to server
 Syntax:
 document.write(navigator.userAgent);
 document.write(navigator.appVersion);
-
-136: What are the ways to delete the property of an object and how?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>136: What are the ways to delete the property of an object and how?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It can be deleted in two ways.
 Example:
@@ -1160,13 +1295,17 @@ example: delete oven.color;
 b) using object name and property with “with”statement
 example: with(oven)
 delete color;
-137: What is the use of eval() in JSON?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>137: What is the use of eval() in JSON?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JSON can be parsed using the built-in function eval() and JSON data is
 executed to generate native JavaScript object.
 Example:
 obj_json2=eval(‘(‘ + JSON_text+’)’);
-138: What are the advantages of JSON over XML?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>138: What are the advantages of JSON over XML?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 a) JSON provides array and object type and also some scalar data types
@@ -1184,22 +1323,26 @@ JSON:
 {
 “Record”:{“First_Name”:”abcd”,”Age”:”25”}
 }
-139: How can the properties of JavaScript objects be accessed?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>139: How can the properties of JavaScript objects be accessed?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The properties of JavaScript objects be accessed in the two ways shown
 below:
 Syntax:
 a) obj_name.prop1;
 b) obj_name[“prop1”];
-
-140: What are the objects of navigator objects?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>140: What are the objects of navigator objects?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Window object: gets created for every frame and web browser
 b) Mime type object: using enabledplugin, gets information about the
 plugin
 c) Plugin object: gives information about an installed plug-in
-141: How to access the properties of main window from the secondary
-window?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>141: How to access the properties of main window from the secondary window?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This can be done using Opener property. The properties of the main
 window can be accessed from secondary window.
@@ -1208,7 +1351,9 @@ In the secondary window:
 window.opener.document.bgColor=”my_color_value”; //give color name or
 hex code
 It changes the background color of the primary window to the given color.
-142: How will you load the previous and next url from the history list?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>142: How will you load the previous and next url from the history list?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The previous and next url from the history list can be loaded using back and
 forward function of history object.
@@ -1216,7 +1361,9 @@ forward function of history object.
 Example:
 “history.back()”;
 “history.forward()”;
-143: How will you determine whether the browser has cookies enabled?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>143: How will you determine whether the browser has cookies enabled?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The browser status can be determined using cookieEnabled
 function of navigator object. If cookies are enabled returns true, else false.
@@ -1225,43 +1372,53 @@ If(navigator.cookieEnabled)
 document.write(“Enabled”);
 else
 document.write(“Not Enabled”);
-*****
-
-JAVASCRIPT AND HTML
-144: How can you change the font size of an Element in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>JAVASCRIPT AND HTML</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>144: How can you change the font size of an Element in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Give an example.
 Answer:
 document.getElementById(elementId).style.fontSize = “12”;
 In this case, JavaScript and CSS are very similar, because the CSS style
 rules are laid on top of the DOM.
-145: How can you submit a form using JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>145: How can you submit a form using JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This can be done using document.form[0].submit(), where 0 represent the
 index of the form in the page. If there are more than one form in the page,
 then the first form has index 0, the second form has index 1 and so on.
-146: How can you set the background color of an HMTL document?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>146: How can you set the background color of an HMTL document?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This can be easily done using document.bgcolor = “color”, where color can
 be the name of a color – e.g. red, black, or it can represent the code of the
 color – e.g. #00FF34.
-147: Name the Boolean operators in JavaScript.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>147: Name the Boolean operators in JavaScript.</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 The Boolean operators in JavaScript are: ‘&&’ - AND operator, ‘||’ – OR
 operator ‘!’ - NOT operator.
-148: How can we determine the state of a checkbox in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>148: How can we determine the state of a checkbox in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 var isChecked = window.document.getElementById(elementId).checked –
 isChecked is the name of the variable where the true or false value will be
 stored. ElementId represents the id of the checkbox element. If the
 checkbox is checked this will return true, otherwise false.
-149: How can you create an HTML button and what is the event called
-when the button is pressed?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>149: How can you create an HTML button and what is the event called when the button is pressed?</h3>
 Answer:
 An HTML button can be created like this: <input type=”button”> or
 <button type=”button”> and the event is “onclick”
-150: How will you make loading of JavaScript code after Html by the
-browser?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>150: How will you make loading of JavaScript code after Html by the browser?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 By “defer” script we can load JavaScript code after Html. It informs the
 browser to load all html codes before JavaScript. So the code inside the
@@ -1271,14 +1428,18 @@ Example:
 
 <script type=’text/javascript’ src=’a1.js‘ defer=’defer’></script>
 Here loading of a1.js takes place after all html code has been parsed.
-151: Which popup allows the user to enter the input?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>151: Which popup allows the user to enter the input?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Prompt box allows the user to enter the input. It provides the user with text
 box for input and two buttons (“ok and cancel”). On selecting “Ok”, it
 returns true otherwise false.
 Example:
 var a1= prompt(“content1”,”myDefault_val”);
-152: What are the ways to display the message on screen?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>152: What are the ways to display the message on screen?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Using write method.
 Eg: document.write(“hello”);
@@ -1288,8 +1449,9 @@ var m1 = document.getElementById("my_disp");
 m1.innerHTML = text;
 return true;
 }
-
-153: How will you reload the page from server using JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>153: How will you reload the page from server using JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using reload() we can reload a page. It is a function of location object that
 contains the details of present url. It takes either true or false as argument.
@@ -1297,7 +1459,9 @@ Default argument is false. When set to false, reloads the page from cache.
 Otherwise ask the browser to load the page from server.
 Syntax:
 Window.location.reload(value);
-154: How will you display large tables effectively in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>154: How will you display large tables effectively in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using fixed width table we can display large tables effectively. Fixed width
 tables are provided by the browser based on the width of the columns in the
@@ -1306,7 +1470,9 @@ Advantage: No need for the browser to wait till all data is received to infer
 the best width.
 Syntax:
 In css,set “table-layout:fixed”
-155: How will you create pop window using JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>155: How will you create pop window using JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It can be created as below:
 a) window.open(): opens a new browser window
@@ -1317,8 +1483,9 @@ For pop window,replace is always set to false.
 b) window.showDialogBox(): creates a modal dialog box
 Syntax:
 window.showDialogBox(page_url,window_name,properties);
-156: How will you fix the errors that make the JavaScript engines
-difficult to perform optimization?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>156: How will you fix the errors that make the JavaScript engines difficult to perform optimization?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using “Strict Mode” which makes the code run faster than the code without
 strict mode such errors could be fixed. To enable strict mode, insert ‘use
@@ -1327,26 +1494,34 @@ a) Duplications are not allowed
 b) If Deprecated languages is used, throws error
 c) It denounces ‘with’ statement
 d) Assign to read-only variables are not allowed
-157: How will you make secure JavaScript code?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>157: How will you make secure JavaScript code?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Using Strict Mode. The value passed with the “this” (keyword) to a
 function will not be changed in strict mode
 
 b) When a function is in strict mode, fn_name.arguments and
 fn_name.caller throws error when tried to get or set
-158: How will you add the external JavaScript file?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>158: How will you add the external JavaScript file?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 External JavaScript file should be saved with an extension ”.js” and needs
 to be imported to the html file by adding that file’s path to the “src”
 attribute of <script> tag.
 Example:
+```
 <html>
 <head>
 <script src=”aa.js”></script>
 </head>
 <body>...</body>
 </html>
-159: Is it possible to break up a string in a JavaScript code?
+```
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>159: Is it possible to break up a string in a JavaScript code?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes. Using backslash”\”, a text can break up in a code.
 Example:
@@ -1355,7 +1530,9 @@ up a code”);
 
 document.write \
 (“Cannot break like this”); // This is not possible.
-160: What is the use of “wait” property in cursor style?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>160: What is the use of “wait” property in cursor style?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Wait sets the cursor in wait state when the request is on process. Type of
 cursor can be set or returned by using “cursor property”. Some of the type
@@ -1367,8 +1544,9 @@ d) help: arrow with a question mark symbol
 Syntax:
 myobject.style.cursor=”my_value”;
 eg: myobject-window,document, my_value-wait,auto,help...
-161: What are the properties that can be set in the background
-properties?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>161: What are the properties that can be set in the background properties?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) color: sets the bgcolor
 b) image: sets the bgimage
@@ -1380,7 +1558,9 @@ Syntax:
 my_object.style.background=”my_value”;
 // my_object=>window,document,..
 // my_value=>color,image,reappear,attachment,position
-162: What are the ways to set the background color?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>162: What are the ways to set the background color?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The background color can be set in the following two ways:
 a) Using bgColor
@@ -1394,8 +1574,9 @@ my_obj.style.backgroundColor=”my_value”;
 my_obj
 document
 my_value=color,image,reappear,attachment,position
-
-163: How will you add JavaScript files dynamically?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>163: How will you add JavaScript files dynamically?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 By creating a new script element file and append it to the document, we can
 add JavaScript files dynamically.
@@ -1406,8 +1587,9 @@ var my_script=document.createElement(‘...’); //pass type as script
 my_script.type=’text/javascript’;
 my_script.src=’www.abc.co/ab.js’;
 head_elemt.appendChild(my_script);
-164: How will you get the current “x and y” co-ordinate value of the
-window when it is scrolled?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>164: How will you get the current “x and y” co-ordinate value of the window when it is scrolled?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Using onscroll. It executes when the window is scrolled
 b) pageXOffset and pageYOffset are used to get the co-ordinate value
@@ -1415,8 +1597,9 @@ Example:
 window.onscroll=function(){
 var xvalue=window.pageXOffset ;
 document.write(xvalue);}
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 165: What are the methods to create remote window?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Using custom property
 Secondary window:
@@ -1432,7 +1615,9 @@ function remote_windw2(link1){
 window.opener.location=link;
 }
 <input type=”button” value=”Address” onclick=remote_windw2()>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 166: How will you get the height of the browser window?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Using availHeight property of the screen object.
 
@@ -1440,24 +1625,29 @@ b) Gives the height of the browser window excluding the taskbar
 height,etc..
 Example:
 document.write(“Height:” + screen.availHeight);
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 167: How will you get the language code of the linked page?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using hreflang property of the anchor object we can get the language code
 of the linked page. Anchor object creates a link to another page or
 document.
 Example:
 my_anchor_object1.hreflang;
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 168: How would you input a file?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using FileUpload Object we can input a file. The type should be specified
 as “file” in the <input> tag. It creates the fileupload object that opens the
 file dialog box on clicking the button.
 Example:
 <input type=”file” >
-*****
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 JAVASCRIPT FORMS
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 169: What is the importance of the “name” attribute of a <form> tag?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 When a Form object is created, the name attribute is stored as an element in
 the form[] array of the Document object, and it is also stored in the
@@ -1465,19 +1655,24 @@ properties of the Document objects. So, after defining a <form
 name=”formName”>, it will be easy to refer the Form object using
 document.formName instead of document.form[0]. This attribute has
 nothing to do with submitting the form.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 170: What are the event handlers of the form element?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The following event handlers are supported by form elements: onclick,
 onchange, onfocus, onblur.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 171: What does “onchange” event handler do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This event handler is triggered when the user enters text or selects an
 option, changing in this way the value represented by the element. Button
 and other related elements do not support this event handler because they
 don't have a value that can be edited. This event it is triggered when the
 focus is lost and it is moved to another form element.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 172: What is a “cookie”?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 A cookie is a named data stored by the web browser and associated with a
 particular web page or web site. They were originally designed for the
@@ -1486,13 +1681,17 @@ HTTP protocol. The cookie data is transmitted between the client and the
 server and the server-side scripts can read and write cookie values that are
 stored on the client. In JavaScript, cookies are manipulated using “cookie”
 property of the Document object.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 173: What does the “new” operator do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The “new” operator creates a new object, that has no properties, and then it
 invokes the function passing the new objected created as the value of “this”
 keyword. The function that uses the “new” operator is called “constructor
 function” or just simply “constructor”.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 174: What does <optgroup> tag do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It is used with select statement to group the related options in the drop
 down list. It will be useful to display long list.
@@ -1520,8 +1719,9 @@ window.onDocumentReady is better for fast execution because it executes
 the code once DOM is loaded by the browser and will not wait for the
 object such as images to be loaded whereas onLoad executes only when the
 browser loads DOM and all other resources such as images gets loaded.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 177: What is the purpose of “visibility” property in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) “Visibility”: Makes the element either visible or invisible
 b) ”collapse”: Used to hide the elements in a table
@@ -1530,7 +1730,9 @@ Example:
 my_elemt.style.visibility=”my_val”;
 my_val
 visible,hidden,collapse,inherit
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 178: What are the ways to make an element visible/hidden?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Using display property
 my_elemt.style.display=” ”; //visible
@@ -1538,29 +1740,33 @@ my_elemt.style.display=”none”; //hidden
 b) Using visibility property
 my_elemt.style.visibility=”visible”; //visible
 my_elemt.style.visibility=”hidden”; //hidden
-
-179: How will you disable the html form fields, for instance password
-field?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+179: How will you disable the html form fields, for instance password field?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using disabled property of a password object.
 Example:
 document.getElementById(“Field_Id”).disabled=true;
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 180: How will you select the contents in the text field, say password?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using select function of password object, we can select the contents in text
 field.
 Example:
 document.getElementById(“Field_Id”).select();
-181: How will you display the id of the form and the name attribute of
-the hidden element?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+181: How will you display the id of the form and the name attribute of the hidden element?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using “form” and name property of hidden object, we can display the id of
 the form and the name attribute of the hidden element
 Example:
 var form_id1= document.getElementById(“my_elemt_id”).form.id;
 var name_id2= document.getElementById(“my_elemt_id”).name;
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 182: How will you get the last row from a table in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using tFoot property of a table object we can get the last row from a table.
 The last rows of tables in Html can be combined using the tfoot element.
@@ -1568,7 +1774,9 @@ Example:
 my_table_objects.tFoot;
 my_table_objects
 document object,getElementById property
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 183: How will you create and delete caption to a table?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using createCaption and deleteCaption function of the table object.
 Example:
@@ -1577,7 +1785,9 @@ my_table_objects.deleteCaption(); //delete
 my_table_objects
 document object,getElementById
 property
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 184: How will you create a text area and make it read-only?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Using textarea object
 
@@ -1592,7 +1802,9 @@ my_table_objects
 document object,getElementById property
 my_value1
 true
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 185: How will you change the caption display position of a table?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using captionSide property of the style object we can change the caption
 display position of a table.
@@ -1603,10 +1815,11 @@ document object,getElementById property
 values
 
 top/bottom
-*****
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 JAVASCRIPT CONSTRUCTORS
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 186: What does a JavaScript constructor do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The constructor initializes the newly created object and sets any properties
 that need to be set before that object is used. You can easily define a
@@ -1620,223 +1833,289 @@ this.radius = r;
 //invoke the constructor to create a circle object:
 var circle1 = new circle(3); // we pass the radius value to the constructor so
 that it will initialize the new object appropriately.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 187 What is the value that the constructor function returns?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Typically, the constructor does not return any values. They simply initialize
 the object passed as the value of “this” operator and return nothing.
 Anyway, the constructor can return an object value, but in this case the
 returned object becomes the value of the “new” expression and the object
 that was the value of this is simply not taken into account.
-
-188: How many types of common object methods can we find in
-JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+188: How many types of common object methods can we find in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 We have three types of object methods: the toString|() method; the
 valueOf() method and comparison method.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 189: How does class hierarchy manifest themselves in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Java and C++ have an explicit concept of the class hierarchy; so any class
 can be extended or sub-classed so that subclass that results can be inherited.
 JavaScript supports prototype inheritance instead of class-based inheritance
 so the Object class is the most generic with all other classes as specialized
 versions of it or subclasses.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 190: What does “overriding method” mean?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 If a subclass defines a method that has the same name as the method in the
 superclass it is called overriding that method. This is a common thing to do
 when creating subclasses of existing classes. For example when toString()
 method is defined, the toString() method of Object is overridden.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 191: How can you create an XML document in Firefox using
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 JavaScript?
 
 Answer:
 We can create an empty XML Document in Firefox and related browsers
 with document.implementation.createDocument() which is a DOM Level 2
 method.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 192: How are images accessed from JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Images can be referred using document.images[0] // for the first images,
 document.images[1] and so one for the next images. Once the image is
 accessed, you can perform different tasks on them.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 193: Where is the arguments() array placed in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It is placed and defined only within a function body. Within the arguments
 of a body arguments refers to Arguments object for the function.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 194: Which are the properties of the arguments object in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The properties of the arguments object are callee and length. All values that
 are passed as arguments become array elements of the arguments object.
-195: What happens when a function is invoked with the arguments
-object?
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+195: What happens when a function is invoked with the arguments object?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Arguments object is created for it and the local variable arguments are
 initialized to refer that arguments object.
-*****
-
-MISCELLANEOUS ARGUMENTS, FUNCTIONS AND METHODS IN
-JAVASCRIPT
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+MISCELLANEOUS ARGUMENTS, FUNCTIONS AND METHODS IN JAVASCRIPT
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 196: What does arguments.callee do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The arguments.callee refers to the currently running function and it
 provides a way for an unnamed function to refer to itself.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 197: What does arguments.length do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The arguments.length specifies the number of arguments that are passed to
 the current function; it only specifies the number of arguments actually
 passed and not the expected number.
-198: What other JavaScript method you know that is similar with
-shift() method?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+198: What other JavaScript method you know that is similar with shift() method?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Other method similar with shift() is Array.pop(), the only exception is that it
 operates on the beginning of an array rather that the end.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 199: How can you remove a page from the browser history?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 If the programmer wants to remove the current page from the browser
 history, it can simply use location.replace() method. Invoking this method
 
 causes the browser to request a page through a GET method just like a
 regular web page.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 200: How can you pass data between pages using cookies?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 In this case cookies.js library can be used with onunload event handler of
 one page to store 1 to 20 name/value pairs on the user's machine. In the
 second document, the onload event handler is used to retrieve the cookie
 data and assign the value to a text input field with the same name located on
 the second page.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 201: What is the difference between resizeTo() and resizeBy() methods?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Both the given methods are applicable to window object. In case you want
 to resize the window to a specific pixel size, resizeTo() method is the most
 appropriate. To increase or decrease the size of the window by a fixed pixel
 amount, you can use resizeBy() method.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 202: What is the difference between moveTo() and moveBy() methods?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Both the methods are applicable to window object. The first method,
 moveTo() is used to move the window to a screen coordinate point, by the
 other hand, the moveby() method shifts the position of the window by a
 known pixel amount.
-
-203: How can a window that is buried beneath other windows be
-brought back to the front?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+203: How can a window that is buried beneath other windows be brought back to the front?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 In this case, for any window to which you have a valid reference, the
 focus() method must be invoked.
-204: What happens when a string argument is passed with the Date()
-constructor in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+204: What happens when a string argument is passed with the Date() constructor in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 If one string argument passes with the Date() constructor it results in the
 string being a representation of a date in the format that is accepted by the
 Date.parse() method.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 205 Which are the arguments of the Date() constructor in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The date() constructor arguments are: milliseconds1, datestring, year,
 month, day, hours, minutes, seconds and milliseconds2 (optional argument).
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 206: What does URIError indicate in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The URIError indicates that one or more escape sequences in URI are
 malformed and they cannot be correctly sequenced.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 207: What does the encodeURIComponent function do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It is a global function that returns an encoded copy of the string argument.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 208: What does the string argument do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The string argument is a string that simply contains a portion of a URI or
 other text that has to be encoded.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 209: What is and what does the escape() function do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The escape() function is a global function that returns a new string that
 contains an encoded version of s; the string s by itself is not modified.
-210: What does the apply() function do in JavaScript and which are its
-arguments?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+210: What does the apply() function do in JavaScript and which are its arguments?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The apply() function invokes the specified function and treats it like it were
 a method of thisobj argument passing it then the arguments contained by the
 args array.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 211: What does the getClass() function do in JavaScript?
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The getClass() function takes a JavaObject object as an argument and return
 the JavaClass object of the respective JavaObject.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 212: What is Infinity in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Infinity is a global property that contains special numeric value that
 represents positive infinity; it cannot be deleted by the delete operator.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 213: What does the exec() method do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The exec() is the most powerful pattern-matching method of RegExp and
 String. It searches string for text that matches the regexp and if it finds a
 match returns an array of results; if not it returns null.
-214: What happens when the exec() method is invoked on a nonglobal
-pattern?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+214: What happens when the exec() method is invoked on a nonglobal pattern?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The exec() performs a search and then returns the same result as
 String.match() would.
-215: Does exec() include full details of every match even if regexp is not
-global?
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+215: Does exec() include full details of every match even if regexp is not global?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It is different in this regard to String.match() which return less information
 when used with global patterns.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 216: What is an anchor in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 An anchor is a named location within an Html document that is created with
 an <a> tag that has an attribute specified.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 217: What does the focus() method do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The focus() method scrolls the document so that the anchor location is
 visible; it is created by any standard HTML <a> tag that contains a name
 attribute.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 218: Is JSObject a JavaScript object?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 No. JSObject is a Java class that cannot be used in any JavaScript
 programs; it invokes the JavaScript methods into Java.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 219: What does the call() method of JSObject class do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 It invokes a name method of the JavaScript object represented by the
 JSObject; the arguments are passed to the method as an array of Java
 objects, then the return value of the JavaScript method is returned as a Java
 object.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 220: What does the eval() method of the JSObject do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It evaluates the JavaScript code that is contained within a string s in the
 context of the JavaScript object. Its behavior is similar to that of the eval()
 method of JavaScript.
-221: What does the getSlot() method of the JSObject do?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+221: What does the getSlot() method of the JSObject do? Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It reads and returns the value of an array element that is specified at the
 index of a JavaScript object.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 222: What does the removeMember() method of the JSObject do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It deletes a named property that belongs to the JavaScript object represented
 by the JSObject.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 223: What does the setMember() method of the JSObject do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 This method is the opposite of removeMember in that it sets a value of a
 named property of a JavaScript object from Java.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 224: What does the toString() method of JSObject do?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It invokes the toString() of the JavaScript object and returns the result of
 that method.
-225: What does the (n) argument represent in isFinite(n) and what does
-it return?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+225: What does the (n) argument represent in isFinite(n) and what does it return?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The (n) argument is the number that is to be tested and if n can be converted
 or is a finite number return true and false or NaN if n is positive or negative
 infinity.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 226: What does the isNaN() function do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It tests its arguments to see if it is the value of Nan, which is an illegal
 number.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 227: What does the setYear() function do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 It sets the year field of a specified date object with a special behavior for
 years between 1900 and 1999.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 228: What does the join() method do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Put in all the elements of the array into a string separated by the specified
 separator. Default separartor is comma “,”.
@@ -1844,7 +2123,9 @@ Example:
 var fourwheelers = [“Car”,”Bus”,”Lorry”] ;
 document.write(fourwheelers.join(“-”));
 ”Car-Bus-Lorry”
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 229: How will you pop the last element from an existing array?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using pop() function we can pop the last element from an existing array. It
 removes and returns the last element of an array. Length of the array will
@@ -1858,7 +2139,9 @@ document.write.(no.pop() +”<br>”);
 ”3”
 document.write(no);
 ”1,2”
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 230: How to pop the first element from an existing array?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using shift() function we can pop the first element from an existing array. It
 removes and returns the first element of an array. Length of the array will
@@ -1871,8 +2154,9 @@ document.write.(no.shift() +”<br>”);
 ”1”
 document.write(no);
 ”2,3”
-231: How will you add one or more elements to the end of the existing
-array?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+231: How will you add one or more elements to the end of the existing array?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 Using push() function we can add more elements. It adds the new items to
@@ -1885,8 +2169,9 @@ document.write(no.push(5));
 ”4”
 document.write(no);
 ”1,2,3,5”
-232: How will you add one or more elements to the beginning of the
-existing array?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+232: How will you add one or more elements to the beginning of the existing array?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using unshift() function we can add more elements. It adds the new items
 to the beginning of the array and returns its length.
@@ -1899,7 +2184,9 @@ document.write(no. unshift (5));
 
 document.write(no);
 ”5,1,2,3”
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 233: How will you reverse the elements in an array?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using reverse() function without creating new array.
 Example:
@@ -1908,35 +2195,43 @@ document.write(no);
 ”1,2,3”
 document.write(no.reverse());
 ”3,2,1”
-234: What does the Array.slice(start,end) method do in JavaScript and
-how to retrieve the elements within the selected position in an array?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+234: What does the Array.slice(start,end) method do in JavaScript and how to retrieve 
+the elements within the selected position in an array?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Its returns the array object containing the elements starting from the
 specified start value till the element before the end value. When a negative
 value is used for the start or end values, that gets added to the length of the
 array and returns the elements within that position.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 235: What does the Array.sort() method do in JavaScript?
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Default sort(): used to sort the alphabets in ascending order
 b) reverse() is used with the sort(): Used to sort the alphabets in
 descending order
 c) To sort the numbers, some functions are passed as arguments in sort()
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 236: What is encodeURI( ) and encodeURIComponent( )?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Used to encode the given uri
 b) encodeURI() encodes the special characters except “ : @ $ # = & / + ? “
 c) encodeURIComponent encodes all the special characters including “ :
 @ $ # = & / + ? “
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 237: What is decodeURI( ) and decodeURIComponent( )?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Used to decode the given encoded uri. decodeURI() decodes the special
 characters except “ : @ $ # = & / + ? “
 b) decodeURIComponent denotes all the special characters including “ : @
 $ # = & / + ? “
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 238: What does the splice( ) function do in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
-
 Adds or remove elements to/from an existing array and return the removed
 elements.
 array.splice(index,no of items to be removed,new items1,new items2...new
@@ -1949,11 +2244,14 @@ document.write(no. splice (1,2,9,10));
 ”2,3”
 document.write(no);
 ”1,9,10,4,5”
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 239: How will you print the current window using JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using window.print() function to print the contents of the specified window.
-240: How will you get default value when an argument is not passed in
-calling function?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+240: How will you get default value when an argument is not passed in calling function?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 By Shorthand assignment. It checks whether the passed argument contains a
 value.
@@ -1971,14 +2269,17 @@ add1(5);
 Here, since the first argument is only passed, it is treated as true hence”5”
 gets assigned to b1. Since the Second argument is not passed, it is treated as
 undefined value (i.e.) false hence the default value gets assigned.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 241: How will you encode and decode a string?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Using escape() and unescape()
 b) escape(): Encodes the string and special characters except “ + * - _ . @ /
 ” . It converts the non Ascii codes to two or four digit hex format
 c) unescape(): decodes the encoded string
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 242: How will you pass a function as argument to another function?
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using callback. A function that is passed as a argument to another function
 gets a reference called “Callback”. The callback functions gets executed
@@ -1993,15 +2294,18 @@ document.write(“Stopped”);});
 Output:
 Started at 5
 Stopped
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 243: What is the need for callback function?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 When a function is called, execution of the function takes place which will
 return some value. If the execution time will be longer for the function to
 return a value, for instance, when it may have to wait for some input from
 another function or user, it needs to be implemented asynchronously using
 callback function.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 244: How will you get a substring from a string in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) substring(): Retrieves the string starting from the start value till end
 value. White space are included
@@ -2013,8 +2317,9 @@ Example:
 var a=”color my world”;
 document.write(substring(3,7); // r my
 document.write(substr(3,7); // o my wo
-245: How will you get the function (fn1) which recently called the
-current function (fn2)?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+245: How will you get the function (fn1) which recently called the current function (fn2)?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using “fn2.caller” we can get the fn1 info. If the control of the program is
 in the fn2(), it will return the function (fn1) by which fn2 is recently called
@@ -2030,8 +2335,9 @@ fn_2.arguments;
 function fn_1(){
 fn_2();
 }
-246: How will you execute the page that is about to be unloaded, before
-the execution of onload()?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+246: How will you execute the page that is about to be unloaded, before the execution of onload()?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using onbeforeunload we can execute the page that is about to be unloaded.
 The “onunload” function occurs when the page is closed or navigating to
@@ -2042,7 +2348,9 @@ window.onbeforeunload=alert_msg();
 function alert_msg(){
 return “Message to be displayed to the user.”;
 }
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 247: How will you find whether the window is closed or not?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 Using closed property we can check the status of the window. It returns
@@ -2052,8 +2360,9 @@ if(window.opener.closed)
 document.write(“closed”);
 else
 document.write(“open”);
-248: How will you call a function repeatedly for a particular interval of
-time?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+248: How will you call a function repeatedly for a particular interval of time?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using setInterval function we can repeatedly call a function for a period of
 time.. It also clears the timer by returning unique id which will be passed as
@@ -2073,8 +2382,9 @@ value.
 *****
 
 JAVASCRIPT DESIGN PATTERNS
-250: What is a Pattern and explain about design patterns in software
-programming?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+250: What is a Pattern and explain about design patterns in software programming?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 A Pattern is often a theme of recurring objects or events. It could be a
 model or template that could be used to develop or generate a working
@@ -2086,7 +2396,9 @@ during the development of any software which usually speed up the
 development activity. Reusing the Design Patterns always helps to prevent
 subtle issues which could cause major concerns. Reusing design patterns
 also improves code readability for architects and coders.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 251: Why is it important to identify patterns?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Identifying patterns is very important because:
 a) Patterns always help us to write better code with proven best practices.
@@ -2097,8 +2409,9 @@ default includes the low-level details with self-contained blocks.
 
 c) Patterns often improves the communication between software developers
 and their teams even when they don’t communicate face to face.
-252: What is Singleton Pattern and what is its importance in
-JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+252: What is Singleton Pattern and what is its importance in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 When the number of instances for a particular object is limited to just one,
 then that single instance is called the Singleton.
@@ -2111,7 +2424,9 @@ entire application.
 b) Singletons mainly reduces the need for the global variables. In
 JavaScript, global variables are important because it limits the variable
 name collisions and namespace pollution.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 253: How will you create singleton in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 We can create Singleton by creating a simple object using the object literal.
 For Example:
@@ -2122,7 +2437,9 @@ myProp: 'My Value'
 In the above code snippet,
 mySingletonObj is the simple object created and
 myProp: ‘My Value’ is the object literal.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 254: How will you create 2 equal objects in JavaScript?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 We could create 2 equal objects with the help of new keyword. For
 example:
@@ -2134,7 +2451,9 @@ constructor Mars is called. The second time (and third, fourth, and so on)
 the same myObject1 object is returned. This is why myObject1 ===
 myObject2 — since they are mainly two references that are pointing to the
 same exact object.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 255: What is the purpose of Factory pattern?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The Factory Pattern similar to other patterns is also used to create objects.
 But here are the two main purposes:
@@ -2306,14 +2625,12 @@ The subscriber is also called as observer. The object being observed is
 called as subject or publisher. The publisher calls or notifies all the
 subscribers when an event occurs and this pass a message in the form of an
 event object.
-*****
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 HR INTERVIEW QUESTIONS
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Review these typical interview questions and think about how you would
 answer them. Read the answers listed; you will find best possible answers
 along with strategies and suggestions
-*****
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1: Tell me about a time when you worked additional hours to finish a project.
 Answer:
