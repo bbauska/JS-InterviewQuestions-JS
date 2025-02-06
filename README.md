@@ -1,5 +1,4 @@
 <h1>JS-InterviewQuestions-JS</h1>
-🎬  
 
 ![image](https://github.com/user-attachments/assets/bd34fe1f-532c-433b-8ebd-f24aae728f95)
 
@@ -7,6 +6,31 @@
 <h2>341 JS Interview Questions You'll Most Likely Be Asked</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <cite>First edition. November 20, 2017.</cite>
+
+<h3>1. Understanding IIFEs</h3>
+<p>Problem: Explain the concept of IIFEs (Immediately Invoked Function Expressions) in JavaScript. 
+Provide an example of how to create and use an IIFE and discuss why they are commonly used in 
+JavaScript.</p>
+
+<p>Solution: IIFEs, or Immediately Invoked Function Expressions, are a common JavaScript design 
+pattern. They are functions that are defined and executed immediately after they are created. 
+IIFEs have the following syntax:</p>
+<pre>
+(function IIFE() {
+console.log("Hello!");
+})(); // Hello!
+</pre>
+<p>IIFEs are used for several reasons:</p>
+<p><b>Encapsulation:</b> They create a new scope for variables, preventing variable name clashes 
+with other parts of the code. This helps avoid polluting the global scope.</p>
+<p><b>Data Privacy:</b> Variables declared within an IIFE are not accessible from the outside, 
+providing a level of data privacy. This is useful for hiding implementation details.</p>
+<p><b>Initialization:</b> IIFEs can be used for initializing code, such as setting up configurations, 
+loading modules, or performing any necessary setup before the rest of the code executes.</p>
+<p><b>Pollution Avoidance:</b> They help prevent global scope pollution by limiting the exposure of
+variables and functions.</p>
+<p><b>Module Pattern:</b> IIFEs are often used to implement the Module Pattern in JavaScript, which
+allows you to create encapsulated modules with private and public members.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>05. Discussing Data Types</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3420,82 +3444,4 @@ with a company that supports it.
 76: How is your background relevant to this position?
 77: How do you feel about X mission of our company?
 *****
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Some of the following titles might also be handy:</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-1. .NET Interview Questions You'll Most Likely Be Asked
-2. 200 Interview Questions You'll Most Likely Be Asked
-3. Access VBA Programming Interview Questions You'll Most Likely Be Asked
-4. Adobe ColdFusion Interview Questions You'll Most Likely Be Asked
-5. Advanced C++ Interview Questions You'll Most Likely Be Asked
-6. Advanced Excel Interview Questions You'll Most Likely Be Asked
-7. Advanced JAVA Interview Questions You'll Most Likely Be Asked
-8. Advanced SAS Interview Questions You'll Most Likely Be Asked
-9. AJAX Interview Questions You'll Most Likely Be Asked
-10. Algorithms Interview Questions You'll Most Likely Be Asked
-11. Android Development Interview Questions You'll Most Likely Be Asked
-12. Ant & Maven Interview Questions You'll Most Likely Be Asked
-13. Apache Web Server Interview Questions You'll Most Likely Be Asked
-14. Artificial Intelligence Interview Questions You'll Most Likely Be Asked
-15. ASP.NET Interview Questions You'll Most Likely Be Asked
-16. Automated Software Testing Interview Questions You'll Most Likely Be Asked
-17. Base SAS Interview Questions You'll Most Likely Be Asked
-18. BEA WebLogic Server Interview Questions You'll Most Likely Be Asked
-19. C & C++ Interview Questions You'll Most Likely Be Asked
-20. C# Interview Questions You'll Most Likely Be Asked
-21. CCNA Interview Questions You'll Most Likely Be Asked
-22. Cloud Computing Interview Questions You'll Most Likely Be Asked
-23. Computer Architecture Interview Questions You'll Most Likely Be Asked
-24. Computer Networks Interview Questions You'll Most Likely Be Asked
-25. Core JAVA Interview Questions You'll Most Likely Be Asked
-26. Data Structures & Algorithms Interview Questions You'll Most Likely Be Asked
-27. EJB 3.0 Interview Questions You'll Most Likely Be Asked
-28. Entity Framework Interview Questions You'll Most Likely Be Asked
-29. Fedora & RHEL Interview Questions You'll Most Likely Be Asked
-30. Hibernate, Spring & Struts Interview Questions You'll Most Likely Be Asked
-31. HTML, XHTML and CSS Interview Questions You'll Most Likely Be Asked
-32. HTML5 Interview Questions You'll Most Likely Be Asked
-33. IBM WebSphere Application Server Interview Questions You'll Most Likely Be Asked
-34. iOS SDK Interview Questions You'll Most Likely Be Asked
-35. Java / J2EE Design Patterns Interview Questions You'll Most Likely Be Asked
-36. Java / J2EE Interview Questions You'll Most Likely Be Asked
-37. JavaScript Interview Questions You'll Most Likely Be Asked
-38. JavaServer Faces Interview Questions You'll Most Likely Be Asked
-39. JDBC Interview Questions You'll Most Likely Be Asked
-40. jQuery Interview Questions You'll Most Likely Be Asked
-41. JSP-Servlet Interview Questions You'll Most Likely Be Asked
-42. JUnit Interview Questions You'll Most Likely Be Asked
-43. Linux Interview Questions You'll Most Likely Be Asked
-44. Linux System Administrator Interview Questions You'll Most Likely Be Asked
-45. Mac OS X Lion Interview Questions You'll Most Likely Be Asked
-46. Mac OS X Snow Leopard Interview Questions You'll Most Likely Be Asked
-47. Microsoft Access Interview Questions You'll Most Likely Be Asked
-48. Microsoft Powerpoint Interview Questions You'll Most Likely Be Asked
-49. Microsoft Word Interview Questions You'll Most Likely Be Asked
-50. MySQL Interview Questions You'll Most Likely Be Asked
-51. Networking Interview Questions You'll Most Likely Be Asked
-52. OOPS Interview Questions You'll Most Likely Be Asked
-53. Operating Systems Interview Questions You'll Most Likely Be Asked
-54. Oracle Database Administration Interview Questions You'll Most Likely Be Asked
-55. Oracle E-Business Suite Interview Questions You'll Most Likely Be Asked
-56. ORACLE PL/SQL Interview Questions You'll Most Likely Be Asked
-57. Perl Programming Interview Questions You'll Most Likely Be Asked
-58. PHP Interview Questions You'll Most Likely Be Asked
-59. Python Interview Questions You'll Most Likely Be Asked
-60. RESTful JAVA Web Services Interview Questions You'll Most Likely Be Asked
-61. SAP HANA Interview Questions You'll Most Likely Be Asked
-62. SAS Programming Guidelines Interview Questions You'll Most Likely Be Asked
-63. Selenium Testing Tools Interview Questions You'll Most Likely Be Asked
-64. Silverlight Interview Questions You'll Most Likely Be Asked
-65. Software Repositories Interview Questions You'll Most Likely Be Asked
-66. Software Testing Interview Questions You'll Most Likely Be Asked
-67. SQL Server Interview Questions You'll Most Likely Be Asked
-68. Tomcat Interview Questions You'll Most Likely Be Asked
-69. UML Interview Questions You'll Most Likely Be Asked
-70. Unix Interview Questions You'll Most Likely Be Asked
-71. UNIX Shell Programming Interview Questions You'll Most Likely Be Asked
-72. Windows Server 2008 R2 Interview Questions You'll Most Likely Be Asked
-73. XLXP, XSLT, XPATH, XFORMS & XQuery Interview Questions You'll Most Likely Be Asked
-74. XML Interview Questions You'll Most Likely Be Asked
 
