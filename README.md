@@ -10,11 +10,11 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>01. Understanding IIFEs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Problem: Explain the concept of IIFEs (Immediately Invoked Function Expressions) in JavaScript. 
+<p><b>Problem:</b> Explain the concept of IIFEs (Immediately Invoked Function Expressions) in JavaScript. 
 Provide an example of how to create and use an IIFE and discuss why they are commonly used in 
 JavaScript.</p>
 
-<p>Solution: IIFEs, or Immediately Invoked Function Expressions, are a common JavaScript design 
+<p><b>Solution:</b> IIFEs, or Immediately Invoked Function Expressions, are a common JavaScript design 
 pattern. They are functions that are defined and executed immediately after they are created. 
 IIFEs have the following syntax:</p>
 <pre>
@@ -36,25 +36,24 @@ allows you to create encapsulated modules with private and public members.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>02. Discussing Data Types</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Problem: Discuss the various data types available in JavaScript and provide examples of each.</h4>
-<h4>Solution: JavaScript offers a range of data types for storing values:</h4>
+<p><b>Problem:</b> Discuss the various data types available in JavaScript and provide examples of each.</p>
+<p><b>Solution:</b> JavaScript offers a range of data types for storing values:</p>
 
-<h5>String: A sequence of characters enclosed in quotes (single or double).</h5>
+<h4>String: A sequence of characters enclosed in quotes (single or double).</h4>
 <pre>let myString = “Hello World”</pre>
-<h5>Number: Numeric values, including integers and floating-point numbers.</h5>
+<h4>Number: Numeric values, including integers and floating-point numbers.</h4>
 <pre>let myNumber = 42;</pre>
-<h5>Boolean: Represents true or false values.</h5>
+<h4>Boolean: Represents true or false values.</h4>
 <pre>let myBoolean = true;</pre>
-<h5>Array: An ordered collection of values.</h5>
+<h4>Array: An ordered collection of values.</h4>
 <pre>
 let myArray = [1, 2, 3];
 null:
 </pre>
-<h5>Intentionally represents no value.</h5>
+<h4>Intentionally represents no value.</h4>
 <pre>let myNull = null;</pre>
-
-<h5>Object: Holds key-value pairs.</h5>
-<h5>Keys are strings, and values can be any data type.</h5>
+<h4>Object: Holds key-value pairs.</h4>
+<h4>Keys are strings, and values can be any data type.</h4>
 <pre>let myObject = { name: “John”, age: 30 };</pre>
 
 <p>undefined: Signifies an uninitialized variable.</p>
@@ -65,10 +64,9 @@ console.log(myUndefined); // undefined
 <p>These JavaScript data types enable value storage and manipulation in various ways, forming the 
 foundation for dynamic and versatile programming.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>03. Mixins and Achieving Multiple</h3>
+<h3>03. Mixins and Achieving Multiple Inheritance</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Inheritance Problem:</h4>
-<p>In JavaScript, there's no built-in multiple inheritance support, making it challenging
+<p><b>Problem:</b> In JavaScript, there's no built-in multiple inheritance support, making it challenging
 to share functionalities across different objects efficiently. Traditional class 
 hierarchies can become complex and rigid, hindering code maintainability.
 
@@ -127,10 +125,8 @@ overloading, allowing a single function to exhibit different behaviors based on 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>05. Change the title of the page</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>Problem:</h5>
-<p>Changing Page Title</p>
-<h5>Answer:</h5>
-<p>Using document.title Property</p>
+<p><b>Problem:</b> Changing Page Title</p>
+<p><b>Answer:</b> Using document.title Property</p>
 <p>You can change the title of a webpage using the document.title property in JavaScript.</p>
 <pre>document.title = "My New Title";</pre>
 <p>This is a straightforward task in JavaScript. Changing the page title is as simple as assigning 
@@ -138,12 +134,10 @@ a new value to the document.title property. It's a basic operation that most web
 be familiar with, making it an easy problem. However, it's still an important concept to understand 
 when working on web development projects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>02. Understanding JSON</h4>
+<h3>06. Understanding JSON</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h5>Problem:</h5>
-<p>Explain what JSON (JavaScript Object Notation) is and its purpose in web development.</p>
-<h5>Solution:</h5>
-<p>JSON, short for JavaScript Object Notation, is a lightweight data interchange format that is 
+<p><b>Problem:</b> Explain what JSON (JavaScript Object Notation) is and its purpose in web development.</p>
+<p><b>Solution:</b> JSON, short for JavaScript Object Notation, is a lightweight data interchange format that is 
 easy for humans to read and write, and easy for machines to parse and generate. It is often used 
 for exchanging data between a server and a web application, as well as between different parts 
 of an application.</p>
@@ -165,115 +159,101 @@ numbers, Booleans, arrays, or other JSON objects.</p>
 programming languages. It is a common format for sending and receiving data in web APIs, 
 configuring applications, and storing configuration settings.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>3: What is JavaScript?</h4>
+<h3>07: What is JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-JavaScript is a scripting language that adds interactivity to HTML pages.
+<p><b>Answer:</b> JavaScript is a scripting language that adds interactivity to HTML pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>4: What kind of language is JavaScript?</h4>
+<h3>08: What kind of language is JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-JavaScript is an interpreted language that executes scripts without preliminary compilation.
+<p><b>Answer:</b> JavaScript is an interpreted language that executes scripts without preliminary compilation.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>5: What is the official name of JavaScript and is it supported by all browsers?</h4>
+<h3>09: What is the official name of JavaScript and is it supported by all browsers?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The official name of JavaScript is ECMA (European Computer Manufacturer's Association) and with it, 
-Internet Explorer 4 and Mozilla Firefox 1.5 fully supported.
+<p><b>Answer:</b> The official name of JavaScript is ECMA (European Computer Manufacturer's Association) 
+and with it, Internet Explorer 4 and Mozilla Firefox 1.5 fully supported.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>6: What does JavaScript do?</h4>
+<h3>10: What does JavaScript do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-JavaScript is meant to be an easy scripting language that helps the non-
-programmers with its simple syntax. JavaScript is smart enough that it can
-put dynamic text into HTML pages, it can react to events (like when a page
-has finished downloading), and it can read and write HTML elements,
-create cookies and so forth.
+<p><b>Answer:</b> JavaScript is meant to be an easy scripting language that helps the non-
+programmers with its simple syntax. JavaScript is smart enough that it can put dynamic text 
+into HTML pages, it can react to events (like when a page has finished downloading), and it 
+can read and write HTML elements, create cookies and so forth.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>7: Does prior knowledge of JAVA ease the use of JavaScript?</h4>
+<h3>11: Is JavaScript case sensitive?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Yes. Being modeled after Java, which in turn is modeled after C++,
-JavaScript should be easier to familiarize and work with.
+<p><b>Answer: Yes. Unlike HTML, JavaScript has to have all variables and function names
+(etc.) in capital letters.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>8: Is JavaScript case sensitive?</h4>
+<h3>12: How do you place JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Yes. Unlike HTML, JavaScript has to have all variables and function names
-(etc.) in capital letters.
+<p><b>Answer:</b> Scripts can be placed in the &lt;body&gt; , or in the &lt;head&gt; section of 
+an HTML page, or in both. JavaScript in &lt;head&gt;. JavaScript may be inserted into code with 
+the following syntax:</p>
+<pre>&lt;script type="text/JavaScript"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>9: How do you place JavaScript?</h4>
+<h3>13: Where do you place JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Scripts can be placed in the &lt;body&gt; , or in the &lt;head&gt; section of an HTML page, or in both. 
-JavaScript in &lt;head&gt;. JavaScript may be inserted into code with the following syntax:
-&lt;script type="text/JavaScript"&gt;
+<p><b>Answer:</b> JavaScript may be placed in the <head> or <body> section of HTML code,
+but it is usually a good practice to place it in <head> as to not hinder your code later on.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>10: Where do you place JavaScript?</h4>
+<h2>STATEMENTS, COMMENTS AND VARIABLES</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-JavaScript may be placed in the <head> or <body> section of HTML code,
-but it is usually a good practice to place it in <head> as to not hinder your
-code later on.
-
-STATEMENTS, COMMENTS AND VARIABLES
+<h3>14: How do you terminate statements in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>11: How do you terminate statements in JavaScript?</h4>
+<p><b>Answer:</b> In JavaScript, statements are terminated by semicolons (;) and although
+they are not mandatory they are a good practice to pick up.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-In JavaScript, statements are terminated by semicolons (;) and although
-they are not mandatory they are a good practice to pick up.
+<h3>15: Why are comments used in JavaScript and how are they inserted?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>12: Why are comments used in JavaScript and how are they inserted?</h4>
+<p><b>Answer:</b> Usually comments are added to make the code more readable but they can
+also be used to explain the code. They are inserted with // (for single line comments) 
+and /* */ for multiple lines comments.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Usually comments are added to make the code more readable but they can
-also be used to explain the code. They are inserted with // (for single line
-comments) and /* */ for multiple lines comments.
+<h3>16. Explain equality</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>13. Explain equality</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Problem: JavaScript has both strict and type–converting comparisons:
-Strict comparison (e.g., ===) checks for value equality without allowing coercion.
-Abstract comparison (e.g., ==) checks for value equality with coercion allowed.
-Answer:
-```
+<p><b>Problem:</b> JavaScript has both strict and type–converting comparisons:<br>
+Strict comparison (e.g., ===) checks for value equality without allowing coercion.<br>
+Abstract comparison (e.g., ==) checks for value equality with coercion allowed.</p>
+<p><b>Answer:</b></p>
+<pre>
 const a = "42";
 const b = 42;
 console.log(a == b); // true
 console.log(a === b); // false
-```
-Some simple equality rules: If either value (also known as side) in a comparison could be the 
-true or false value, avoid == and use ===.
-If either value in a comparison could be of these specific values (0, "", or [] — empty array), 
-avoid == and use ===.
-In all other cases, you’re safe to use ==. Not only is it safe, but in many cases, it simplifies 
-your code in a way that improves readability.
+</pre>
+<p>Some simple equality rules: If either value (also known as side) in a comparison could be the 
+true or false value, avoid == and use ===.</p>
+<p>If either value in a comparison could be of these specific values (0, "", or [] — empty array), 
+avoid == and use ===.</p>
+<p>In all other cases, you’re safe to use ==. Not only is it safe, but in many cases, it simplifies 
+your code in a way that improves readability.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>14: What are variables and how are they inserted?</h4>
+<h3>17: What are variables and how are they inserted?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Variables are storing containers used for holding expressions and values. They can have a short 
-letter or a longer name and are inserted with the statement: var. Because the variables are 
-loosely typed, they can hold any type of data.
+<p><b>Answer:</b> Variables are storing containers used for holding expressions and values. They 
+can have a short letter or a longer name and are inserted with the statement: var. Because the 
+variables are loosely typed, they can hold any type of data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>15: What does a variable of var y=10; and var catname= "Tomcat"; do?</h4>
+<h3>18: What does a variable of var y=10; and var catname= "Tomcat"; do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-
-With the execution of the above code, we have variables that hold values of 10(for y) and Tomcat (for catname).
-Note that the inclusion of text warrants " " being used.
+<p><b>Answer:</b> With the execution of the above code, we have variables that hold values of 
+10(for y) and Tomcat (for catname). Note that the inclusion of text warrants " " being used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>15: How many statements types can we find in JavaScript? Give some examples?</h4>
+<h3>19: How many statements types can we find in JavaScript? Give some examples?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The statement types found in JavaScript are: Expression statements, compound, empty and labeled statements. 
-Example: break, continue, default, do, for, etc.
-<h4>16. Understanding Exponential Operator</h4>
-Problem: Explain the usage of the exponential (&ast;&ast;) operator in JavaScript, including when and how to use it to perform exponentiation calculations.
-Answer: The exponential operator (&ast;&ast;) in JavaScript is used to perform exponentiation, which is raising a number to a power. It's a concise and intuitive way to perform such calculations.
-Here's how to use it:
-```
+<p><b>Answer:</b> The statement types found in JavaScript are: Expression statements, compound, 
+empty and labeled statements.</p>
+<p><b>Example:</b> break, continue, default, do, for, etc.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>20. Understanding Exponential Operator</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>Problem:</b> Explain the usage of the exponential (&ast;&ast;) operator in JavaScript, 
+including when and how to use it to perform exponentiation calculations.</p>
+<p><b>Answer:</b> The exponential operator (&ast;&ast;) in JavaScript is used to perform 
+exponentiation, which is raising a number to a power. It's a concise and intuitive way to 
+perform such calculations.</p>
+<p>Here's how to use it:</p>
+<pre>
 // Using the exponential operator
 const result1 = 2 &ast;&ast; 3;  // raised to the power of 3 
 console.log(result1);  // 8
@@ -281,144 +261,149 @@ const result2 = 4 &ast;&ast; 8.5;  // Square root of 4
 console.log(result2);  // 131072
 const result3 = 10 &ast;&ast; -2; // 10 raised to the power of -2
 console.log(result3) // 0.01
-```
+</pre>
 The exponential operator can be used with both integer and floating-point exponents. It's 
 particularly useful when you need to perform exponentiation calculations in a clear and 
-concise manner.
+concise manner.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>17: What are conditional statements and how are they implemented in JavaScript?</h4>
+<h3>21: What are conditional statements and how are they implemented in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Conditional statements are used to perform and act on different sets of conditions declared by the programmer. They are the following: if statement; if...else statement; if...else if...else statement and the switch statement.
+<p><b>Answer:</b> Conditional statements are used to perform and act on different sets of 
+conditions declared by the programmer. They are the following: if statement; if...else 
+statement; if...else if...else statement and the switch statement.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>18: How will you determine a variable type in JavaScript?</h4>
+<h3>22: How will you determine a variable type in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-A variable type in JavaScript is determined using Typeof operator. When the object is String, Number, Function, undefined and Boolean, the operator returns the same type. And when the object is null and array, the operator returns “object”.
-Example:
+<p><b>Answer:</b> A variable type in JavaScript is determined using Typeof operator. When the 
+object is String, Number, Function, undefined and Boolean, the operator returns the same type. 
+And when the object is null and array, the operator returns “object”.</p>
+<p><b>Example:</b></p>
+<pre>
 var count=100;
 typeof count; // (returns “number”)
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>19: What is the difference in evaluating [“8”+5+2] and [8+5+”2”]?</h4>
+<h3>23: What is the difference in evaluating [“8”+5+2] and [8+5+”2”]?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-In [“8”+5+2],”8” is a String. So anything that trail the string will be changed to string. Hence the result will be”852”. 
-In [8+5+”2”], 8 and 5 are integer, so it gets added up (13).And “2” is treated as String. Hence the concatenation takes place and the result will be “132”.
+<p><b>Answer:</b><br>
+In [“8”+5+2],”8” is a String. So anything that trail the string will be changed to string.<br>
+Hence the result will be ”852”.<br>
+In [8+5+”2”], 8 and 5 are integer, so it gets added up (13).And “2” is treated as String.<br>
+Hence the concatenation takes place and the result will be “132”.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>20: Is it possible to assign a string to a floating point variable?</h4>
+<h3>24: Is it possible to assign a string to a floating point variable?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Yes. Any variable can be assigned to another data type. For example,
+<p><b>Answer:</b> Yes. Any variable can be assigned to another data type. For example,</p>
+<pre>
 var a1=10.39;
 document.write(a1);
 10.39
 a1=”hai”;
 document.write(a1);
-
 hai
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>21: Will variable redeclaration affect the value of that variable?</h4>
+<h3>25: Will variable redeclaration affect the value of that variable?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-No. The same value will be retained in the variable.
-Example:
+<p><b>Answer:</b> No. The same value will be retained in the variable.</p>
+<p><b>Example:</b></p>
+<pre>
 var status=”cool”;
 document.write(“status”); //cool
 var status;
 document.write(“status”); //cool
 status=”chill”;
 document.write(“status”); //chill
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>22: How will you search a matching pattern globally in a string?</h4>
+<h3>26: How will you search a matching pattern globally in a string?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-A matching pattern can be globally searched in a string using “g” modifier
-in Regular Expression.
-Example:
+<p><b>Answer:</b> A matching pattern can be globally searched in a string using “g” modifier
+in Regular Expression.</p>
+<p><b>Example:</b></p>
+<pre>
 var p1=”First_Regular_ Expression_First”;
 var q1=”/First/g”;
 document.write(“Pattern_Match:” + p1.match(q1)); //
 Pattern_Match:First,First
-
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>23: How will you search a particular pattern in a string?</h4>
+<h3>27: How will you search a particular pattern in a string?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-A particular pattern in string can be searched using test function. If the
-match is found it returns true, else false.
-Example:
+<p><b>Answer:</b> A particular pattern in string can be searched using test function. If the
+match is found it returns true, else false.</p>
+<p><b>Example:</b></p>
+<pre>
 var my_pattern1=new RegExp(“pp”);
 document.write(my_pattern1.test(“Happy_Days”); //true
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>24: Which property is used to match the pattern at the start of the string?</h4>
+<h3>28: Which property is used to match the pattern at the start of the string?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-“^” symbol is used for position matching.
-Example:
+<p><b>Answer:</b> “^” symbol is used for position matching.</p>
+<p><b>Example:</b></p>
+<pre>
 var p1=”First_Regular_ Expression_First”;
 var q1=”/First/^”;
-document.write(“Pattern_Match:” + p1.match(q1)); //Pattern_Match:First
-First_Regular
+document.write(“Pattern_Match:” + p1.match(q1)); //Pattern_Match:First First_Regular
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>25: Which property is used to match the pattern at the end of the string?</h4>
+<h3>29: Which property is used to match the pattern at the end of the string?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-
-“$” symbol is used for end position matching.
-Example:
+<p><b>Answer:</b> “$” symbol is used for end position matching.</p>
+<p><b>Example:</b></p>
+<pre>
 var p1=”First_Regular_ Expression_First”;
 var q1=”/First/$”;
-document.write(“Pattern_Match:” + p1.match(q1)); //Pattern_Match:First
-Expression_First
-*****
-
-OPERATORS AND FUNCTIONS
+document.write(“Pattern_Match:” + p1.match(q1)); //Pattern_Match:First Expression_First
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>26: What are operators? Which are the most important operators in</h4>
+<h2>OPERATORS AND FUNCTIONS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-JavaScript?
+<h3>30: What are operators? Which are the most important operators in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Operators in JavaScript are used to combine values that form expressions.
 The most important are: = and +. The first is used to assign values and the
 second one is used to add values together.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>27: Why comparison and logical operators are used?</h4>
+<h3>31: Why comparison and logical operators are used?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Comparison operators are used to determine if there is a difference between
 variables, and also their equality, while the logical operators are used to
 determine the logic of variables.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>26: How many types of pop-up boxes does JavaScript have? What are those?</h4>
+<h3>32: How many types of pop-up boxes does JavaScript have? What are those?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 JavaScript has three types of pop-up boxes and they are: alert, confirm and
 prompt.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>27: Does creating an alert box prompt the user to respond with OK or Cancel?</h4>
+<h3>33: Does creating an alert box prompt the user to respond with OK or Cancel?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 No. An alert box only gives the user the option of choosing OK to proceed.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>28: What are functions in JavaScript and where are they placed?</h4>
+<h3>34: What are functions in JavaScript and where are they placed?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Functions contain code that is executed before an event thus stopping the
 browser from loading a script when the page opens. Functions can be
 placed both in the <head> or <body> section, but it is advised to place them
 in the <head> section.
-*****
 
-VALUES, ARRAYS AND OPERATORS
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>29: What does the keyword null mean in JavaScript?</h4>
+<h2>VALUES, ARRAYS AND OPERATORS</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>35: What does the keyword null mean in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The keyword null is a special value that indicates no value. It is unique
 from other values and also fully distinct.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>30: What does the value undefined mean in JavaScript?</h4>
+<h3>30: What does the value undefined mean in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Undefined is a special value in JavaScript, it means the variable used in the
