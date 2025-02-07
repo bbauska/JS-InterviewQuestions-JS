@@ -641,45 +641,45 @@ and previousSibling properties.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>69: How do you find document elements in a HTML document?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 You can find elements by using the getElementsByTagName and obtain any
-type of HTML element.
+type of HTML element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>70: How are documents created and modified in DOM?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Documents are modified by setting attribute values on document elements
 with the element.setAttribute() method. They are created with
-document.createDocumentFragment().
+document.createDocumentFragment().</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>71: How can you build a DOM tree of arbitrary document content?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 You can achieve this by creating new Element and text nodes with the
 Document.CreateElement() and Document.CreateTextNote() methods; you
 can then add them to a document with the Note.AppendChild(),
-Note.InsertBefore() and Note.replaceChild() methods.
+Note.InsertBefore() and Note.replaceChild() methods.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>72: How do you find document elements in IE4?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Because IE4 does not support the getElementById() and get
 ElementsBytagName()methods we are forced to use the array property
-named all().
+named all().</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>73: How to access Html attributes using DOM?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using three methods of DOM:
 a) getAttribute(): Retrives the value of an attribute
 b) setAttribute(): Modifies the value of an attribute
-c) removeAttribute(): Removes the entire attributes from an element
+c) removeAttribute(): Removes the entire attributes from an element</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>74: What is the difference between getAttribute() and getAttributeNode()?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 a) getAttribute(): returns the value of an attribute
-b) getAttributeNode(): returns the attribute itself
+b) getAttributeNode(): returns the attribute itself</p>
 
 Example:
 <body>
@@ -695,10 +695,10 @@ document.write(txt2.value);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>75: What are the event handlers in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Event handlers are the JavaScript code that can be used inside the Html tags
 and gets executed when any events such as form submission, page loading
-occur. Some of the event handlers in JavaScript are:
+occur. Some of the event handlers in JavaScript are:</p>
 a) onload
 b) onunload
 c) onclick
@@ -707,11 +707,11 @@ e) onmouseover
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>76: Can you use two or more functions in onclick event?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 By separating the functions with semicolon(;) we can use two or more
 functions. First function gets executed after onclick event. The consecutive
 functions get executed only when the immediate previous function returns
-true.
+true.</p>
 Example:
 onclick=(“my_fun1();my_fun2();my_fun3()”);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -719,27 +719,28 @@ onclick=(“my_fun1();my_fun2();my_fun3()”);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>77: What is the “this” keyword in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 When an event handler with an HTML or JavaScript property is defined a
 function to a property of a document element is assigned. When the event
-handler is invoked the “this” keyword refers to the target element.
+handler is invoked the “this” keyword refers to the target element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>78: What does lexically scoped in JavaScript mean?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 It means that functions run in the scope that they are defined in and not in
-the scope they are called in.
+the scope they are called in.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>79: Is the following expression correct: element.style.font-family="arial";?</h3>
-<p><b>Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>Answer:</b>
 No. It is incorrect because in JavaScript many CSS style attributes contain
-hyphens in their names and these are interpreted as minus signs.
+hyphens in their names and these are interpreted as minus signs.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>STATEMENTS AND FUNCTIONS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>80: How can you replace an if-else statement in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 You can simply replace if-else statement by using the ternary operator.
 These kinds of operators require three operands. The ternary operator can
 be defined as follows:
@@ -747,14 +748,14 @@ be defined as follows:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>81: What is a "memoization" method in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Memoization is an optimization technique used in JavaScript. Functions
 may use objects to remember the results of previous operations, in this way
 avoiding unnecessary work.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>82: What does 2+3+”1” evaluate to?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 As 2 and 3 are integers, 2+3 will evaluate to 5. Since “1” is a string, it will
 concatenate with 5 and the final result will be the string “51”
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -762,7 +763,7 @@ concatenate with 5 and the final result will be the string “51”
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>83: Give some examples of the role that JavaScript has on the Web.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The role of JavaScript is to provide a better user browsing experience.
 JavaScript can do many things like: creating visual effects such as image
 rollovers, sorting the columns of a table, so the user can easily find what he
@@ -770,7 +771,7 @@ needs and hiding certain content.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>84: Give an example on how JavaScript can be used in URLs.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 JavaScript can be used in URLs, using “JavaScript:” pseudoprotocol
 specifier. This specifies that the body of the URL is an arbitrary string of
 JavaScript code to be run by the JavaScript interpreter. It is treated as a
@@ -783,25 +784,27 @@ ar today = new Date(); “<p>The date is:</p>” + today;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>85: How are scripts in JavaScript executed?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Scripts are executed in the order in which they appear and the code in the
 <script> tags is executed as part of document loading process.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>86: What do scripts placed in the <head> part of an HTML document do?</h3>
-<p><b>Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>Answer:</b>
 Scripts placed in the <head> section usually define functions that are to be
 called by other code and/or declare and initialize variables used by other
 code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>87: What do scripts placed in the <body> part of an HTML document do?</h3>
-<p><b>Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>Answer:</b>
 Scripts placed in the <body> part of a document can do everything that
 those placed in a <head> section of the document do. They can also
 manipulate document elements that appear before the script.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>88: When does browser trigger the onload event?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The browser triggers the onload event and executes any registered
 JavaScript code under the following scenarios:
 a) Once the document has been parsed,
@@ -814,7 +817,7 @@ the event is triggered only when the page is loaded.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>89: When does the onunload event trigger and what does it do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The onunload event triggers after the user navigates away from the web
 page giving the code on that page a final chance to run; the onunload event
 enables the possibility to undo effects of your onload handler or scripts in
@@ -822,7 +825,7 @@ the web page.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>90: How can we read or write a file in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Client-side JavaScript does not provide any way to read, write or delete
 files or directories on the client computer. This is also a security aspect –
 with no File object and no file access functions, a JavaScript program
@@ -830,7 +833,7 @@ cannot delete a user's data.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>91: Explain about “cross-site scripting”.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Cross Site Scripting (XSS) is called as the name of a security issue where
 the hacker or attacker injects the scripts or HTML tags into a website.
 Even though defending XSS attack is a job for server-side script developers,
@@ -839,7 +842,7 @@ defend against this attack.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>92: What are JavaScript timers? Give examples and explain one of them.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 It is very important for any programming environment to have the ability to
 schedule code to be executed at some point in the future. Client-side
 JavaScript provides some global functions like: setTimeout(),
@@ -849,7 +852,7 @@ elapses.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>93: Explain the history property in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The history property of the Window object refers to the History object for
 the window. The History object supports three methods: back(), forward()
 and go(). The first 2 methods are similar with what happens when the user
@@ -858,7 +861,7 @@ integer argument and can skip any number of pages
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>94: What is the “Screen” object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The screen property of the Window object refers to a Screen object that
 provides information about the size of the user's display, the number of
 colors available on it. The “width” and “height” properties can be used to
@@ -866,7 +869,7 @@ specify the size of the display in pixels.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>95: What is the “Navigator” object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The navigator property of a Window object refers to a Navigator object that
 contains important information about the web browser, such as the version
 and the list of data formats it can display. In the past Navigator object was
@@ -875,7 +878,7 @@ Netscape web browser.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>96: What is “onreset” in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Onreset is an event handler of a form object in JavaScript. It gets executed
 when the reset button in the form is clicked and resets the fields when it
 receives true value otherwise prevent the form elements from being reset.
@@ -884,7 +887,7 @@ onreset=”alert(‘AABBCC’)”
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>97: What is void 0 in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 a) JavaScript files can be executed directly in the web browsers by placing
 “JavaScript:” before the code
 b) Web browsers attempt to load the page when any value returning
@@ -893,7 +896,7 @@ c) void 0 is used to prevent the unwanted action
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>98: What is the best practice to place the JavaScript codes?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Place all JavaScript codes in one place. So it can be placed,
 a) At the end of html tag
 b) Below second header tag
@@ -901,7 +904,7 @@ c) Before the closing of bod tag
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>99: How to prevent caching of web pages in temporary internet files folder?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Caching of web pages in temporary internet files folder can be prevented by
 adding <META HTTP-EQUIP=”PRAGMA” CONTENT=”NO-CACHE” >
 in the second header tag which is placed before the html’s end tag(</html>).
@@ -921,7 +924,7 @@ Example:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>100: Why adding of meta tag in first header will not prevent caching of the Web page?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The browsing page gets cached only when the buffer is half filled. So when
 the meta tag is added in first header, the internet explorer search for that
 page in cache at that instant. Most of the time, buffer won't get half filled at
@@ -929,7 +932,7 @@ the beginning of parsing.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>101: What is the purpose of meta tag?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 When this tag is read while parsing the html code, internet explorer
 searches for this page in cache at that instant. If it is found, it will be
 removed from the cache.
@@ -938,7 +941,7 @@ Syntax:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>102: How will you resolve looping problem in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 
 Using closures which combines the function with its referencing
 environment, looping can be resolved. It keeps the local variable of the
@@ -947,7 +950,7 @@ function within the function, Closure is created.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 103: Give any example for resolving looping problem.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 var method1={};
 for(var k=0;k<5;k++){
 method1[i]=function(){
@@ -970,7 +973,8 @@ Output:
 0 1 2 3 4
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>104: When is the Execution context created and what are the primary components?</h3>
-<p><b>Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>Answer:</b>
 During execution of JavaScript function, the execution context is created. It
 keeps track of the execution of its related code. Global execution context is
 created when executing the application.
@@ -981,14 +985,14 @@ c) ThisBinding: value of “this” keyword related with execution context
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>105: When is the Execution context stack created?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 a) Global execution context: Created when executing the application
 b) New execution context: Created when the new functions are created
 c) Collection of this execution context form the execution context stack
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>106: How is the outer scope environment references maintained?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using LexicalEnvironment, the outer scope environment references are
 maintained. It contains two components:
 a) Environment Record: Identifier bindings are stored for the execution
@@ -998,13 +1002,13 @@ lexicalEnvironment
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>107: How will you read or write in a file using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 An I/O operation such as reading or writing is not possible. However, “Java
 Applet” can be implemented to read files for script.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>108: How will you create rich, responsive display and editor user interface?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using knockout we can create rich, responsive display and editor user
 interface. It is JavaScript library which implements the model view-
 viewmodel pattern. It is used to create UI and allows dynamic updation and
@@ -1012,7 +1016,7 @@ can be used with any server or client.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>109: Which is the new JavaScript engine developed for internet explorer9 by Microsoft?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Chakra is the new JavaScript engine for IE9. A distinct feature is that its JIT
 compiles scripts on separate “CPUcore”, parallel to web browsers. The
 engine also accesses the computer’s graphic processing unit for 3D videos
@@ -1021,14 +1025,14 @@ JavaScript runtime and libraries, a new interpreter was included.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>110: What is Node.js?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Node.js is a software designed for creating server side JavaScript
 application which is not executed in client browser. It is event based and
 runs asynchronously to provide scalability and reduce overhead.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>111: Which is alternative to XML for data exchange in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 JSON (JavaScript Object Notation). Light weighted, text-based data
 exchange format. Web data is imported into JavaScript applications using
 JSON.
@@ -1039,7 +1043,7 @@ Name:ABC
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>112: What are the sub-components of dynamic component in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 a) Dynamic typing: Based on values; not associated on variable
 b) Obj-based: Properties of an object can be modified at run-time; Built-in
 functions are used for properties to maintain dynamicity
@@ -1050,7 +1054,7 @@ take dynamic arguments at run time
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>113: How can you open a new window using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 We can open a new web browser window using “open()” method of the
 Window object.Window.open() has four optional arguments and returns a
 window object that represents the new open window. The first argument is
@@ -1062,7 +1066,7 @@ the second argument is mentioned.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>114: How can you close a window using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 We can close a created window object using “close()” method. The syntax
 is: Window.close()
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1086,6 +1090,7 @@ The browser interprets the string as a URL and tries to load it and display
 the document and that URL.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>118: What is the history object in JavaScript?</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:
 The history object refers to the History of the browser window. The
 multitudes of elements that the history object incorporates are never
@@ -1791,299 +1796,253 @@ that it will initialize the new object appropriately.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>187 What is the value that the constructor function returns?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Typically, the constructor does not return any values. They simply initialize
+<p>Typically, the constructor does not return any values. They simply initialize
 the object passed as the value of “this” operator and return nothing.
 Anyway, the constructor can return an object value, but in this case the
 returned object becomes the value of the “new” expression and the object
-that was the value of this is simply not taken into account.
+that was the value of this is simply not taken into account.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>188: How many types of common object methods can we find in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-We have three types of object methods: the toString|() method; the
-valueOf() method and comparison method.
+<p>We have three types of object methods: the toString|() method; the
+valueOf() method and comparison method.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>189: How does class hierarchy manifest themselves in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Java and C++ have an explicit concept of the class hierarchy; so any class
+<p>Java and C++ have an explicit concept of the class hierarchy; so any class
 can be extended or sub-classed so that subclass that results can be inherited.
 JavaScript supports prototype inheritance instead of class-based inheritance
 so the Object class is the most generic with all other classes as specialized
-versions of it or subclasses.
+versions of it or subclasses.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>190: What does “overriding method” mean?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-If a subclass defines a method that has the same name as the method in the
+<p>If a subclass defines a method that has the same name as the method in the
 superclass it is called overriding that method. This is a common thing to do
 when creating subclasses of existing classes. For example when toString()
-method is defined, the toString() method of Object is overridden.
+method is defined, the toString() method of Object is overridden.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>191: How can you create an XML document in Firefox using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-We can create an empty XML Document in Firefox and related browsers
-with document.implementation.createDocument() which is a DOM Level 2
-method.
+<p>We can create an empty XML Document in Firefox and related browsers with 
+document.implementation.createDocument() which is a DOM Level 2 method.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>192: How are images accessed from JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Images can be referred using document.images[0] // for the first images,
+<p>Images can be referred using document.images[0] // for the first images,
 document.images[1] and so one for the next images. Once the image is
-accessed, you can perform different tasks on them.
+accessed, you can perform different tasks on them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>193: Where is the arguments() array placed in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-It is placed and defined only within a function body. Within the arguments
-of a body arguments refers to Arguments object for the function.
+<p>It is placed and defined only within a function body. Within the arguments
+of a body arguments refers to Arguments object for the function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>194: Which are the properties of the arguments object in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The properties of the arguments object are callee and length. All values that
-are passed as arguments become array elements of the arguments object.
+<p>The properties of the arguments object are callee and length. All values that
+are passed as arguments become array elements of the arguments object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>195: What happens when a function is invoked with the arguments object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Arguments object is created for it and the local variable arguments are
-initialized to refer that arguments object.
+<p>Arguments object is created for it and the local variable arguments are
+initialized to refer that arguments object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>MISCELLANEOUS ARGUMENTS, FUNCTIONS AND METHODS IN JAVASCRIPT</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>196: What does arguments.callee do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The arguments.callee refers to the currently running function and it
-provides a way for an unnamed function to refer to itself.
+<p>The arguments.callee refers to the currently running function and it
+provides a way for an unnamed function to refer to itself.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>197: What does arguments.length do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The arguments.length specifies the number of arguments that are passed to
+<p>The arguments.length specifies the number of arguments that are passed to
 the current function; it only specifies the number of arguments actually
-passed and not the expected number.
+passed and not the expected number.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>198: What other JavaScript method you know that is similar with shift() method?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Other method similar with shift() is Array.pop(), the only exception is that it
-operates on the beginning of an array rather that the end.
+<p>Other method similar with shift() is Array.pop(), the only exception is that it
+operates on the beginning of an array rather that the end.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>199: How can you remove a page from the browser history?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-If the programmer wants to remove the current page from the browser
-history, it can simply use location.replace() method. Invoking this method
-
-causes the browser to request a page through a GET method just like a
-regular web page.
+<p>If the programmer wants to remove the current page from the browser history, it can simply 
+use location.replace() method. Invoking this method causes the browser to request a page 
+through a GET method just like a regular web page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>200: How can you pass data between pages using cookies?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-In this case cookies.js library can be used with onunload event handler of
+<p>In this case cookies.js library can be used with onunload event handler of
 one page to store 1 to 20 name/value pairs on the user's machine. In the
 second document, the onload event handler is used to retrieve the cookie
 data and assign the value to a text input field with the same name located on
-the second page.
+the second page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>201: What is the difference between resizeTo() and resizeBy() methods?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Both the given methods are applicable to window object. In case you want
+<p>Both the given methods are applicable to window object. In case you want
 to resize the window to a specific pixel size, resizeTo() method is the most
 appropriate. To increase or decrease the size of the window by a fixed pixel
-amount, you can use resizeBy() method.
+amount, you can use resizeBy() method.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>202: What is the difference between moveTo() and moveBy() methods?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Both the methods are applicable to window object. The first method,
+<p>Both the methods are applicable to window object. The first method,
 moveTo() is used to move the window to a screen coordinate point, by the
 other hand, the moveby() method shifts the position of the window by a
-known pixel amount.
+known pixel amount.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>203: How can a window that is buried beneath other windows be brought back to the front?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-In this case, for any window to which you have a valid reference, the
-focus() method must be invoked.
+<p>In this case, for any window to which you have a valid reference, the
+focus() method must be invoked.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>204: What happens when a string argument is passed with the Date() constructor in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-If one string argument passes with the Date() constructor it results in the
+<p>If one string argument passes with the Date() constructor it results in the
 string being a representation of a date in the format that is accepted by the
-Date.parse() method.
+Date.parse() method.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>205 Which are the arguments of the Date() constructor in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The date() constructor arguments are: milliseconds1, datestring, year,
-month, day, hours, minutes, seconds and milliseconds2 (optional argument).
+<p>The date() constructor arguments are: milliseconds1, datestring, year,
+month, day, hours, minutes, seconds and milliseconds2 (optional argument).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>206: What does URIError indicate in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The URIError indicates that one or more escape sequences in URI are
-malformed and they cannot be correctly sequenced.
+<p>The URIError indicates that one or more escape sequences in URI are
+malformed and they cannot be correctly sequenced.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>207: What does the encodeURIComponent function do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-It is a global function that returns an encoded copy of the string argument.
+<p>It is a global function that returns an encoded copy of the string argument.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>208: What does the string argument do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The string argument is a string that simply contains a portion of a URI or
-other text that has to be encoded.
+<p>The string argument is a string that simply contains a portion of a URI or
+other text that has to be encoded.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>209: What is and what does the escape() function do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The escape() function is a global function that returns a new string that
-contains an encoded version of s; the string s by itself is not modified.
+<p>The escape() function is a global function that returns a new string that
+contains an encoded version of s; the string s by itself is not modified.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>210: What does the apply() function do in JavaScript and which are its arguments?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The apply() function invokes the specified function and treats it like it were
-a method of thisobj argument passing it then the arguments contained by the
-args array.
+<p>The apply() function invokes the specified function and treats it like it were 
+a method of thisobj argument passing it then the arguments contained by the 
+args array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>211: What does the getClass() function do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The getClass() function takes a JavaObject object as an argument and return
-the JavaClass object of the respective JavaObject.
+<p>The getClass() function takes a JavaObject object as an argument and return
+the JavaClass object of the respective JavaObject.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>212: What is Infinity in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Infinity is a global property that contains special numeric value that
-represents positive infinity; it cannot be deleted by the delete operator.
+<p>Infinity is a global property that contains special numeric value that
+represents positive infinity; it cannot be deleted by the delete operator.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>213: What does the exec() method do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The exec() is the most powerful pattern-matching method of RegExp and
+<p>The exec() is the most powerful pattern-matching method of RegExp and
 String. It searches string for text that matches the regexp and if it finds a
-match returns an array of results; if not it returns null.
+match returns an array of results; if not it returns null.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>214: What happens when the exec() method is invoked on a nonglobal pattern?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The exec() performs a search and then returns the same result as
-String.match() would.
+<p>The exec() performs a search and then returns the same result as
+String.match() would.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>215: Does exec() include full details of every match even if regexp is not global?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-It is different in this regard to String.match() which return less information
-when used with global patterns.
+<p>It is different in this regard to String.match() which return less information
+when used with global patterns.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>216: What is an anchor in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-An anchor is a named location within an Html document that is created with
-an <a> tag that has an attribute specified.
+<p>An anchor is a named location within an Html document that is created with 
+an &lt;a&gt; tag that has an attribute specified.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>217: What does the focus() method do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The focus() method scrolls the document so that the anchor location is
+<p>The focus() method scrolls the document so that the anchor location is
 visible; it is created by any standard HTML <a> tag that contains a name
-attribute.
+attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>218: Is JSObject a JavaScript object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-No. JSObject is a Java class that cannot be used in any JavaScript
-programs; it invokes the JavaScript methods into Java.
+<p>No. JSObject is a Java class that cannot be used in any JavaScript
+programs; it invokes the JavaScript methods into Java.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>219: What does the call() method of JSObject class do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-
-It invokes a name method of the JavaScript object represented by the
+<p>It invokes a name method of the JavaScript object represented by the
 JSObject; the arguments are passed to the method as an array of Java
 objects, then the return value of the JavaScript method is returned as a Java
-object.
+object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>220: What does the eval() method of the JSObject do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-It evaluates the JavaScript code that is contained within a string s in the
+<p>It evaluates the JavaScript code that is contained within a string s in the
 context of the JavaScript object. Its behavior is similar to that of the eval()
-method of JavaScript.
+method of JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>221: What does the getSlot() method of the JSObject do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer: It reads and returns the value of an array element that is specified at the
-index of a JavaScript object.
+<p>It reads and returns the value of an array element that is specified at the
+index of a JavaScript object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>222: What does the removeMember() method of the JSObject do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-It deletes a named property that belongs to the JavaScript object represented
-by the JSObject.
+<p>It deletes a named property that belongs to the JavaScript object represented
+by the JSObject.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>223: What does the setMember() method of the JSObject do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-
-This method is the opposite of removeMember in that it sets a value of a
-named property of a JavaScript object from Java.
+<p>This method is the opposite of removeMember in that it sets a value of a
+named property of a JavaScript object from Java.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>224: What does the toString() method of JSObject do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-It invokes the toString() of the JavaScript object and returns the result of
-that method.
+<p>It invokes the toString() of the JavaScript object and returns the result of
+that method.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>225: What does the (n) argument represent in isFinite(n) and what does it return?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The (n) argument is the number that is to be tested and if n can be converted
+<p>The (n) argument is the number that is to be tested and if n can be converted
 or is a finite number return true and false or NaN if n is positive or negative
-infinity.
+infinity.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>226: What does the isNaN() function do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-It tests its arguments to see if it is the value of Nan, which is an illegal
-number.
+<p>It tests its arguments to see if it is the value of Nan, which is an illegal number.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>227: What does the setYear() function do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-
-It sets the year field of a specified date object with a special behavior for
-years between 1900 and 1999.
+<p>It sets the year field of a specified date object with a special behavior for
+years between 1900 and 1999.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>228: What does the join() method do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Put in all the elements of the array into a string separated by the specified
-separator. Default separartor is comma “,”.
-Example:
+<p>Put in all the elements of the array into a string separated by the specified
+separator. Default separartor is comma “,”.</p>
+<h4>Example:</h4>
+<pre>
 var fourwheelers = [“Car”,”Bus”,”Lorry”] ;
 document.write(fourwheelers.join(“-”));
 ”Car-Bus-Lorry”
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>229: How will you pop the last element from an existing array?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Using pop() function we can pop the last element from an existing array. It
+<p>Using pop() function we can pop the last element from an existing array. It
 removes and returns the last element of an array. Length of the array will
-decrease by 1.
-Example:
+decrease by 1.</p>
+<h4>Example:</h4>
+<pre>
 var no=[1,2,3];
 document.write(no);
 ”1,2,3”
@@ -2092,14 +2051,15 @@ document.write.(no.pop() +”<br>”);
 ”3”
 document.write(no);
 ”1,2”
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>230: How to pop the first element from an existing array?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Using shift() function we can pop the first element from an existing array. It
+<p>Using shift() function we can pop the first element from an existing array. It
 removes and returns the first element of an array. Length of the array will
-decrease by 1.
-Example:
+decrease by 1.</p>
+<h4>Example:</h4>
+<pre>
 var no=[1,2,3];
 document.write(no);
 ”1,2,3”
@@ -2107,14 +2067,14 @@ document.write.(no.shift() +”<br>”);
 ”1”
 document.write(no);
 ”2,3”
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>231: How will you add one or more elements to the end of the existing array?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-
-Using push() function we can add more elements. It adds the new items to
-the end of the array and returns its length.
-Example:
+<p>Using push() function we can add more elements. It adds the new items to
+the end of the array and returns its length.</p>
+<h4>Example:</h4>
+<pre>
 var no=[1,2,3];
 document.write(no);
 ”1,2,3”
@@ -2122,10 +2082,10 @@ document.write(no.push(5));
 ”4”
 document.write(no);
 ”1,2,3,5”
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>232: How will you add one or more elements to the beginning of the existing array?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 Using unshift() function we can add more elements. It adds the new items
 to the beginning of the array and returns its length.
 Example:
@@ -2140,7 +2100,6 @@ document.write(no);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>233: How will you reverse the elements in an array?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 Using reverse() function without creating new array.
 Example:
 var no=[1,2,3];
@@ -2152,7 +2111,6 @@ document.write(no.reverse());
 <h3>234: What does the Array.slice(start,end) method do in JavaScript and how to retrieve 
 the elements within the selected position in an array?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 Its returns the array object containing the elements starting from the
 specified start value till the element before the end value. When a negative
 value is used for the start or end values, that gets added to the length of the
@@ -2160,7 +2118,6 @@ array and returns the elements within that position.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>235: What does the Array.sort() method do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 a) Default sort(): used to sort the alphabets in ascending order
 b) reverse() is used with the sort(): Used to sort the alphabets in
 descending order
@@ -2168,7 +2125,6 @@ c) To sort the numbers, some functions are passed as arguments in sort()
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>236: What is encodeURI( ) and encodeURIComponent( )?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 a) Used to encode the given uri
 b) encodeURI() encodes the special characters except “ : @ $ # = & / + ? “
 c) encodeURIComponent encodes all the special characters including “ :
@@ -2176,7 +2132,6 @@ c) encodeURIComponent encodes all the special characters including “ :
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>237: What is decodeURI( ) and decodeURIComponent( )?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 a) Used to decode the given encoded uri. decodeURI() decodes the special
 characters except “ : @ $ # = & / + ? “
 b) decodeURIComponent denotes all the special characters including “ : @
@@ -2184,7 +2139,6 @@ $ # = & / + ? “
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>238: What does the splice( ) function do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 Adds or remove elements to/from an existing array and return the removed
 elements.
 array.splice(index,no of items to be removed,new items1,new items2...new
@@ -2205,7 +2159,6 @@ Using window.print() function to print the contents of the specified window.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>240: How will you get default value when an argument is not passed in calling function?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 By Shorthand assignment. It checks whether the passed argument contains a
 value.
 
@@ -2225,7 +2178,6 @@ undefined value (i.e.) false hence the default value gets assigned.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>241: How will you encode and decode a string?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 a) Using escape() and unescape()
 b) escape(): Encodes the string and special characters except “ + * - _ . @ /
 ” . It converts the non Ascii codes to two or four digit hex format
@@ -2233,7 +2185,6 @@ c) unescape(): decodes the encoded string
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>242: How will you pass a function as argument to another function?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 Using callback. A function that is passed as a argument to another function
 gets a reference called “Callback”. The callback functions gets executed
 only after the execution of called function.
@@ -2250,7 +2201,6 @@ Stopped
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>243: What is the need for callback function?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 When a function is called, execution of the function takes place which will
 return some value. If the execution time will be longer for the function to
 return a value, for instance, when it may have to wait for some input from
@@ -2259,7 +2209,6 @@ callback function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>244: How will you get a substring from a string in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 a) substring(): Retrieves the string starting from the start value till end
 value. White space are included
 Syntax: substring(start_value,end_value);
@@ -2273,7 +2222,6 @@ document.write(substr(3,7); // o my wo
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>245: How will you get the function (fn1) which recently called the current function (fn2)?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 Using “fn2.caller” we can get the fn1 info. If the control of the program is
 in the fn2(), it will return the function (fn1) by which fn2 is recently called
 by using fn2.caller.
@@ -2291,7 +2239,6 @@ fn_2();
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>246: How will you execute the page that is about to be unloaded, before the execution of onload()?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 Using onbeforeunload we can execute the page that is about to be unloaded.
 The “onunload” function occurs when the page is closed or navigating to
 another page. Hence onbeforeunload alerts the user about navigation before
@@ -2304,8 +2251,6 @@ return “Message to be displayed to the user.”;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>247: How will you find whether the window is closed or not?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-
 Using closed property we can check the status of the window. It returns
 “true” if the window is closed else returns “false”.
 Example:
@@ -2316,7 +2261,6 @@ document.write(“open”);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>248: How will you call a function repeatedly for a particular interval of time?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 Using setInterval function we can repeatedly call a function for a period of
 time.. It also clears the timer by returning unique id which will be passed as
 a parameter for clearTimer.
@@ -2329,7 +2273,6 @@ specified_ interval
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>249: What is the difference between test and exec function?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 a) Both functions are used to search the particular pattern.
 b) test function returns a Boolean value and exec function returns the found
 value.
@@ -2338,7 +2281,6 @@ value.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>250: What is a Pattern and explain about design patterns in software programming?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 A Pattern is often a theme of recurring objects or events. It could be a
 model or template that could be used to develop or generate a working
 component. In software development, a pattern is a solution to a common
@@ -2352,7 +2294,6 @@ also improves code readability for architects and coders.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>251: Why is it important to identify patterns?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 Identifying patterns is very important because:
 a) Patterns always help us to write better code with proven best practices.
 There is no need to reinvent the wheel.
@@ -2365,7 +2306,6 @@ and their teams even when they don’t communicate face to face.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>252: What is Singleton Pattern and what is its importance in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 When the number of instances for a particular object is limited to just one,
 then that single instance is called the Singleton.
 Following are the importance of Singleton:
@@ -2380,7 +2320,6 @@ name collisions and namespace pollution.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>253: How will you create singleton in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 We can create Singleton by creating a simple object using the object literal.
 For Example:
 var mySingletonObj = {
@@ -2393,7 +2332,6 @@ myProp: ‘My Value’ is the object literal.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>254: How will you create 2 equal objects in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 We could create 2 equal objects with the help of new keyword. For
 example:
 var myObject1 = new Mars();
@@ -2407,7 +2345,6 @@ same exact object.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>255: What is the purpose of Factory pattern?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 The Factory Pattern similar to other patterns is also used to create objects.
 But here are the two main purposes:
 a) Perform repeating operations while setting up similar objects
@@ -2417,7 +2354,6 @@ compile time
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>256: How will you create a Factory pattern?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 In JavaScript, Factory pattern could be created as follows:
 var myCorolla = MakeCar.factory('Compact');
 var myIkon = MakeCar.factory('SUV');
@@ -2428,7 +2364,6 @@ creates objects based on a type identified by a string.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>257: Explain about Iterator pattern.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 In Iterator pattern, the object holds aggregate data. The data could be stored
 in a complex structure, and we have to provide access to each element. The
 object consumer does not need to know the data structure.
@@ -2443,7 +2378,6 @@ could be accessed by simply calling the next() method in a loop.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>258: Explain about Decorator Pattern.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 In Decorator pattern, a new or additional functionality could be added to an
 object dynamically during runtime. Objects are mutable in JavaScript, so
 adding a functionality to an object could be done quite easily.
@@ -2458,7 +2392,6 @@ modified price.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>259: What is the importance of Strategy Pattern?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 The strategy pattern enables you to select algorithms at runtime. The clients
 of your code can work with the same interface but pick from a number of
 available algorithms to handle their specific task.
@@ -2471,7 +2404,6 @@ validate and return any error messages.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>260: Explain data validation using strategy pattern.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 Let’s say you have the following piece of data, probably coming from a
 form on a page, and you want to verify whether it’s valid:
 var myData = {
@@ -2506,7 +2438,6 @@ numbers, and no special symbols
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>261: Explain Facade pattern with example.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
 The facade is a simple pattern; it provides an alternative interface to an
 object. It’s a good design practice to keep the methods short and not have
 them handle too much work.
@@ -2531,62 +2462,62 @@ In the above code, myEvent is a Façade that invokes 2 methods when it’s trigg
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>262: Explain about Proxy Pattern.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-In Proxy design pattern, one object acts as an interface to another object.
+<p>In Proxy design pattern, one object acts as an interface to another object.
 The proxy sits between the client object and the object itself and protects
 access to that object.
 Proxy pattern may look like an overhead but it’s useful to improve the
 performance. The proxy serves as a guardian of the object and tries to have
-the real subject do as little work as possible.
-
-Network request is one of the expensive operation you could perform in
+the real subject do as little work as possible.</p>
+<p>Network request is one of the expensive operation you could perform in
 web application. Proxy pattern is useful to make this expensive operation
-and it’s necessary to combine HTTP requests as often as possible.
+and it’s necessary to combine HTTP requests as often as possible.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>263: Explain about Mediator pattern.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Irrespective of the applications are small or large, applications are made of
+<p>Irrespective of the applications are small or large, applications are made of
 unique objects. All these unique objects need a way to communicate among
 themselves in a manner that doesn’t affect maintenance and the ability to
 safely change a part of the application without breaking the rest of it. This is
-where Mediator pattern plays an important role.
-When the application grows, we add objects one by one and it grows
+where Mediator pattern plays an important role.</p>
+
+<p>When the application grows, we add objects one by one and it grows
 rapidly. Then, during refactoring, objects are removed and rearranged.
 When objects know too much about each other and communicate directly
 by calling each other’s methods and change the properties, it leads to
-undesirable tight coupling.
-When objects are closely coupled, it’s not easy to change one object without
+undesirable tight coupling.</p>
+
+<p>When objects are closely coupled, it’s not easy to change one object without
 affecting many others. Then even the simplest change in an application is
 no longer trivial, and it’s virtually impossible to estimate the time a change
 might take. The mediator pattern alleviates this situation by promoting
-loose coupling and helping to improve maintainability.
+loose coupling and helping to improve maintainability.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>264: Explain about Observer Pattern.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The Observer pattern is mainly used in client-side JavaScript programming.
+<p>The Observer pattern is mainly used in client-side JavaScript programming.
 All the browser events like key-press, mouse-over, and so on are examples
-of Observer pattern.
-Another name for this pattern is custom events since they were created
+of Observer pattern.</p>
+<p>Another name for this pattern is custom events since they were created
 programmatically as opposed to the ones that the browser triggers.
 This pattern is also called as subscriber / publisher pattern. The main
 motivation for this pattern is to promote loose coupling. Instead of one
 object calling another object’s method, an object subscribes to another
-object’s specific activity and gets notified.
-The subscriber is also called as observer. The object being observed is
+object’s specific activity and gets notified.</p>
+<p>The subscriber is also called as observer. The object being observed is
 called as subject or publisher. The publisher calls or notifies all the
 subscribers when an event occurs and this pass a message in the form of an
-event object.
+event object.</p>
+
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>HR INTERVIEW QUESTIONS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Review these typical interview questions and think about how you would
+<p>Review these typical interview questions and think about how you would
 answer them. Read the answers listed; you will find best possible answers
-along with strategies and suggestions
+along with strategies and suggestions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1: Tell me about a time when you worked additional hours to finish a project.
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It's important for your employer to see that you are dedicated to your work,
 and willing to put in extra hours when required or when a job calls for it.
 However, be careful when explaining why you were called to work
@@ -2597,7 +2528,7 @@ moved up on short notice? Stress your competence and willingness to give
 110% every time.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 2: Tell me about a time when your performance exceeded the duties and requirements of your job.
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 If you're a great candidate for the position, this should be an easy question
 to answer – choose a time when you truly went above and beyond the call
 of duty, and put in additional work or voluntarily took on new responsib-
@@ -2605,7 +2536,7 @@ ilities. Remain humble, and express gratitude for the learning opportunity,
 as well as confidence in your ability to give a repeat performance.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 3: What is your driving attitude about work?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There are many possible good answers to this question, and the interviewer
 primarily wants to see that you have a great passion for the job and that you
 
@@ -2614,7 +2545,7 @@ behind your success may include hard work, opportunity, growth potential,
 or success.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 4: Do you take work home with you?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It is important to first clarify that you are always willing to take work home
 when necessary, but you want to emphasize as well that it has not been an
 issue for you in the past. Highlight skills such as time management, goal-
@@ -2622,7 +2553,7 @@ setting, and multi-tasking, which can all ensure that work is completed at
 work.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 5: Describe a typical work day to me.
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There are several important components in your typical work day, and an
 interviewer may derive meaning from any or all of them, as well as from
 your ability to systematically lead him or her through the day. Start at the
@@ -2632,14 +2563,13 @@ prioritizing, as well as some additional time to account for unexpected
 things that may arise.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 6: Tell me about a time when you went out of your way at your previous job.
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here it is best to use a specific example of the situation that required you to
 go out of your way, what your specific position would have required that
 you did, and how you went above that. Use concrete details, and be sure to
 include the results, as well as reflection on what you learned in the process.
-7: Are you open to receiving feedback and criticisms on your job performance, and adjusting as 
-   necessary?
-Answer:
+7: Are you open to receiving feedback and criticisms on your job performance, and adjusting as necessary?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This question has a pretty clear answer – yes – but you'll need to display a
 knowledge as to why this is important. Receiving feedback and criticism is
 one thing, but the most important part of that process is to then implement it
@@ -2647,7 +2577,7 @@ into your daily work. Keep a good attitude, and express that you always
 appreciate constructive feedback.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 8: What inspires you?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You may find inspiration in nature, reading success stories, or mastering a
 difficult task, but it's important that your inspiration is positively-based and
 that you're able to listen and tune into it when it appears. Keep this answer
@@ -2656,7 +2586,7 @@ stretch a bit into creative exercises in your personal life that, in turn, help
 you in achieving career objectives.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 9: How do you inspire others?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This may be a difficult question, as it is often hard to discern the effects of
 inspiration in others. Instead of offering a specific example of a time when
 you inspired someone, focus on general principles such as leading by
@@ -2665,7 +2595,7 @@ a quality that someone who inspired you possessed, and discuss the way
 you have modified or modeled it in your own work.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 10: What has been your biggest success?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Your biggest success should be something that was especially meaningful to
 you, and that you can talk about passionately – your interviewer will be
 able to see this. Always have an answer prepared for this question, and be
@@ -2673,7 +2603,7 @@ sure to explain how you achieved success, as well as what you learned from
 the experience.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 11: What motivates you?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It's best to focus on a key aspect of your work that you can target as a
 “driving force” behind your everyday work. Whether it's customer service,
 making a difference, or the chance to further your skills and gain
@@ -2681,7 +2611,7 @@ experience, it's important that the interviewer can see the passion you hold
 for your career and the dedication you have to the position.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 12: What do you do when you lose motivation?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 The best candidates will answer that they rarely lose motivation, because
 they already employ strategies to keep themselves inspired, and because
 they remain dedicated to their objectives. Additionally, you may impress
@@ -2689,7 +2619,7 @@ the interviewer by explaining that you are motivated by achieving goals and
 advancing, so small successes are always a great way to regain momentum.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 13: What do you like to do in your free time?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 What you do answer here is not nearly as important as what you don't
 answer – your interviewer does not want to hear that you like to drink,
 party, or revel in the nightlife. Instead, choose a few activities to focus on
@@ -2700,7 +2630,7 @@ interviewer that you are a well-rounded, interesting, and dynamic
 personality that they would be happy to hire.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 14: What sets you apart from other workers?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This question is a great opportunity to highlight the specific skill sets and
 passion you bring to the company that no one else can. If you can't outline
 exactly what sets you apart from other workers, how will the interviewer
@@ -2708,7 +2638,7 @@ see it? Be prepared with a thorough outline of what you will bring to the
 table, in order to help the company achieve their goals.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 15: Why are you the best candidate for that position?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Have a brief response prepared in advance for this question, as this is
 another very common theme in interviews (variations of the question
 include: “Why should I hire you, above Candidate B?” and “What can you
@@ -2720,7 +2650,7 @@ special projects or recognition you've received that set you apart, and show
 your greatest passion, commitment, and enthusiasm for the position.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 16: What does it take to be successful?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Hard work, passion, motivation, and a dedication to learning – these are all
 potential answers to the ambiguous concept of success. It doesn't matter so
 much which of these values you choose as the primary means to success, or
@@ -2729,7 +2659,7 @@ whichever value you choose, you must clearly display in your attitude,
 experience, and goals.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 17: What would be the biggest challenge in this position for you?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Keep this answer positive, and remain focused on the opportunities for
 growth and learning that the position can provide. Be sure that no matter
 
@@ -2738,7 +2668,7 @@ tackle it, and that you have a full awareness of what it will take to get the
 job done.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 18: Would you describe yourself as an introvert or an extrovert?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 There are beneficial qualities to each of these, and your answer may depend
 on what type of work you're involved in. However, a successful leader may
 be an introvert or extrovert, and similarly, solid team members may also be
@@ -2746,7 +2676,7 @@ either. The important aspect of this question is to have the level of self-
 awareness required to accurately describe yourself.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 19: What are some positive character traits that you don't possess?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 If an interviewer asks you a tough question about your weaknesses, or lack
 of positive traits, it's best to keep your answer light-hearted and simple – for
 instance, express your great confidence in your own abilities, followed by a
@@ -2754,7 +2684,7 @@ instance, express your great confidence in your own abilities, followed by a
 humble.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 20: What is the greatest lesson you've ever learned?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 While this is a very broad question, the interviewer will be more interested
 in hearing what kind of emphasis you place on this value. Your greatest
 lesson may tie in with something a mentor, parent, or professor once told
@@ -2762,9 +2692,8 @@ you, or you may have gleaned it from a book written by a leading expert in
 your field. Regardless of what the lesson is, it is most important that you
 can offer an example of how you've incorporated it into your life.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-21: Have you ever been in a situation where one of your strengths
-became a weakness in an alternate setting?
-Answer:
+21: Have you ever been in a situation where one of your strengths became a weakness in an alternate setting?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 It's important to show an awareness of yourself by having an answer for this
 question, but you want to make sure that the weakness is relatively minor,
 and that it would still remain a strength in most settings. For instance, you
@@ -2772,7 +2701,7 @@ may be an avid reader who reads anything and everything you can find, but
 reading billboards while driving to work may be a dangerous idea.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 22: Who has been the most influential person in your life?
-Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Give a specific example (and name) to the person who has influenced your
 life greatly, and offer a relevant anecdote about a meaningful exchange the
 two of you shared. It's great if their influence relates to your professional
@@ -2781,8 +2710,8 @@ inspiration in your personal life as well. The interviewer wants to see that
 you're able to make strong connections with other individuals, and to work
 under the guiding influence of another person.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-23: Do you consider yourself to be a “detailed” or “big picture” type of
-person?
+23: Do you consider yourself to be a “detailed” or “big picture” type of person?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Both of these are great qualities, and it's best if you can incorporate each
 into your answer. Choose one as your primary type, and relate it to
@@ -2790,6 +2719,7 @@ experience or specific items from your resume. Then, explain how the
 other type fits into your work as well.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 24: What is your greatest fear?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Disclosing your greatest fear openly and without embarrassment is a great
 way to show your confidence to an employer. Choose a fear that you are
@@ -2800,6 +2730,7 @@ easy answer such as spiders, stay away from these, as they don't really tell
 the interviewer anything about yourself that's relevant.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 25: What sort of challenges do you enjoy?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The challenges you enjoy should demonstrate some sort of initiative or
 growth potential on your part, and should also be in line with your career
@@ -2807,8 +2738,8 @@ objectives. Employers will evaluate consistency here, as they analyze
 critically how the challenges you look forward to are related to your
 ultimate goals.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-26: Tell me about a time you were embarrassed. How did you handle
-it?
+26: Tell me about a time you were embarrassed. How did you handle it?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 No one wants to bring up times they were embarrassed in a job interview,
 and it's probably best to avoid an anecdote here. However, don't shy away
@@ -2817,6 +2748,7 @@ it off. Show the interviewer that it was not an event that impacted you
 significantly.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 27: What is your greatest weakness?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This is another one of the most popular questions asked in job interviews,
 so you should be prepared with an answer already. Try to come up with a
@@ -2827,8 +2759,8 @@ However, don't try to mask obvious weaknesses – if you have little practical
 experience in the field, mention that you're looking forward to great
 opportunities to further your knowledge.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-28: What are the three best adjectives to describe you in a work
-setting?
+28: What are the three best adjectives to describe you in a work setting?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 While these three adjectives probably already appear somewhere on your
 resume, don't be afraid to use them again in order to highlight your best
@@ -2837,8 +2769,8 @@ point out traits you possess that other candidates do not. Use the most
 specific and accurate words you can think of, and elaborate shortly on how
 you embody each.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-29: What are the three best adjectives to describe you in your personal
-life?
+29: What are the three best adjectives to describe you in your personal life?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Ideally, the three adjectives that describe you in your personal life should be
 similar to the adjectives that describe you in your professional life.
@@ -2847,6 +2779,7 @@ you having an alternate personality outside of the office, it's best if you
 employ similar principles in your actions both on and off the clock.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 30: What type of worker are you?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This is an opportunity for you to highlight some of your greatest assets.
 Characterize some of your talents such as dedicated, self-motivated, detail-
@@ -2855,7 +2788,7 @@ Stay away from your weaker qualities here, and remain on the target of all
 the wonderful things that you can bring to the company.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 31: Tell me about your happiest day at work.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Your happiest day at work should include one of your greatest professional
 successes, and how it made you feel. Stay focused on what you
@@ -2863,6 +2796,7 @@ accomplished, and be sure to elaborate on how rewarding or satisfying the
 achievement was for you.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 32: Tell me about your worst day at work.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It may have been the worst day ever because of all the mistakes you made,
 or because you'd just had a huge argument with your best friend, but make
@@ -2874,6 +2808,7 @@ the situation. Keep this answer brief, and be sure to end with a reflection on
 what you learned from the day.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 33: What are you passionate about?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Keep this answer professionally-focused where possible, but it may also be
 appropriate to discuss personal issues you are passionate about as well
@@ -2885,6 +2820,7 @@ is one that does not detract from your availability to work or to be
 productive.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 34: What is the piece of criticism you receive most often?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 An honest, candid answer to this question can greatly impress an
 interviewer (when, of course, it is coupled with an explanation of what
@@ -2892,6 +2828,7 @@ you're doing to improve), but make sure the criticism is something minimal
 or unrelated to your career.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 35: What type of work environment do you succeed the most in?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Be sure to research the company and the specific position before heading
 into the interview. Tailor your response to fit the job you'd be working in,
@@ -2900,6 +2837,7 @@ it's also extremely important to be adaptable, so remain flexible to other
 environments as well.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 36: Are you an emotional person?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It's best to focus on your positive emotions – passion, happiness,
 motivations – and to stay away from other extreme emotions that may cause
@@ -2909,6 +2847,7 @@ interviewer knows you're not the type of person who lets emotions take you
 over and get in the way of your work.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 37: How do you make decisions?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This is a great opportunity for you to wow your interviewer with your
 decisiveness, confidence, and organizational skills. Make sure that you
@@ -2918,6 +2857,7 @@ question skillfully and with ease, your interviewer will trust in your
 capability as a worker.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 38: What are the most difficult decisions for you to make?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Explain your relationship to decision-making, and a general synopsis of the
 process you take in making choices. If there is a particular type of decision
@@ -2926,6 +2866,7 @@ sure to explain why that type of decision is tough for you, and how you are
 currently engaged in improving your skills.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 39: When making a tough decision, how do you gather information?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 If you're making a tough choice, it's best to gather information from as
 many sources as possible. Lead the interviewer through your process of
@@ -2934,6 +2875,7 @@ from experts in your field, feedback from coworkers or other clients, and by
 looking analytically at your own past experiences.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 40: Tell me about a decision you made that did not turn out well.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Honesty and transparency are great values that your interviewer will
 appreciate – outline the choice you made, why you made it, the results of
@@ -2942,6 +2884,7 @@ from the decision. Give the interviewer reason to trust that you wouldn't
 make a decision like that again in the future.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 41: Are you able to make decisions quickly?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 You may be able to make decisions quickly, but be sure to communicate
 your skill in making sound, thorough decisions as well. Discuss the
@@ -2949,6 +2892,7 @@ importance of making a decision quickly, and how you do so, as well as the
 necessity for each decision to first be well-informed.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 42: Tell me about your favorite book or newspaper.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The interviewer will look at your answer to this question in order to
 determine your ability to analyze and review critically. Additionally, try to
@@ -2958,6 +2902,7 @@ theme important to your work, and be able to explain how it relates. Stay
 away from controversial subject matter, such as politics or religion.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 43: If you could be rich or famous, which would you choose?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This question speaks to your ability to think creatively, but your answer
 may also give great insight to your character. If you answer rich, your
@@ -2968,16 +2913,16 @@ known and to deal with people, and to have the platform to deliver your
 message to others. Either way, it's important to back up your answer with
 sound reasoning.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-44: If you could trade places with anyone for a week, who would it be
-and why?
+44: If you could trade places with anyone for a week, who would it be and why?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This question is largely designed to test your ability to think on your feet,
 and to come up with a reasonable answer to an outside the box question.
 Whoever you choose, explain your answer in a logical manner, and offer
 specific professional reasons that led you to choose the individual.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-45: What would you say if I told you that just from glancing over your
-resume, I can already see three spelling mistakes?
+45: What would you say if I told you that just from glancing over your resume, I can already see three spelling mistakes?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Clearly, your resume should be absolutely spotless – and you should be
 confident that it is. If your interviewer tries to make you second-guess
@@ -2986,6 +2931,7 @@ you would be quite surprised as you are positive that your resume is error-
 free.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 46: Tell me about your worldview.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This question is designed to offer insight into your personality, so be aware
 of how the interviewer will interpret your answer. Speak openly and
@@ -2996,6 +2942,7 @@ of life's greatest gifts. It's okay to expand into general life principles here,
 but try to keep your thoughts related to the professional field as well.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 47: What is the biggest mistake someone could make in an interview?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The biggest mistake that could be made in an interview is to be caught off
 guard! Make sure that you don't commit whatever you answer here, and
@@ -3006,6 +2953,7 @@ arriving late, dressing casually or sloppily, or showing ignorance of the
 position.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 48: If you won the $50m lottery, what would you do with the money?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 While a question such as this may seem out of place in a job interview, it's
 important to display your creative thinking and your ability to think on the
@@ -3014,8 +2962,8 @@ do with the money such as donate the first seventy percent to a charitable
 cause, and divide the remainder among gifts for friends, family, and of
 course, yourself.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-49: Is there ever a time when honesty isn't appropriate in the
-workplace?
+49: Is there ever a time when honesty isn't appropriate in the workplace?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This may be a difficult question, but the only time that honesty isn't
 appropriate in the workplace is perhaps when you're feeling anger or
@@ -3025,6 +2973,7 @@ of keeping some thoughts quiet is often enough to smooth over any
 unsettled emotions, thus eliminating the problem.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 50: If you could travel anywhere in the world, where would it be?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This question is meant to allow you to be creative – so go ahead and stretch
 your thoughts to come up with a unique answer. However, be sure to keep
@@ -3034,6 +2983,7 @@ with culture or that would expose you to a new experience, rather than
 going on an expensive cruise through the Bahamas.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 51: What would I find in your refrigerator right now?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 An interviewer may ask a creative question such as this in order to discern
 your ability to answer unexpected questions calmly, or, to try to gain some
@@ -3042,8 +2992,8 @@ full of junk food or take-out may be more likely to be under stress or have
 health issues, while a candidate with a balanced refrigerator full of
 nutritious staples may be more likely to lead a balanced mental life, as well.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-52: If you could play any sport professionally, what would it be and
-what aspect draws you to it?
+52: If you could play any sport professionally, what would it be and what aspect draws you to it?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Even if you don't know much about professional sports, this question might
 be a great opportunity to highlight some of your greatest professional
@@ -3055,16 +3005,16 @@ great dedication to perfecting your craft. Explain your choice simply to the
 interviewer without elaborating on drawn-out sports metaphors, and be sure
 to point out specific areas or skills in which you excel.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-53: Who were the presidential and vice-presidential candidates in the
-recent elections?
+53: Who were the presidential and vice-presidential candidates in the recent elections?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This question, plain and simple, is intended as a gauge of your intelligence
 and awareness. If you miss this question, you may well fail the interview.
 Offer your response with a polite smile, because you understand that there
 are some individuals who probably miss this question.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-54: Explain X task in a few short sentences as you would to a second-
-grader.
+54: Explain X task in a few short sentences as you would to a second-grader.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 An interviewer may ask you to break down a normal job task that you
 would complete in a manner that a child could understand, in part to test
@@ -3074,6 +3024,7 @@ coworkers may be able to converse using highly technical language, being
 able to simplify a process is an important skill for any employee to have.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 55: If you could compare yourself to any animal, what would it be?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Many interviewers ask this question, and it's not to determine which
 character traits you think you embody – instead, the interviewer wants to
@@ -3082,6 +3033,7 @@ way through any situation. Regardless of what animal you answer, be sure
 that you provide a thorough reason for your choice.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 56: Who is your hero?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Your hero may be your mother or father, an old professor, someone
 successful in your field, or perhaps even Wonder Woman – but keep your
@@ -3091,6 +3043,7 @@ in your chosen career field, and answer the question with a smile and sense
 of passion.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 57: Who would play you in the movie about your life?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 As with many creative questions that challenge an interviewee to think
 outside the box, the answer to this question is not as important as how you
@@ -3110,6 +3063,7 @@ include yourself, and to talk about what you would bring to the
 conversation as well!
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 59: What is customer service?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Customer service can be many things – and the most important
 consideration in this question is that you have a creative answer.
@@ -3120,6 +3074,7 @@ customers. The thoughtful consideration you hold for customers will speak
 for itself.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 60: Tell me about a time when you went out of your way for a customer.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It's important that you offer an example of a time you truly went out of your
 way – be careful not to confuse something that felt like a big effort on your
@@ -3128,6 +3083,7 @@ an example of the customer's problems, what you did to solve it, and the
 way the customer responded after you took care of the situation.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 61: How do you gain confidence from customers?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 This is a very open-ended question that allows you to show your customer
 service skills to the interviewer. There are many possible answers, and it is
@@ -3135,8 +3091,8 @@ best to choose something that you've had great experience with, such as “by
 handling situations with transparency,” “offering rewards,” or “focusing on
 great communication.” Offer specific examples of successes you've had.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-62: Tell me about a time when a customer was upset or agitated – how
-did you handle the situation?
+62: Tell me about a time when a customer was upset or agitated – how did you handle the situation?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Similarly to handling a dispute with another employee, the most important
 part to answering this question is to first set up the scenario, offer a step-by-
@@ -3147,6 +3103,7 @@ of open communication and understanding from both parties, as well as a
 willingness to reach a compromise or other solution.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 63: When can you make an exception for a customer?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Exceptions for customers can generally be made when in accordance with
 company policy or when directed by a supervisor. Display an
@@ -3154,8 +3111,8 @@ understanding of the types of situations in which an exception should be
 considered, such as when a customer has endured a particular hardship, had
 a complication with an order, or at a request.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-64: What would you do in a situation where you were needed by both a
-customer and your boss?
+64: What would you do in a situation where you were needed by both a customer and your boss?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 While both your customer and your boss have different needs of you and
 are very important to your success as a worker, it is always best to try to
@@ -3165,6 +3122,7 @@ that you will attend to his or her needs as soon as possible (unless it's
 absolutely an urgent matter).
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 65: What is the most important aspect of customer service?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 While many people would simply state that customer satisfaction is the
 most important aspect of customer service, it's important to be able to
@@ -3174,6 +3132,7 @@ expand on the aspect that you deem to be the most important in a way that
 is reasoned and well-thought out.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 66: Is it best to create low or high expectations for a customer?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 You may answer this question either way (after, of course, determining that
 the company does not have a clear opinion on the matter). However, no
@@ -3183,8 +3142,8 @@ thought process, and very clear reasoning for the option you chose. Offer
 pros and cons of each, and include the ultimate point that tips the scale in
 favor of your chosen answer.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-67: Why would your skills be a good match with X objective of our
-company?
+67: Why would your skills be a good match with X objective of our company?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 If you've researched the company before the interview, answering this
 question should be no problem. Determine several of the company's main
@@ -3195,6 +3154,7 @@ goals. If your old company had a similar objective, give a specific example
 of how you helped the company to meet it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 68: What do you think this job entails?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Make sure you've researched the position well before heading into the
 interview. Read any and all job descriptions you can find (at best, directly
@@ -3202,7 +3162,9 @@ from the employer's website or job posting), and make note of key duties,
 responsibilities, and experience required. Few things are less impressive to
 an interviewer than a candidate who has no idea what sort of job they're
 actually being interviewed for.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 69: Is there anything else about the job or company you'd like to know?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 If you have learned about the company beforehand, this is a great
@@ -3214,12 +3176,14 @@ position before leaving – so that if the interviewer calls with an offer, you'
 be prepared to answer.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 70: Are you the best candidate for this position?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Yes! Offer specific details about what makes you qualified for this position,
 and be sure to discuss (and show) your unbridled passion and enthusiasm
 for the new opportunity, the job, and the company.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 71: How did you prepare for this interview?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 The key part of this question is to make sure that you have prepared! Be
 sure that you've researched the company, their objectives, and their services
@@ -3228,6 +3192,7 @@ possibly can. It's also helpful to learn about the company's history and key
 players in the current organization.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 72: If you were hired here, what would you do on your first day?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 
 While many people will answer this question in a boring fashion, going
@@ -3239,6 +3204,7 @@ you would spend a lot of the day asking questions and taking in all of your
 new surroundings.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 73: Have you viewed our company's website?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Clearly, you should have viewed the company's website and done some
 preliminary research on them before coming to the interview. If for some
@@ -3249,23 +3215,25 @@ that was of particular interest to you, or a value that you especially
 supported.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 74: How does X experience on your resume relate to this position?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Many applicants will have some bit of experience on their resume that does
 not clearly translate to the specific job in question. However, be prepared to
 be asked about this type of seemingly-irrelevant experience, and have a
 response prepared that takes into account similar skill sets or training that
 the two may share.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 75: Why do you want this position?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Keep this answer focused positively on aspects of this specific job that will
 allow you to further your skills, offer new experience, or that will be an
 opportunity for you to do something that you particularly enjoy. Don't tell
 the interviewer that you've been looking for a job for a long time, or that the
 pay is very appealing, or you will appear unmotivated and opportunistic.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 76: How is your background relevant to this position?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Ideally, this should be obvious from your resume. However, in instances
 where your experience is more loosely-related to the position, make sure
@@ -3279,6 +3247,7 @@ and development.”
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 77: How do you feel about X mission of our company?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 It's important to have researched the company prior to the interview – and if
 you've done so, this question won't catch you off guard. The best answer is
