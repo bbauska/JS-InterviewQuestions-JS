@@ -400,12 +400,12 @@ from other values and also fully distinct.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>30: What does the value undefined mean in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer: Undefined is a special value in JavaScript, it means the variable used in the
+<p><b>Answer:</b> Undefined is a special value in JavaScript, it means the variable used in the
 code does not exist or is not assigned any value or the property does not exist.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>31: Do the null and undefined values have the same conversion in Boolean, numeric and string context?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer: No. The undefined value changes into Nan in numeric context and 
+<p><b>Answer:</b> No. The undefined value changes into Nan in numeric context and 
 undefined in a string context. They share the same conversion in Boolean.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>32: What are Boolean values?</h3>
@@ -440,7 +440,7 @@ now contain letters and digits from the Unicode complete character set.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>38: What is the scope of a variable in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer: The scope of a variable is the region in which your program in which it is 
+<p><b>Answer:</b> The scope of a variable is the region in which your program in which it is 
 defined. Thus a global variable has a global scope meaning it is defined everywhere in your 
 JavaScript code. The local variables have a local scope meaning they are defined only in the 
 body section of your code.</p>
@@ -484,7 +484,7 @@ comparison operators to show complex comparisons that involve more than one vari
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>46: Does JavaScript contain classes?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer: Yes. Although they do not define the structure of an object like in Java and 
+<p><b>Answer:</b> Yes. Although they do not define the structure of an object like in Java and 
 C++, it does approximate the classes with its constructors and their prototype objects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>47: What is the purpose of an object in JavaScript?</h3>
@@ -499,7 +499,7 @@ letters. This ensures that classes and objects are distinct from each other.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>49: What are class properties in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer: Class property is associated with a class itself and not instance of a class. 
+<p><b>Answer:</b> Class property is associated with a class itself and not instance of a class. 
 This ensures that no matter how many instances of a class are created only one copy of each 
 class property exists.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -510,7 +510,7 @@ meaning they are invoked by the class itself and not an instance of the class.</
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>51: Do class properties and class methods have a global and local range?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer: No.</b> They are both only global because they do not operate on a particular object.</p>
+<p><b>Answer:</b> No. They are both only global because they do not operate on a particular object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>52: How do JavaScript equality operators compare objects?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -520,9 +520,8 @@ the same property names and values.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>53: Are the null and undefined values for the variable same?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer: No.</b><br>
-Variables that are declared and not assigned any value will have undefined values whereas the 
-variable that is assigned a null will have null values.</p>
+<p><b>Answer:</b> No. Variables that are declared and not assigned any value will have undefined 
+values whereas the variable that is assigned a null will have null values.</p>
 <h4>Example:</h4>
 <pre>
 var qno;
@@ -534,125 +533,111 @@ Items=null;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>54: What is the difference between “===” and “==”? Give examples</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-a) “===” returns true - if both the operands are same and are of the same
-data type
-b) “==” checks only for operands - if both are same, returns true
-For comparison of operands, JavaScript converts different data type to same
-type.
-Example:
+<p><b>Answer:</b><br>
+a) “===” returns true - if both the operands are same and are of the same data type<br>
+b) “==” checks only for operands - if both are same, returns true</p>
+<p>For comparison of operands, JavaScript converts different data type to same type.</p>
+<h4>Example:</h4>
+<pre>
 Let p=3
 p==’3’ //true p===’3’ //false
 3==’3’ //true 3===’3’ //false
 
 P==3 //true P===3 //true
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>55: What is the function of delete operator in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-It deletes
-a) an object
-Syntax: delete obj_name1;
-b) particular element in an array
-Syntax: delete arr_ele1[index];
-c) property of an object
-Syntax: delete obj_name2.prop_name;
+<p><b>Answer:</b> It deletes<br>
+a) an object<br>
+Syntax: delete obj_name1;<br>
+b) particular element in an array<br>
+Syntax: delete arr_ele1[index];<br>
+c) property of an object<br>
+Syntax: delete obj_name2.prop_name;</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>56: How will you clip the particular portion of an element?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Using clip property of the style object, we can clip a particular portion of an
-element.
-Example:
+<p><b>Answer:</b> Using clip property of the style object, we can clip a particular portion of an
+element.</p>
+<h4>Example:</h4>
+<pre>
 my_obj1.style.clip=”values”;
 my_obj1
-document object, getElementById property values
-auto(Unclip),rect(top1,right1,botttom1,left1)-pin the shape defined by
-value.
+</h4>
+<p>document object, getElementById property values<br>
+auto(Unclip),rect(top1,right1,botttom1,left1)-pin the shape defined by value.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>MODULES, CHARACTERS AND ATTRIBUTES</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>57: How is a module in JavaScript written so that it can be used by any script or module?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The most important rule is to never define global variables as to have the
-risk of having that value overwritten by a module or another programmer.
+<p><b>Answer:</b> The most important rule is to never define global variables as to have the
+risk of having that value overwritten by a module or another programmer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>58: How are regular expressions represented and created in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Regular expressions are represented by the RegExp objects and are created
-by the RegExp() constructor or a special literal syntax.
+<p><b>Answer:</b> Regular expressions are represented by the RegExp objects and are created
+by the RegExp() constructor or a special literal syntax.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>59: How do you combine literal characters in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Literal characters can be combined into character classes by placing them
-within square brackets.
+<p><b>Answer:</b> Literal characters can be combined into character classes by placing them
+within square brackets.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>60: What document properties does a document contain?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-In a document we can find the following properties: bgcolor, cookie,
-domain, lastModified, location, referrer, title and URL.
+<p><b>Answer:</b> In a document we can find the following properties: bgcolor, cookie,
+domain, lastModified, location, referrer, title and URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>61: How many types of DOM document object collections can we find in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-There are five DOM properties that give access to special elements within a
-document: anchors, applets, forms, images and links.
+<p><b>Answer:</b> There are five DOM properties that give access to special elements within a
+document: anchors, applets, forms, images and links.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>62: Does use of DOM properties allow you to change the structure of a document?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-No. Using these properties you can inspect and alter a link and read values
-from a link but the text in the document cannot be changed; the structure of
-the document cannot be altered.
+<p><b>Answer:</b> No. Using these properties you can inspect and alter a link and read values
+from a link but the text in the document cannot be changed; the structure of the document 
+cannot be altered.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>63: How are document objects named in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Documents are named with the name attribute of forms. You can change
+<p><b>Answer:</b> Documents are named with the name attribute of forms. You can change
 elements, links and images when the name attribute is present. Its value is
-used for exposure to the corresponding object by name.
+used for exposure to the corresponding object by name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 EVENT HANDLERS AND DOM
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>64: How are event handlers defined in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Event handlers are defined by assigning a function to an event handler
+<p><b>Answer:</b> Event handlers are defined by assigning a function to an event handler
 property, unlike HTML where event handlers are defined by giving a string
-of JavaScript code to an event handler attribute.
+of JavaScript code to an event handler attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>65: What do the HTMLInputElement and HTMLFormElementinterfaces define in HTML DOM?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The HTMLInputElement defines focus() and blur() methods and form
+<p><b>Answer:</b> The HTMLInputElement defines focus() and blur() methods and form
 property. HTMLFormElementinterfaces defines submit() and reset()
-methods and length property.
+methods and length property.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>66: How many levels of DOM standard are currently released?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-There are two levels of DOM: the first one was released in 1998 and it
+<p><b>Answer:</b> There are two levels of DOM: the first one was released in 1998 and it
 defines the core DOM interfaces. The second level that was released in
 2000 that updates the core interfaces and defines standard APIs for working
-with document events style sheets CSS.
+with document events style sheets CSS.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>67: Are there any more levels of DOM?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-
-Yes there are. One of them is the level 3 DOM, but its features are not fully
+<p><b>Answer:</b> Yes there are. One of them is the level 3 DOM, but its features are not fully
 supported by all the web browsers and the other is the level0 DOM whish in
-fact is the legacy DOM.
+fact is the legacy DOM.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>68: What does the Node interface define in DOM?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The node interface defines the childNotes, firstChild, lastChild, nextSibling
-and previousSibling properties.
+<p><b>Answer:</b> The node interface defines the childNotes, firstChild, lastChild, nextSibling
+and previousSibling properties.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>69: How do you find document elements in a HTML document?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
