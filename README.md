@@ -19,7 +19,7 @@ pattern. They are functions that are defined and executed immediately after they
 IIFEs have the following syntax:</p>
 <pre>
 (function IIFE() {
-console.log("Hello!");
+  console.log("Hello!");
 })(); // Hello!
 </pre>
 <h4>IIFEs are used for several reasons:</h4>
@@ -53,10 +53,10 @@ null:
 <h4>Intentionally represents no value.</h4>
 <pre>let myNull = null;</pre>
 <h4>Object: Holds key-value pairs.</h4>
-<h4>Keys are strings, and values can be any data type.</h4>
+<p><b>Keys</b> are strings, and <b>values</b> can be any data type.</p>
 <pre>let myObject = { name: “John”, age: 30 };</pre>
 
-<p>undefined: Signifies an uninitialized variable.</p>
+<h4>undefined: Signifies an uninitialized variable.</h4>
 <pre>
 let myUndefined;
 console.log(myUndefined); // undefined
@@ -77,7 +77,7 @@ This enhances modularity and flexibility in code design.</p>
 <p><b>Implementation:</b> To implement mixins, you can use the Object.assign() method to copy methods 
 and properties from a source object to a target object.</p>
 
-<p>Here's a brief example:</p>
+<h4>Here's a brief example:</h4>
 <pre>
 const greetingsMixin = {
   sayHello() {
@@ -101,7 +101,7 @@ objects to take on multiple forms. In JavaScript, polymorphism can be achieved u
 overloading, where a function can have multiple implementations based on the number and
 type of arguments it receives.</p>
 
-<p>Here's a simple example illustrating how function overloading can be implemented in JavaScript:</p>
+<h4>Here's a simple example illustrating how function overloading can be implemented in JavaScript:</h4>
 <pre>
 function greet(name, language
   = 'English') { 
@@ -141,9 +141,10 @@ when working on web development projects.</p>
 easy for humans to read and write, and easy for machines to parse and generate. It is often used 
 for exchanging data between a server and a web application, as well as between different parts 
 of an application.</p>
-<p>JSON is represented as key-value pairs, where keys are strings and values can be strings, 
-numbers, Booleans, arrays, or other JSON objects.</p>
-<p>The basic syntax of a JSON object looks like this:</p>
+<p><span class="consolas">JSON</span> is represented as <b>key-value pairs</b>, where keys are strings 
+and values can be strings, numbers, Booleans, arrays, or other JSON objects.</p>
+
+<h4>The basic syntax of a JSON object looks like this:</h4>
 <pre>
 {
   "key1": "value1",
@@ -155,28 +156,30 @@ numbers, Booleans, arrays, or other JSON objects.</p>
   }
 }
 </pre>
-<p>JSON is widely used because of its simplicity, ease of use, and compatibility with various 
-programming languages. It is a common format for sending and receiving data in web APIs, 
-configuring applications, and storing configuration settings.</p>
+<p><span class="consolas">JSON</span> is widely used because of its simplicity, ease of use, and 
+compatibility with various programming languages. It is a common format for sending and receiving 
+data in web APIs, configuring applications, and storing configuration settings.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>07: What is JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> JavaScript is a scripting language that adds interactivity to HTML pages.</p>
+<p><b>Answer:</b> <span class="consolas">JavaScript</span> is a <b>scripting language</b> that 
+adds interactivity to HTML pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>08: What kind of language is JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> JavaScript is an interpreted language that executes scripts without preliminary compilation.</p>
+<p><b>Answer:</b> JavaScript is an <span class="consolas">interpreted language</span> that 
+executes scripts without preliminary compilation.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>09: What is the official name of JavaScript and is it supported by all browsers?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The official name of JavaScript is ECMA (European Computer Manufacturer's Association) 
-and with it, Internet Explorer 4 and Mozilla Firefox 1.5 fully supported.</p>
+<p><b>Answer:</b> The official name of JavaScript is <span class="consolas">ECMA (European Computer 
+Manufacturer's Association)</span> and with it, Internet Explorer 4 and Mozilla Firefox 1.5 fully supported.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>10: What does JavaScript do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> JavaScript is meant to be an easy scripting language that helps the non-
-programmers with its simple syntax. JavaScript is smart enough that it can put dynamic text 
-into HTML pages, it can react to events (like when a page has finished downloading), and it 
+<p><b>Answer:</b> JavaScript is meant to be an easy <span class="consolas">scripting language</span> 
+that helps the non-programmers with its simple syntax. JavaScript is smart enough that it can put 
+dynamic text into HTML pages, it can react to events (like when a page has finished downloading), and it 
 can read and write HTML elements, create cookies and so forth.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>11: Is JavaScript case sensitive?</h3>
@@ -186,22 +189,22 @@ can read and write HTML elements, create cookies and so forth.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>12: How do you place JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Scripts can be placed in the &lt;body&gt; , or in the &lt;head&gt; section of 
+<p><b>Answer:</b> Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of 
 an HTML page, or in both. JavaScript in &lt;head&gt;. JavaScript may be inserted into code with 
 the following syntax:</p>
 <pre>&lt;script type="text/JavaScript"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>13: Where do you place JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> JavaScript may be placed in the <head> or <body> section of HTML code,
-but it is usually a good practice to place it in <head> as to not hinder your code later on.</p>
+<p><b>Answer:</b> JavaScript may be placed in the &lt;head&gt; or &lt;body&gt; section of HTML code,
+but it is usually a good practice to place it in &lt;head&gt; as to not hinder your code later on.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>STATEMENTS, COMMENTS AND VARIABLES</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>14: How do you terminate statements in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> In JavaScript, statements are terminated by semicolons (;) and although
-they are not mandatory they are a good practice to pick up.</p>
+<p><b>Answer:</b> In JavaScript, statements are terminated by <span class="consolas">semicolons (;)</span> 
+and although they are not mandatory they are a good practice to pick up.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>15: Why are comments used in JavaScript and how are they inserted?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -212,9 +215,9 @@ and /* */ for multiple lines comments.</p>
 <h3>16. Explain equality</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Problem:</b> JavaScript has both strict and type–converting comparisons:<br>
-Strict comparison (e.g., ===) checks for value equality without allowing coercion.<br>
-Abstract comparison (e.g., ==) checks for value equality with coercion allowed.</p>
-<p><b>Answer:</b></p>
+<b>Strict comparison (e.g., ===)</b> checks for value equality without allowing coercion.<br>
+<b>Abstract comparison (e.g., ==)</b> checks for value equality with coercion allowed.</p>
+<h4>Answer:</h4>
 <pre>
 const a = "42";
 const b = 42;
@@ -230,9 +233,10 @@ your code in a way that improves readability.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>17: What are variables and how are they inserted?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Variables are storing containers used for holding expressions and values. They 
-can have a short letter or a longer name and are inserted with the statement: var. Because the 
-variables are loosely typed, they can hold any type of data.</p>
+<p><b>Answer:</b> <span class="consolas">Variables</span> are storing containers used for 
+holding expressions and values. They can have a short letter or a longer name and are 
+inserted with the statement: var. Because the variables are loosely typed, they can hold 
+any type of data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>18: What does a variable of var y=10; and var catname= "Tomcat"; do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -249,10 +253,10 @@ empty and labeled statements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Problem:</b> Explain the usage of the exponential (&ast;&ast;) operator in JavaScript, 
 including when and how to use it to perform exponentiation calculations.</p>
-<p><b>Answer:</b> The exponential operator (&ast;&ast;) in JavaScript is used to perform 
-exponentiation, which is raising a number to a power. It's a concise and intuitive way to 
-perform such calculations.</p>
-<p>Here's how to use it:</p>
+<p><b>Answer:</b> The <span class="consolas">exponential operator (&ast;&ast;)</span> in JavaScript 
+is used to perform exponentiation, which is raising a number to a power. It's a concise and intuitive 
+way to perform such calculations.</p>
+<h4>Here's how to use it:</h4>
 <pre>
 // Using the exponential operator
 const result1 = 2 &ast;&ast; 3;  // raised to the power of 3 
@@ -361,212 +365,172 @@ document.write(“Pattern_Match:” + p1.match(q1));  // Pattern_Match:First Exp
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>30: What are operators? Which are the most important operators in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Operators in JavaScript are used to combine values that form expressions.
-The most important are: = and +. The first is used to assign values and the
-second one is used to add values together.
+<p><b>Answer:</b> Operators in JavaScript are used to combine values that form expressions.
+The most important are: = and +. The first is used to assign values and the second one is used 
+to add values together.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>31: Why comparison and logical operators are used?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Comparison operators are used to determine if there is a difference between
-variables, and also their equality, while the logical operators are used to
-determine the logic of variables.
+<p><b>Answer:</b> Comparison operators are used to determine if there is a difference between
+variables, and also their equality, while the logical operators are used to determine the logic 
+of variables.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>32: How many types of pop-up boxes does JavaScript have? What are those?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-JavaScript has three types of pop-up boxes and they are: alert, confirm and
-prompt.
+<p><b>Answer:</b> JavaScript has three types of pop-up boxes and they are: alert, confirm and
+prompt.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>33: Does creating an alert box prompt the user to respond with OK or Cancel?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-
-No. An alert box only gives the user the option of choosing OK to proceed.
+<p><b>Answer:</b> No. An alert box only gives the user the option of choosing OK to proceed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>34: What are functions in JavaScript and where are they placed?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Functions contain code that is executed before an event thus stopping the
+<p><b>Answer:</b> Functions contain code that is executed before an event thus stopping the
 browser from loading a script when the page opens. Functions can be
 placed both in the <head> or <body> section, but it is advised to place them
-in the <head> section.
-
+in the <head> section.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>VALUES, ARRAYS AND OPERATORS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>35: What does the keyword null mean in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The keyword null is a special value that indicates no value. It is unique
-from other values and also fully distinct.
+<p><b>Answer:</b> The keyword null is a special value that indicates no value. It is unique
+from other values and also fully distinct.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>30: What does the value undefined mean in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Undefined is a special value in JavaScript, it means the variable used in the
-code does not exist or is not assigned any value or the property does not
-exist.
+<p><b>Answer: Undefined is a special value in JavaScript, it means the variable used in the
+code does not exist or is not assigned any value or the property does not exist.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>31: Do the null and undefined values have the same conversion in Boolean, numeric and string context?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-No. The undefined value changes into Nan in numeric context and
-undefined in a string context. They share the same conversion in Boolean.
+<p><b>Answer: No. The undefined value changes into Nan in numeric context and 
+undefined in a string context. They share the same conversion in Boolean.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>32: What are Boolean values?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Boolean values are datatypes that only have two types of values: true or
-false; a value of Boolean type only represents the truth: it says if it true or
-not.
+<p><b>Answer:</b> Boolean values are datatypes that only have two types of values: true or
+false; a value of Boolean type only represents the truth: it says if it true or not.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>33: Can a Boolean value be converted into numeric context?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Yes. If it is converted into numeric context the true value becomes 1 and if
-it is a false value it becomes a 0.
+<p><b>Answer:</b> Yes. If it is converted into numeric context the true value becomes 1 and if
+it is a false value it becomes a 0.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>34: What happens when a number is dropped where a Boolean value is expected to be?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The number is converted into a true value, but only if it not equal to 0 or
-NaN which in turn is converted into a false value.
+<p><b>Answer:</b> The number is converted into a true value, but only if it not equal to 0 or
+NaN which in turn is converted into a false value.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>35: What are objects in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Objects are collections of named values that most of the times are referred
-to as properties of an object.
+<p><b>Answer:</b> Objects are collections of named values that most of the times are referred
+to as properties of an object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>36: What is an array in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-An array is a collection of data values which can handle more than one
-value at a time, the difference being that each data in an array has a number
-or index.
+<p><b>Answer:</b> An array is a collection of data values which can handle more than one
+value at a time, the difference being that each data in an array has a number or index.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>37: From which version forward has JavaScript stopped using ASCII character set?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-From v.3 JavaScript started using Unicode character sets: identifiers can
-now contain letters and digits from the Unicode complete character set.
+<p><b>Answer:</b> From v.3 JavaScript started using Unicode character sets: identifiers can
+now contain letters and digits from the Unicode complete character set.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>38: What is the scope of a variable in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The scope of a variable is the region in which your program in which it is
-defined. Thus a global variable has a global scope meaning it is defined
-everywhere in your JavaScript code. The local variables have a local scope
-meaning they are defined only in the body section of your code.
+<p><b>Answer: The scope of a variable is the region in which your program in which it is 
+defined. Thus a global variable has a global scope meaning it is defined everywhere in your 
+JavaScript code. The local variables have a local scope meaning they are defined only in the 
+body section of your code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>39: In the body of the code which variable with the same name has</h3>
+<h3>39: In the body of the code which variable with the same name has more importance over the 
+other: the local or the global variable?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-more importance over the other: the local or the global variable?
-Answer:
-In the body of a function a local variable will always take precedence over a
-global variable hiding it all together.
+<p><b>Answer:</b> In the body of a function a local variable will always take precedence over a
+global variable hiding it all together.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>40: How many types of undefined variables can we find in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-There are two kinds of undefined variables: the first is the one that has
-never been declared and the second is the kind of undefined variable that
-has been declared but has never had a value assigned to it.
+<p><b>Answer:</b> There are two kinds of undefined variables: the first is the one that has 
+never been declared and the second is the kind of undefined variable that has been declared 
+but has never had a value assigned to it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>41: What does (==) & (===) operators do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The first (==) is the equality operator and it checks if its two operands are
-equal. The second (===) is called the identity operator and it checks if two
-operands are identical by using a strict definition.
+<p><b>Answer:</b> The first (==) is the equality operator and it checks if its two operands are
+equal. The second (===) is called the identity operator and it checks if two operands are 
+identical by using a strict definition.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>42: How many types of operators can we find in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-There are eight types of operators in JavaScript. These are as follows:
-operator, arithmetic, equality, relational, string, logical, bitwise and
-miscellaneous.
+<p><b>Answer:</b> There are eight types of operators in JavaScript. These are as follows: 
+operator, arithmetic, equality, relational, string, logical, bitwise and miscellaneous.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>43: How many types of comparison operators does JavaScript contain?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-There are four types of comparison operators in JavaScript. They are: less
-than (<); greater than (>); less than or equal (<=) and greater than or equal
-(>=).
+<p><b>Answer:</b> There are four types of comparison operators in JavaScript. They are: less 
+than (&lt;); greater than (&gt;l); less than or equal (&lt;=) and greater than or equal (&gt;=).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>44: Can comparison be done on any type of operands?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Yes. Operands in JavaScript that are not number or strings are converted.
-
+<p><b>Answer:</b> Yes. Operands in JavaScript that are not number or strings are converted.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>45: What are logical operators and how are they used in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-The logical operators perform Boolean algebra and are used mostly with
-comparison operators to show complex comparisons that involve more than
-one variable.
+<p><b>Answer:</b> The logical operators perform Boolean algebra and are used mostly with 
+comparison operators to show complex comparisons that involve more than one variable.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>46: Does JavaScript contain classes?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Yes. Although they do not define the structure of an object like in Java and
-C++, it does approximate the classes with its constructors and their
-prototype objects.
+<p><b>Answer: Yes. Although they do not define the structure of an object like in Java and 
+C++, it does approximate the classes with its constructors and their prototype objects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>47: What is the purpose of an object in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-An object is an instance of its class. This allows us to have multiple
-instances of any class.
+<p><b>Answer:</b> An object is an instance of its class. This allows us to have multiple 
+instances of any class.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>48: How are classes and objects in JavaScript named and why?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Classes are named with an initial capital letter and an object with lowercase
-letters. This ensures that classes and objects are distinct from each other.
+<p><b>Answer:</b> Classes are named with an initial capital letter and an object with lowercase 
+letters. This ensures that classes and objects are distinct from each other.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>49: What are class properties in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Class property is associated with a class itself and not instance of a class.
-This ensures that no matter how many instances of a class are created only
-one copy of each class property exists.
+<p><b>Answer: Class property is associated with a class itself and not instance of a class. 
+This ensures that no matter how many instances of a class are created only one copy of each 
+class property exists.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>50: What are class methods in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Class methods are associated with a class rather than an instance of a class,
-meaning they are invoked by the class itself and not an instance of the class.
+<p><b>Answer:</b> Class methods are associated with a class rather than an instance of a class, 
+meaning they are invoked by the class itself and not an instance of the class.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>51: Do class properties and class methods have a global and local</h3>
+<h3>51: Do class properties and class methods have a global and local range?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-range?
-Answer:
-No. They are both only global because they do not operate on a particular
-object.
+<p><b>Answer: No.</b> They are both only global because they do not operate on a particular object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>52: How do JavaScript equality operators compare objects?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Equality operators compare objects by reference and not by value, checking
-to see if both references are to the same object. They do not check to see if
-two objects have the same property names and values.
+<p><b>Answer:</b> Equality operators compare objects by reference and not by value, checking 
+to see if both references are to the same object. They do not check to see if two objects have 
+the same property names and values.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>53: Are the null and undefined values for the variable same?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-No. Variables that are declared and not assigned any value will have
-undefined values whereas the variable that is assigned a null will have null
-values.
-Example:
+<p><b>Answer: No.</b><br>
+Variables that are declared and not assigned any value will have undefined values whereas the 
+variable that is assigned a null will have null values.</p>
+<h4>Example:</h4>
+<pre>
 var qno;
 ”undefined value”
 var Items=10;
 Items=null;
 ”null value”
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>54: What is the difference between “===” and “==”? Give examples</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
