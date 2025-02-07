@@ -564,7 +564,7 @@ element.</p>
 <pre>
 my_obj1.style.clip=”values”;
 my_obj1
-</h4>
+</pre>
 <p>document object, getElementById property values<br>
 auto(Unclip),rect(top1,right1,botttom1,left1)-pin the shape defined by value.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
