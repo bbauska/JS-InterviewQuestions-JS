@@ -1539,63 +1539,69 @@ head_elemt.appendChild(my_script);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>164: How will you get the current “x and y” co-ordinate value of the window when it is scrolled?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-a) Using onscroll. It executes when the window is scrolled
-b) pageXOffset and pageYOffset are used to get the co-ordinate value
-Example:
+<p><b>Answer:</b><br>
+a) Using onscroll. It executes when the window is scrolled<br>
+b) pageXOffset and pageYOffset are used to get the co-ordinate value</p>
+<h4>Example:</h4>
+<pre>
 window.onscroll=function(){
 var xvalue=window.pageXOffset ;
 document.write(xvalue);}
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-165: What are the methods to create remote window?
+<h3>165: What are the methods to create remote window?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-a) Using custom property
-Secondary window:
+<p><b>Answer:</b> a) Using custom property<br>
+Secondary window:<p>
+<pre>
 windw2=window.open(“remote_win2”);
 windw2.maker=self; //“self” gives the current window
-Remote window:
+</pre>
+<p>Remote window:</p>
+<pre>
 function remote_wind2(link2){
 maker.location=link2;
 }
-<input type=”button” value=”Address” onclick=remote_wind2()>
+&lt;input type=”button” value=”Address” onclick=remote_wind2()&gt;
+</pre>
 b) Using opener property
+<pre>
 function remote_windw2(link1){
 window.opener.location=link;
 }
-<input type=”button” value=”Address” onclick=remote_windw2()>
+&lt;input type=”button” value=”Address” onclick=remote_windw2()&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-166: How will you get the height of the browser window?
+<h3>166: How will you get the height of the browser window?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 a) Using availHeight property of the screen object.
-
 b) Gives the height of the browser window excluding the taskbar
 height,etc..
-Example:
-document.write(“Height:” + screen.availHeight);
+<h4>Example:</h4>
+<pre>document.write(“Height:” + screen.availHeight);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-167: How will you get the language code of the linked page?
+<h3>167: How will you get the language code of the linked page?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using hreflang property of the anchor object we can get the language code
 of the linked page. Anchor object creates a link to another page or
 document.
-Example:
-my_anchor_object1.hreflang;
+<h4>Example:</h4>
+<pre>my_anchor_object1.hreflang;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-168: How would you input a file?
+<h3>168: How would you input a file?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 Using FileUpload Object we can input a file. The type should be specified
 as “file” in the <input> tag. It creates the fileupload object that opens the
 file dialog box on clicking the button.
-Example:
-<input type=”file” >
+<h4>Example:</h4>
+<pre>&lt;input type=”file”&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-JAVASCRIPT FORMS
+<h2>JAVASCRIPT FORMS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-169: What is the importance of the “name” attribute of a <form> tag?
+<h3>169: What is the importance of the “name” attribute of a <form> tag?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Answer:
 When a Form object is created, the name attribute is stored as an element in
