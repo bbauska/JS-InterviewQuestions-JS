@@ -1310,7 +1310,7 @@ c) Plugin object: gives information about an installed plug-in</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>141: How to access the properties of main window from the secondary window?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 This can be done using Opener property. The properties of the main
 window can be accessed from secondary window.
 Example:
@@ -1321,7 +1321,7 @@ It changes the background color of the primary window to the given color.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>142: How will you load the previous and next url from the history list?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The previous and next url from the history list can be loaded using back and
 forward function of history object.
 
@@ -1331,7 +1331,7 @@ Example:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>143: How will you determine whether the browser has cookies enabled?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The browser status can be determined using cookieEnabled
 function of navigator object. If cookies are enabled returns true, else false.
 Example:
@@ -1345,48 +1345,49 @@ document.write(“Not Enabled”);
 <h3>144: How can you change the font size of an Element in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Give an example.
-<p><b>Answer:
+<p><b>Answer:</b>
 document.getElementById(elementId).style.fontSize = “12”;
 In this case, JavaScript and CSS are very similar, because the CSS style
 rules are laid on top of the DOM.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>145: How can you submit a form using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 This can be done using document.form[0].submit(), where 0 represent the
 index of the form in the page. If there are more than one form in the page,
 then the first form has index 0, the second form has index 1 and so on.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>146: How can you set the background color of an HMTL document?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 This can be easily done using document.bgcolor = “color”, where color can
 be the name of a color – e.g. red, black, or it can represent the code of the
 color – e.g. #00FF34.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>147: Name the Boolean operators in JavaScript.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 
 The Boolean operators in JavaScript are: ‘&&’ - AND operator, ‘||’ – OR
 operator ‘!’ - NOT operator.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>148: How can we determine the state of a checkbox in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 var isChecked = window.document.getElementById(elementId).checked –
 isChecked is the name of the variable where the true or false value will be
 stored. ElementId represents the id of the checkbox element. If the
 checkbox is checked this will return true, otherwise false.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>149: How can you create an HTML button and what is the event called when the button is pressed?</h3>
-<p><b>Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>Answer:</b>
 An HTML button can be created like this: <input type=”button”> or
 <button type=”button”> and the event is “onclick”
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>150: How will you make loading of JavaScript code after Html by the browser?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 By “defer” script we can load JavaScript code after Html. It informs the
 browser to load all html codes before JavaScript. So the code inside the
 defer script gets executed only when the page is entirely parsed. It can use
@@ -1398,7 +1399,7 @@ Here loading of a1.js takes place after all html code has been parsed.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>151: Which popup allows the user to enter the input?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Prompt box allows the user to enter the input. It provides the user with text
 box for input and two buttons (“ok and cancel”). On selecting “Ok”, it
 returns true otherwise false.
@@ -1407,7 +1408,7 @@ var a1= prompt(“content1”,”myDefault_val”);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>152: What are the ways to display the message on screen?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 a) Using write method.
 Eg: document.write(“hello”);
 b) Using getElementById.
@@ -1419,7 +1420,7 @@ return true;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>153: How will you reload the page from server using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using reload() we can reload a page. It is a function of location object that
 contains the details of present url. It takes either true or false as argument.
 Default argument is false. When set to false, reloads the page from cache.
@@ -1429,7 +1430,7 @@ Window.location.reload(value);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>154: How will you display large tables effectively in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using fixed width table we can display large tables effectively. Fixed width
 tables are provided by the browser based on the width of the columns in the
 first row, ensuring faster display.
@@ -1440,7 +1441,7 @@ In css,set “table-layout:fixed”
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>155: How will you create pop window using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 It can be created as below:
 a) window.open(): opens a new browser window
 
@@ -1453,7 +1454,7 @@ window.showDialogBox(page_url,window_name,properties);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>156: How will you fix the errors that make the JavaScript engines difficult to perform optimization?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using “Strict Mode” which makes the code run faster than the code without
 strict mode such errors could be fixed. To enable strict mode, insert ‘use
 strict mode’ before the code. It takes care of following functions:
@@ -1464,7 +1465,7 @@ d) Assign to read-only variables are not allowed
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>157: How will you make secure JavaScript code?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 a) Using Strict Mode. The value passed with the “this” (keyword) to a
 function will not be changed in strict mode
 
@@ -1473,7 +1474,7 @@ fn_name.caller throws error when tried to get or set
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>158: How will you add the external JavaScript file?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 External JavaScript file should be saved with an extension ”.js” and needs
 to be imported to the html file by adding that file’s path to the “src”
 attribute of <script> tag.
@@ -1489,7 +1490,7 @@ Example:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>159: Is it possible to break up a string in a JavaScript code?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Yes. Using backslash”\”, a text can break up in a code.
 Example:
 document.write(“Break \
@@ -1500,7 +1501,7 @@ document.write \
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>160: What is the use of “wait” property in cursor style?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Wait sets the cursor in wait state when the request is on process. Type of
 cursor can be set or returned by using “cursor property”. Some of the type
 of cursor are:
@@ -1514,7 +1515,7 @@ eg: myobject-window,document, my_value-wait,auto,help...
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>161: What are the properties that can be set in the background properties?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 a) color: sets the bgcolor
 b) image: sets the bgimage
 c) repeat: repeats the bgimage
@@ -1544,7 +1545,7 @@ my_value=color,image,reappear,attachment,position
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>163: How will you add JavaScript files dynamically?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 By creating a new script element file and append it to the document, we can
 add JavaScript files dynamically.
 Example:
@@ -1569,7 +1570,8 @@ document.write(xvalue);}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>165: What are the methods to create remote window?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> a) Using custom property<br>
+<p><b>Answer:</b><br>
+a) Using custom property<br>
 Secondary window:<p>
 <pre>
 windw2=window.open(“remote_win2”);
@@ -1582,7 +1584,7 @@ maker.location=link2;
 }
 &lt;input type=”button” value=”Address” onclick=remote_wind2()&gt;
 </pre>
-b) Using opener property
+<p>b) Using opener property</p>
 <pre>
 function remote_windw2(link1){
 window.opener.location=link;
@@ -1592,28 +1594,28 @@ window.opener.location=link;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>166: How will you get the height of the browser window?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-a) Using availHeight property of the screen object.
+<p><b>Answer:</b><br>
+a) Using availHeight property of the screen object.<br>
 b) Gives the height of the browser window excluding the taskbar
-height,etc..
+height,etc..</p>
 <h4>Example:</h4>
 <pre>document.write(“Height:” + screen.availHeight);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>167: How will you get the language code of the linked page?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using hreflang property of the anchor object we can get the language code
 of the linked page. Anchor object creates a link to another page or
-document.
+document.</p>
 <h4>Example:</h4>
 <pre>my_anchor_object1.hreflang;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>168: How would you input a file?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using FileUpload Object we can input a file. The type should be specified
 as “file” in the <input> tag. It creates the fileupload object that opens the
-file dialog box on clicking the button.
+file dialog box on clicking the button.</p>
 <h4>Example:</h4>
 <pre>&lt;input type=”file”&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1621,183 +1623,199 @@ file dialog box on clicking the button.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>169: What is the importance of the “name” attribute of a <form> tag?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 When a Form object is created, the name attribute is stored as an element in
 the form[] array of the Document object, and it is also stored in the
 properties of the Document objects. So, after defining a <form
 name=”formName”>, it will be easy to refer the Form object using
 document.formName instead of document.form[0]. This attribute has
-nothing to do with submitting the form.
+nothing to do with submitting the form.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>170: What are the event handlers of the form element?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The following event handlers are supported by form elements: onclick,
-onchange, onfocus, onblur.
+onchange, onfocus, onblur.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>171: What does “onchange” event handler do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 This event handler is triggered when the user enters text or selects an
 option, changing in this way the value represented by the element. Button
 and other related elements do not support this event handler because they
 don't have a value that can be edited. This event it is triggered when the
-focus is lost and it is moved to another form element.
+focus is lost and it is moved to another form element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>172: What is a “cookie”?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 A cookie is a named data stored by the web browser and associated with a
 particular web page or web site. They were originally designed for the
 server-side programming and they are implemented as an extension to the
 HTTP protocol. The cookie data is transmitted between the client and the
 server and the server-side scripts can read and write cookie values that are
 stored on the client. In JavaScript, cookies are manipulated using “cookie”
-property of the Document object.
+property of the Document object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>173: What does the “new” operator do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The “new” operator creates a new object, that has no properties, and then it
 invokes the function passing the new objected created as the value of “this”
 keyword. The function that uses the “new” operator is called “constructor
-function” or just simply “constructor”.
+function” or just simply “constructor”.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>174: What does <optgroup> tag do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 It is used with select statement to group the related options in the drop
-down list. It will be useful to display long list.
-Example:
-<select>
-<optgroup label=”JAVA”>
-
-<option value=”hibernate1”>Hibernate</option>
-<option value=”struts1”> Struts </option>
-</optgroup>
-<optgroup label=”WEBSERVICE”>
-<option value=”soap1”>SOAP</option>
-<option value=”xml1”> Xml </option>
-</optgroup>
-</select>
+down list. It will be useful to display long list.</p>
+<h4>Example:</h4>
+<pre>
+&lt;select&gt;
+&lt;optgroup label=”JAVA”&gt;
+&lt;option value=”hibernate1”&gt;Hibernate&lt;/option&gt;
+&lt;option value=”struts1”&gt; Struts &lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;optgroup label=”WEBSERVICE”&gt;
+&lt;option value=”soap1”&gt;SOAP&lt;/option&gt;
+&lt;option value=”xml1”&gt; Xml &lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;/select&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>175: Compare between session state and view state.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>176: Which function is better for fast execution: window.onload or window.onDocumentReady?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 window.onDocumentReady is better for fast execution because it executes
 the code once DOM is loaded by the browser and will not wait for the
 object such as images to be loaded whereas onLoad executes only when the
-browser loads DOM and all other resources such as images gets loaded.
+browser loads DOM and all other resources such as images gets loaded.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>177: What is the purpose of “visibility” property in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-a) “Visibility”: Makes the element either visible or invisible
-b) ”collapse”: Used to hide the elements in a table
-c) ”inherit”: Takes the values from the parent element
-Example:
+<p><b>Answer:</b><br>
+a) “Visibility”: Makes the element either visible or invisible<br>
+b) ”collapse”: Used to hide the elements in a table<br>
+c) ”inherit”: Takes the values from the parent element</p>
+<h4>Example:</h4>
+<pre>
 my_elemt.style.visibility=”my_val”;
 my_val
 visible,hidden,collapse,inherit
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>178: What are the ways to make an element visible/hidden?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-a) Using display property
+<p><b>Answer:</b>
+a) Using display property</p>
+<pre>
 my_elemt.style.display=” ”; //visible
 my_elemt.style.display=”none”; //hidden
-b) Using visibility property
+</pre>
+<p>b) Using visibility property</p>
+<pre>
 my_elemt.style.visibility=”visible”; //visible
 my_elemt.style.visibility=”hidden”; //hidden
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>179: How will you disable the html form fields, for instance password field?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using disabled property of a password object.
 Example:
 document.getElementById(“Field_Id”).disabled=true;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>180: How will you select the contents in the text field, say password?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using select function of password object, we can select the contents in text
 field.
-Example:
+Example:</b>
 document.getElementById(“Field_Id”).select();
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>181: How will you display the id of the form and the name attribute of the hidden element?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using “form” and name property of hidden object, we can display the id of
-the form and the name attribute of the hidden element
-Example:
+the form and the name attribute of the hidden element.</p>
+<h4>Example:</h4>
+<pre>
 var form_id1= document.getElementById(“my_elemt_id”).form.id;
 var name_id2= document.getElementById(“my_elemt_id”).name;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>182: How will you get the last row from a table in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using tFoot property of a table object we can get the last row from a table.
-The last rows of tables in Html can be combined using the tfoot element.
-Example:
+The last rows of tables in Html can be combined using the tfoot element.</p>
+<h4>Example:</h4>
+<pre>
 my_table_objects.tFoot;
 my_table_objects
 document object,getElementById property
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>183: How will you create and delete caption to a table?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Using createCaption and deleteCaption function of the table object.
-Example:
+<p><b>Answer:</b>
+Using createCaption and deleteCaption function of the table object.</p>
+<h4>Example:</h4>
+<pre>
 my_table_objects.createCaption(); //create
 my_table_objects.deleteCaption(); //delete
 my_table_objects
 document object,getElementById
 property
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>184: How will you create a text area and make it read-only?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-a) Using textarea object
+<p><b>Answer:</b>
+a) Using textarea object</p>
 
-Example:
-<textarea id=”my_txt” cols=”22”>
+<h4>Example:</h4>
+<pre>&lt;textarea id=”my_txt” cols=”22”&gt;
 My_text
-</textarea>
-b) Using readOnly property of textarea object
-Example:
+&lt;/textarea&gt;
+</pre>
+<p>b) Using readOnly property of textarea object</p>
+<h4>Example:</h4>
+<pre>
 my_table_objects.readOnly=”my_value1”; //delete
 my_table_objects
 document object,getElementById property
 my_value1
 true
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>185: How will you change the caption display position of a table?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:
 Using captionSide property of the style object we can change the caption
-display position of a table.
-Example:
+display position of a table.</p>
+<p><b>Example:</b></p>
+<pre>
 my_obj1.style.captionSide=”values”;
 my_obj1
 document object,getElementById property
-values
-
-top/bottom
+</pre>
+values top/bottom</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JAVASCRIPT CONSTRUCTORS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>186: What does a JavaScript constructor do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The constructor initializes the newly created object and sets any properties
 that need to be set before that object is used. You can easily define a
 constructor function, by writing a function that adds properties to “this”
-operator.
+operator.</p>
 Example:
 // define the constructor
 function circle(r){
