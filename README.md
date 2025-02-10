@@ -10,11 +10,11 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>01. Understanding IIFEs</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Problem:</b> Explain the concept of IIFEs (Immediately Invoked Function Expressions) in JavaScript. 
+<h4>Problem:</h4> Explain the concept of IIFEs (Immediately Invoked Function Expressions) in JavaScript. 
 Provide an example of how to create and use an IIFE and discuss why they are commonly used in 
 JavaScript.</p>
 
-<p><b>Solution:</b> IIFEs, or Immediately Invoked Function Expressions, are a common JavaScript design 
+<h4>Solution:</h4> IIFEs, or Immediately Invoked Function Expressions, are a common JavaScript design 
 pattern. They are functions that are defined and executed immediately after they are created. 
 IIFEs have the following syntax:</p>
 <pre>
@@ -23,21 +23,21 @@ IIFEs have the following syntax:</p>
 })(); // Hello!
 </pre>
 <h4>IIFEs are used for several reasons:</h4>
-<p><b>Encapsulation:</b> They create a new scope for variables, preventing variable name clashes 
+<h4>Encapsulation:</h4> They create a new scope for variables, preventing variable name clashes 
 with other parts of the code. This helps avoid polluting the global scope.</p>
-<p><b>Data Privacy:</b> Variables declared within an IIFE are not accessible from the outside, 
+<h4>Data Privacy:</h4> Variables declared within an IIFE are not accessible from the outside, 
 providing a level of data privacy. This is useful for hiding implementation details.</p>
-<p><b>Initialization:</b> IIFEs can be used for initializing code, such as setting up configurations, 
+<h4>Initialization:</h4> IIFEs can be used for initializing code, such as setting up configurations, 
 loading modules, or performing any necessary setup before the rest of the code executes.</p>
-<p><b>Pollution Avoidance:</b> They help prevent global scope pollution by limiting the exposure of
+<h4>Pollution Avoidance:</h4> They help prevent global scope pollution by limiting the exposure of
 variables and functions.</p>
-<p><b>Module Pattern:</b> IIFEs are often used to implement the Module Pattern in JavaScript, which
+<h4>Module Pattern:</h4> IIFEs are often used to implement the Module Pattern in JavaScript, which
 allows you to create encapsulated modules with private and public members.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>02. Discussing Data Types</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Problem:</b> Discuss the various data types available in JavaScript and provide examples of each.</p>
-<p><b>Solution:</b> JavaScript offers a range of data types for storing values:</p>
+<h4>Problem:</h4> Discuss the various data types available in JavaScript and provide examples of each.</p>
+<h4>Solution:</h4> JavaScript offers a range of data types for storing values:</p>
 
 <h4>String: A sequence of characters enclosed in quotes (single or double).</h4>
 <pre>let myString = “Hello World”</pre>
@@ -53,7 +53,7 @@ null:
 <h4>Intentionally represents no value.</h4>
 <pre>let myNull = null;</pre>
 <h4>Object: Holds key-value pairs.</h4>
-<p><b>Keys</b> are strings, and <b>values</b> can be any data type.</p>
+<h4>Keys are strings, and values can be any data type.</h4>
 <pre>let myObject = { name: “John”, age: 30 };</pre>
 
 <h4>undefined: Signifies an uninitialized variable.</h4>
@@ -66,15 +66,15 @@ foundation for dynamic and versatile programming.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>03. Mixins and Achieving Multiple Inheritance</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Problem:</b> In JavaScript, there's no built-in multiple inheritance support, making it challenging
+<h4>Problem:</h4> In JavaScript, there's no built-in multiple inheritance support, making it challenging
 to share functionalities across different objects efficiently. Traditional class 
 hierarchies can become complex and rigid, hindering code maintainability.
 
-<p><b>Solution:</b> Mixins offer a solution by enabling code reuse and achieving a form of multiple 
+<h4>Solution:</h4> Mixins offer a solution by enabling code reuse and achieving a form of multiple 
 inheritance. A mixin is a way to incorporate methods and properties from one object into another. 
 This enhances modularity and flexibility in code design.</p>
 
-<p><b>Implementation:</b> To implement mixins, you can use the Object.assign() method to copy methods 
+<h4>Implementation:</h4> To implement mixins, you can use the Object.assign() method to copy methods 
 and properties from a source object to a target object.</p>
 
 <h4>Here's a brief example:</h4>
@@ -96,7 +96,7 @@ be cautious of potential method conflicts and unintended overwrites when using m
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>04. How to Implement Polymorphism</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Problem:</b> Polymorphism is a fundamental concept in Object-Oriented Programming that enables 
+<h4>Problem:</h4> Polymorphism is a fundamental concept in Object-Oriented Programming that enables 
 objects to take on multiple forms. In JavaScript, polymorphism can be achieved using function 
 overloading, where a function can have multiple implementations based on the number and
 type of arguments it receives.</p>
@@ -116,7 +116,7 @@ greet('John'); // Hello John
 greet('Juan', 'Spanish'); //
 Hello Juan
 </pre>
-<p><b>Solution:</b> In this example, the greet function accepts two arguments: name and language. 
+<h4>Solution:</h4> In this example, the greet function accepts two arguments: name and language. 
 The default value for language is set to English. If you call the function with only one argument, 
 it will utilize the default language. However, when you call the function with two arguments, it 
 will use the specified language.</p>
@@ -125,8 +125,8 @@ overloading, allowing a single function to exhibit different behaviors based on 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>05. Change the title of the page</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Problem:</b> Changing Page Title</p>
-<p><b>Answer:</b> Using document.title Property</p>
+<h4>Problem:</h4> Changing Page Title</p>
+<h4>Answer:</h4> Using document.title Property</p>
 <p>You can change the title of a webpage using the document.title property in JavaScript.</p>
 <pre>document.title = "My New Title";</pre>
 <p>This is a straightforward task in JavaScript. Changing the page title is as simple as assigning 
@@ -136,8 +136,8 @@ when working on web development projects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>06. Understanding JSON</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Problem:</b> Explain what JSON (JavaScript Object Notation) is and its purpose in web development.</p>
-<p><b>Solution:</b> JSON, short for JavaScript Object Notation, is a lightweight data interchange format that is 
+<h4>Problem:</h4> Explain what JSON (JavaScript Object Notation) is and its purpose in web development.</p>
+<h4>Solution:</h4> JSON, short for JavaScript Object Notation, is a lightweight data interchange format that is 
 easy for humans to read and write, and easy for machines to parse and generate. It is often used 
 for exchanging data between a server and a web application, as well as between different parts 
 of an application.</p>
@@ -162,60 +162,60 @@ data in web APIs, configuring applications, and storing configuration settings.<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>07: What is JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> <span class="consolas">JavaScript</span> is a <b>scripting language</b> that 
+<h4>Answer:</h4> <span class="consolas">JavaScript</span> is a <b>scripting language</b> that 
 adds interactivity to HTML pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>08: What kind of language is JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> JavaScript is an <span class="consolas">interpreted language</span> that 
+<h4>Answer:</h4> JavaScript is an <span class="consolas">interpreted language</span> that 
 executes scripts without preliminary compilation.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>09: What is the official name of JavaScript and is it supported by all browsers?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The official name of JavaScript is <span class="consolas">ECMA (European Computer 
+<h4>Answer:</h4> The official name of JavaScript is <span class="consolas">ECMA (European Computer 
 Manufacturer's Association)</span> and with it, Internet Explorer 4 and Mozilla Firefox 1.5 fully supported.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>10: What does JavaScript do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> JavaScript is meant to be an easy <span class="consolas">scripting language</span> 
+<h4>Answer:</h4> JavaScript is meant to be an easy <span class="consolas">scripting language</span> 
 that helps the non-programmers with its simple syntax. JavaScript is smart enough that it can put 
 dynamic text into HTML pages, it can react to events (like when a page has finished downloading), and it 
 can read and write HTML elements, create cookies and so forth.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>11: Is JavaScript case sensitive?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Yes. Unlike HTML, JavaScript has to have all variables and function names
+<h4>Answer:</h4> Yes. Unlike HTML, JavaScript has to have all variables and function names
 (etc.) in capital letters.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>12: How do you place JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of 
+<h4>Answer:</h4> Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of 
 an HTML page, or in both. JavaScript in &lt;head&gt;. JavaScript may be inserted into code with 
 the following syntax:</p>
 <pre>&lt;script type="text/JavaScript"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>13: Where do you place JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> JavaScript may be placed in the &lt;head&gt; or &lt;body&gt; section of HTML code,
+<h4>Answer:</h4> JavaScript may be placed in the &lt;head&gt; or &lt;body&gt; section of HTML code,
 but it is usually a good practice to place it in &lt;head&gt; as to not hinder your code later on.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>STATEMENTS, COMMENTS AND VARIABLES</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>14: How do you terminate statements in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> In JavaScript, statements are terminated by <span class="consolas">semicolons (;)</span> 
+<h4>Answer:</h4> In JavaScript, statements are terminated by <span class="consolas">semicolons (;)</span> 
 and although they are not mandatory they are a good practice to pick up.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>15: Why are comments used in JavaScript and how are they inserted?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Usually comments are added to make the code more readable but they can
+<h4>Answer:</h4> Usually comments are added to make the code more readable but they can
 also be used to explain the code. They are inserted with // (for single line comments) 
 and /* */ for multiple lines comments.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>16. Explain equality</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Problem:</b> JavaScript has both strict and type–converting comparisons:<br>
-<b>Strict comparison (e.g., ===)</b> checks for value equality without allowing coercion.<br>
+<h4>Problem: JavaScript has both strict and type–converting comparisons:</h4>
+<p><b>Strict comparison (e.g., ===)</b> checks for value equality without allowing coercion.<br>
 <b>Abstract comparison (e.g., ==)</b> checks for value equality with coercion allowed.</p>
 <h4>Answer:</h4>
 <pre>
@@ -233,27 +233,27 @@ your code in a way that improves readability.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>17: What are variables and how are they inserted?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> <span class="consolas">Variables</span> are storing containers used for 
+<h4>Answer:</h4> <span class="consolas">Variables</span> are storing containers used for 
 holding expressions and values. They can have a short letter or a longer name and are 
 inserted with the statement: var. Because the variables are loosely typed, they can hold 
 any type of data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>18: What does a variable of var y=10; and var catname= "Tomcat"; do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> With the execution of the above code, we have variables that hold values of 
+<h4>Answer:</h4> With the execution of the above code, we have variables that hold values of 
 10(for y) and Tomcat (for catname). Note that the inclusion of text warrants " " being used.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>19: How many statements types can we find in JavaScript? Give some examples?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The statement types found in JavaScript are: Expression statements, compound, 
+<h4>Answer:</h4> The statement types found in JavaScript are: Expression statements, compound, 
 empty and labeled statements.</p>
-<p><b>Example:</b> break, continue, default, do, for, etc.</p>
+<h4>Example:</h4> break, continue, default, do, for, etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>20. Understanding Exponential Operator</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Problem:</b> Explain the usage of the exponential (&ast;&ast;) operator in JavaScript, 
+<h4>Problem:</h4> Explain the usage of the exponential (&ast;&ast;) operator in JavaScript, 
 including when and how to use it to perform exponentiation calculations.</p>
-<p><b>Answer:</b> The <span class="consolas">exponential operator (&ast;&ast;)</span> in JavaScript 
+<h4>Answer:</h4> The <span class="consolas">exponential operator (&ast;&ast;)</span> in JavaScript 
 is used to perform exponentiation, which is raising a number to a power. It's a concise and intuitive 
 way to perform such calculations.</p>
 <h4>Here's how to use it:</h4>
@@ -272,16 +272,17 @@ concise manner.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>21: What are conditional statements and how are they implemented in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Conditional statements are used to perform and act on different sets of 
+<h4>Answer:</h4> Conditional statements are used to perform and act on different sets of 
 conditions declared by the programmer. They are the following: if statement; if...else 
 statement; if...else if...else statement and the switch statement.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>22: How will you determine a variable type in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> A variable type in JavaScript is determined using Typeof operator. When the 
+<h4>Answer:</h4>
+<p>A variable type in JavaScript is determined using Typeof operator. When the 
 object is String, Number, Function, undefined and Boolean, the operator returns the same type. 
 And when the object is null and array, the operator returns “object”.</p>
-<p><b>Example:</b></p>
+<h4>Example:</h4>
 <pre>
 var count=100;
 typeof count;  // (returns “number”)
@@ -289,7 +290,7 @@ typeof count;  // (returns “number”)
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>23: What is the difference in evaluating [“8”+5+2] and [8+5+”2”]?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b><br>
+<h4>Answer:</h4>
 In [“8”+5+2],”8” is a String. So anything that trail the string will be changed to string.<br>
 Hence the result will be ”852”.<br>
 In [8+5+”2”], 8 and 5 are integer, so it gets added up (13).And “2” is treated as String.<br>
@@ -297,7 +298,8 @@ Hence the concatenation takes place and the result will be “132”.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>24: Is it possible to assign a string to a floating point variable?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Yes. Any variable can be assigned to another data type. For example,</p>
+<h4>Answer:</h4>
+<p>Yes. Any variable can be assigned to another data type. For example,</p>
 <pre>
 var a1=10.39;
 document.write(a1);
@@ -309,8 +311,9 @@ hai
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>25: Will variable redeclaration affect the value of that variable?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> No. The same value will be retained in the variable.</p>
-<p><b>Example:</b></p>
+<h4>Answer:</h4> 
+<p>No. The same value will be retained in the variable.</p>
+<h4>Example:</h4>
 <pre>
 var status=”cool”;
 document.write(“status”);  // cool
@@ -322,9 +325,9 @@ document.write(“status”);  // chill
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>26: How will you search a matching pattern globally in a string?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> A matching pattern can be globally searched in a string using “g” modifier
+<h4>Answer:</h4> A matching pattern can be globally searched in a string using “g” modifier
 in Regular Expression.</p>
-<p><b>Example:</b></p>
+<h4>Example:</h4>
 <pre>
 var p1=”First_Regular_ Expression_First”;
 var q1=”/First/g”;
@@ -333,9 +336,9 @@ document.write(“Pattern_Match:” + p1.match(q1)); // Pattern_Match:First,Firs
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>27: How will you search a particular pattern in a string?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> A particular pattern in string can be searched using test function. If the
+<h4>Answer:</h4> A particular pattern in string can be searched using test function. If the
 match is found it returns true, else false.</p>
-<p><b>Example:</b></p>
+<h4>Example:</h4></p>
 <pre>
 var my_pattern1=new RegExp(“pp”);
 document.write(my_pattern1.test(“Happy_Days”);  // true
@@ -343,8 +346,8 @@ document.write(my_pattern1.test(“Happy_Days”);  // true
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>28: Which property is used to match the pattern at the start of the string?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> “^” symbol is used for position matching.</p>
-<p><b>Example:</b></p>
+<h4>Answer:</h4> “^” symbol is used for position matching.</p>
+<h4>Example:</h4></p>
 <pre>
 var p1=”First_Regular_ Expression_First”;
 var q1=”/First/^”;
@@ -353,8 +356,8 @@ document.write(“Pattern_Match:” + p1.match(q1));  // Pattern_Match:First Fir
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>29: Which property is used to match the pattern at the end of the string?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> “$” symbol is used for end position matching.</p>
-<p><b>Example:</b></p>
+<h4>Answer:</h4> “$” symbol is used for end position matching.</p>
+<h4>Example:</h4></p>
 <pre>
 var p1=”First_Regular_ Expression_First”;
 var q1=”/First/$”;
@@ -365,28 +368,28 @@ document.write(“Pattern_Match:” + p1.match(q1));  // Pattern_Match:First Exp
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>30: What are operators? Which are the most important operators in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Operators in JavaScript are used to combine values that form expressions.
+<h4>Answer:</h4> Operators in JavaScript are used to combine values that form expressions.
 The most important are: = and +. The first is used to assign values and the second one is used 
 to add values together.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>31: Why comparison and logical operators are used?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Comparison operators are used to determine if there is a difference between
+<h4>Answer:</h4> Comparison operators are used to determine if there is a difference between
 variables, and also their equality, while the logical operators are used to determine the logic 
 of variables.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>32: How many types of pop-up boxes does JavaScript have? What are those?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> JavaScript has three types of pop-up boxes and they are: alert, confirm and
+<h4>Answer:</h4> JavaScript has three types of pop-up boxes and they are: alert, confirm and
 prompt.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>33: Does creating an alert box prompt the user to respond with OK or Cancel?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> No. An alert box only gives the user the option of choosing OK to proceed.</p>
+<h4>Answer:</h4> No. An alert box only gives the user the option of choosing OK to proceed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>34: What are functions in JavaScript and where are they placed?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Functions contain code that is executed before an event thus stopping the
+<h4>Answer:</h4> Functions contain code that is executed before an event thus stopping the
 browser from loading a script when the page opens. Functions can be
 placed both in the <head> or <body> section, but it is advised to place them
 in the <head> section.</p>
@@ -395,52 +398,52 @@ in the <head> section.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>35: What does the keyword null mean in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The keyword null is a special value that indicates no value. It is unique
+<h4>Answer:</h4> The keyword null is a special value that indicates no value. It is unique
 from other values and also fully distinct.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>30: What does the value undefined mean in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Undefined is a special value in JavaScript, it means the variable used in the
+<h4>Answer:</h4> Undefined is a special value in JavaScript, it means the variable used in the
 code does not exist or is not assigned any value or the property does not exist.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>31: Do the null and undefined values have the same conversion in Boolean, numeric and string context?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> No. The undefined value changes into Nan in numeric context and 
+<h4>Answer:</h4> No. The undefined value changes into Nan in numeric context and 
 undefined in a string context. They share the same conversion in Boolean.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>32: What are Boolean values?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Boolean values are datatypes that only have two types of values: true or
+<h4>Answer:</h4> Boolean values are datatypes that only have two types of values: true or
 false; a value of Boolean type only represents the truth: it says if it true or not.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>33: Can a Boolean value be converted into numeric context?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Yes. If it is converted into numeric context the true value becomes 1 and if
+<h4>Answer:</h4> Yes. If it is converted into numeric context the true value becomes 1 and if
 it is a false value it becomes a 0.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>34: What happens when a number is dropped where a Boolean value is expected to be?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The number is converted into a true value, but only if it not equal to 0 or
+<h4>Answer:</h4> The number is converted into a true value, but only if it not equal to 0 or
 NaN which in turn is converted into a false value.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>35: What are objects in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Objects are collections of named values that most of the times are referred
+<h4>Answer:</h4> Objects are collections of named values that most of the times are referred
 to as properties of an object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>36: What is an array in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> An array is a collection of data values which can handle more than one
+<h4>Answer:</h4> An array is a collection of data values which can handle more than one
 value at a time, the difference being that each data in an array has a number or index.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>37: From which version forward has JavaScript stopped using ASCII character set?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> From v.3 JavaScript started using Unicode character sets: identifiers can
+<h4>Answer:</h4> From v.3 JavaScript started using Unicode character sets: identifiers can
 now contain letters and digits from the Unicode complete character set.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>38: What is the scope of a variable in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The scope of a variable is the region in which your program in which it is 
+<h4>Answer:</h4> The scope of a variable is the region in which your program in which it is 
 defined. Thus a global variable has a global scope meaning it is defined everywhere in your 
 JavaScript code. The local variables have a local scope meaning they are defined only in the 
 body section of your code.</p>
@@ -448,79 +451,79 @@ body section of your code.</p>
 <h3>39: In the body of the code which variable with the same name has more importance over the 
 other: the local or the global variable?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> In the body of a function a local variable will always take precedence over a
+<h4>Answer:</h4> In the body of a function a local variable will always take precedence over a
 global variable hiding it all together.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>40: How many types of undefined variables can we find in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> There are two kinds of undefined variables: the first is the one that has 
+<h4>Answer:</h4> There are two kinds of undefined variables: the first is the one that has 
 never been declared and the second is the kind of undefined variable that has been declared 
 but has never had a value assigned to it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>41: What does (==) & (===) operators do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The first (==) is the equality operator and it checks if its two operands are
+<h4>Answer:</h4> The first (==) is the equality operator and it checks if its two operands are
 equal. The second (===) is called the identity operator and it checks if two operands are 
 identical by using a strict definition.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>42: How many types of operators can we find in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> There are eight types of operators in JavaScript. These are as follows: 
+<h4>Answer:</h4> There are eight types of operators in JavaScript. These are as follows: 
 operator, arithmetic, equality, relational, string, logical, bitwise and miscellaneous.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>43: How many types of comparison operators does JavaScript contain?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> There are four types of comparison operators in JavaScript. They are: less 
+<h4>Answer:</h4> There are four types of comparison operators in JavaScript. They are: less 
 than (&lt;); greater than (&gt;l); less than or equal (&lt;=) and greater than or equal (&gt;=).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>44: Can comparison be done on any type of operands?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Yes. Operands in JavaScript that are not number or strings are converted.</p>
+<h4>Answer:</h4> Yes. Operands in JavaScript that are not number or strings are converted.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>45: What are logical operators and how are they used in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The logical operators perform Boolean algebra and are used mostly with 
+<h4>Answer:</h4> The logical operators perform Boolean algebra and are used mostly with 
 comparison operators to show complex comparisons that involve more than one variable.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>46: Does JavaScript contain classes?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Yes. Although they do not define the structure of an object like in Java and 
+<h4>Answer:</h4> Yes. Although they do not define the structure of an object like in Java and 
 C++, it does approximate the classes with its constructors and their prototype objects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>47: What is the purpose of an object in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> An object is an instance of its class. This allows us to have multiple 
+<h4>Answer:</h4> An object is an instance of its class. This allows us to have multiple 
 instances of any class.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>48: How are classes and objects in JavaScript named and why?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Classes are named with an initial capital letter and an object with lowercase 
+<h4>Answer:</h4> Classes are named with an initial capital letter and an object with lowercase 
 letters. This ensures that classes and objects are distinct from each other.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>49: What are class properties in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Class property is associated with a class itself and not instance of a class. 
+<h4>Answer:</h4> Class property is associated with a class itself and not instance of a class. 
 This ensures that no matter how many instances of a class are created only one copy of each 
 class property exists.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>50: What are class methods in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Class methods are associated with a class rather than an instance of a class, 
+<h4>Answer:</h4> Class methods are associated with a class rather than an instance of a class, 
 meaning they are invoked by the class itself and not an instance of the class.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>51: Do class properties and class methods have a global and local range?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> No. They are both only global because they do not operate on a particular object.</p>
+<h4>Answer:</h4> No. They are both only global because they do not operate on a particular object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>52: How do JavaScript equality operators compare objects?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Equality operators compare objects by reference and not by value, checking 
+<h4>Answer:</h4> Equality operators compare objects by reference and not by value, checking 
 to see if both references are to the same object. They do not check to see if two objects have 
 the same property names and values.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>53: Are the null and undefined values for the variable same?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> No. Variables that are declared and not assigned any value will have undefined 
+<h4>Answer:</h4> No. Variables that are declared and not assigned any value will have undefined 
 values whereas the variable that is assigned a null will have null values.</p>
 <h4>Example:</h4>
 <pre>
@@ -533,8 +536,8 @@ Items=null;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>54: What is the difference between “===” and “==”? Give examples</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b><br>
-a) “===” returns true - if both the operands are same and are of the same data type<br>
+<h4>Answer:</h4>
+<p>a) “===” returns true - if both the operands are same and are of the same data type<br>
 b) “==” checks only for operands - if both are same, returns true</p>
 <p>For comparison of operands, JavaScript converts different data type to same type.</p>
 <h4>Example:</h4>
@@ -548,7 +551,7 @@ P==3 //true P===3 //true
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>55: What is the function of delete operator in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> It deletes<br>
+<h4>Answer:</h4> It deletes<br>
 a) an object<br>
 Syntax: delete obj_name1;<br>
 b) particular element in an array<br>
@@ -558,7 +561,7 @@ Syntax: delete obj_name2.prop_name;</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>56: How will you clip the particular portion of an element?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Using clip property of the style object, we can clip a particular portion of an
+<h4>Answer:</h4> Using clip property of the style object, we can clip a particular portion of an
 element.</p>
 <h4>Example:</h4>
 <pre>
@@ -572,38 +575,38 @@ auto(Unclip),rect(top1,right1,botttom1,left1)-pin the shape defined by value.</p
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>57: How is a module in JavaScript written so that it can be used by any script or module?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The most important rule is to never define global variables as to have the
+<h4>Answer:</h4> The most important rule is to never define global variables as to have the
 risk of having that value overwritten by a module or another programmer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>58: How are regular expressions represented and created in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Regular expressions are represented by the RegExp objects and are created
+<h4>Answer:</h4> Regular expressions are represented by the RegExp objects and are created
 by the RegExp() constructor or a special literal syntax.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>59: How do you combine literal characters in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Literal characters can be combined into character classes by placing them
+<h4>Answer:</h4> Literal characters can be combined into character classes by placing them
 within square brackets.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>60: What document properties does a document contain?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> In a document we can find the following properties: bgcolor, cookie,
+<h4>Answer:</h4> In a document we can find the following properties: bgcolor, cookie,
 domain, lastModified, location, referrer, title and URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>61: How many types of DOM document object collections can we find in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> There are five DOM properties that give access to special elements within a
+<h4>Answer:</h4> There are five DOM properties that give access to special elements within a
 document: anchors, applets, forms, images and links.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>62: Does use of DOM properties allow you to change the structure of a document?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> No. Using these properties you can inspect and alter a link and read values
+<h4>Answer:</h4> No. Using these properties you can inspect and alter a link and read values
 from a link but the text in the document cannot be changed; the structure of the document 
 cannot be altered.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>63: How are document objects named in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Documents are named with the name attribute of forms. You can change
+<h4>Answer:</h4> Documents are named with the name attribute of forms. You can change
 elements, links and images when the name attribute is present. Its value is
 used for exposure to the corresponding object by name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -611,50 +614,50 @@ EVENT HANDLERS AND DOM
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>64: How are event handlers defined in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Event handlers are defined by assigning a function to an event handler
+<h4>Answer:</h4> Event handlers are defined by assigning a function to an event handler
 property, unlike HTML where event handlers are defined by giving a string
 of JavaScript code to an event handler attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>65: What do the HTMLInputElement and HTMLFormElementinterfaces define in HTML DOM?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The HTMLInputElement defines focus() and blur() methods and form
+<h4>Answer:</h4> The HTMLInputElement defines focus() and blur() methods and form
 property. HTMLFormElementinterfaces defines submit() and reset()
 methods and length property.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>66: How many levels of DOM standard are currently released?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> There are two levels of DOM: the first one was released in 1998 and it
+<h4>Answer:</h4> There are two levels of DOM: the first one was released in 1998 and it
 defines the core DOM interfaces. The second level that was released in
 2000 that updates the core interfaces and defines standard APIs for working
 with document events style sheets CSS.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>67: Are there any more levels of DOM?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> Yes there are. One of them is the level 3 DOM, but its features are not fully
+<h4>Answer:</h4> Yes there are. One of them is the level 3 DOM, but its features are not fully
 supported by all the web browsers and the other is the level0 DOM whish in
 fact is the legacy DOM.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>68: What does the Node interface define in DOM?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b> The node interface defines the childNotes, firstChild, lastChild, nextSibling
+<h4>Answer:</h4> The node interface defines the childNotes, firstChild, lastChild, nextSibling
 and previousSibling properties.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>69: How do you find document elements in a HTML document?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 You can find elements by using the getElementsByTagName and obtain any
 type of HTML element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>70: How are documents created and modified in DOM?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Documents are modified by setting attribute values on document elements
 with the element.setAttribute() method. They are created with
 document.createDocumentFragment().</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>71: How can you build a DOM tree of arbitrary document content?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 You can achieve this by creating new Element and text nodes with the
 Document.CreateElement() and Document.CreateTextNote() methods; you
 can then add them to a document with the Note.AppendChild(),
@@ -662,14 +665,14 @@ Note.InsertBefore() and Note.replaceChild() methods.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>72: How do you find document elements in IE4?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Because IE4 does not support the getElementById() and get
 ElementsBytagName()methods we are forced to use the array property
 named all().</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>73: How to access Html attributes using DOM?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using three methods of DOM:
 a) getAttribute(): Retrives the value of an attribute
 b) setAttribute(): Modifies the value of an attribute
@@ -677,7 +680,7 @@ c) removeAttribute(): Removes the entire attributes from an element</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>74: What is the difference between getAttribute() and getAttributeNode()?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) getAttribute(): returns the value of an attribute
 b) getAttributeNode(): returns the attribute itself</p>
 
@@ -695,7 +698,7 @@ document.write(txt2.value);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>75: What are the event handlers in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Event handlers are the JavaScript code that can be used inside the Html tags
 and gets executed when any events such as form submission, page loading
 occur. Some of the event handlers in JavaScript are:</p>
@@ -707,7 +710,7 @@ e) onmouseover
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>76: Can you use two or more functions in onclick event?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 By separating the functions with semicolon(;) we can use two or more
 functions. First function gets executed after onclick event. The consecutive
 functions get executed only when the immediate previous function returns
@@ -719,20 +722,20 @@ onclick=(“my_fun1();my_fun2();my_fun3()”);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>77: What is the “this” keyword in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 When an event handler with an HTML or JavaScript property is defined a
 function to a property of a document element is assigned. When the event
 handler is invoked the “this” keyword refers to the target element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>78: What does lexically scoped in JavaScript mean?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 It means that functions run in the scope that they are defined in and not in
 the scope they are called in.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>79: Is the following expression correct: element.style.font-family="arial";?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 No. It is incorrect because in JavaScript many CSS style attributes contain
 hyphens in their names and these are interpreted as minus signs.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -740,7 +743,7 @@ hyphens in their names and these are interpreted as minus signs.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>80: How can you replace an if-else statement in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 You can simply replace if-else statement by using the ternary operator.
 These kinds of operators require three operands. The ternary operator can
 be defined as follows:
@@ -748,14 +751,14 @@ be defined as follows:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>81: What is a "memoization" method in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Memoization is an optimization technique used in JavaScript. Functions
 may use objects to remember the results of previous operations, in this way
 avoiding unnecessary work.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>82: What does 2+3+”1” evaluate to?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 As 2 and 3 are integers, 2+3 will evaluate to 5. Since “1” is a string, it will
 concatenate with 5 and the final result will be the string “51”
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -763,7 +766,7 @@ concatenate with 5 and the final result will be the string “51”
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>83: Give some examples of the role that JavaScript has on the Web.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The role of JavaScript is to provide a better user browsing experience.
 JavaScript can do many things like: creating visual effects such as image
 rollovers, sorting the columns of a table, so the user can easily find what he
@@ -771,7 +774,7 @@ needs and hiding certain content.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>84: Give an example on how JavaScript can be used in URLs.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 JavaScript can be used in URLs, using “JavaScript:” pseudoprotocol
 specifier. This specifies that the body of the URL is an arbitrary string of
 JavaScript code to be run by the JavaScript interpreter. It is treated as a
@@ -784,27 +787,27 @@ ar today = new Date(); “<p>The date is:</p>” + today;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>85: How are scripts in JavaScript executed?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Scripts are executed in the order in which they appear and the code in the
 <script> tags is executed as part of document loading process.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>86: What do scripts placed in the <head> part of an HTML document do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Scripts placed in the <head> section usually define functions that are to be
 called by other code and/or declare and initialize variables used by other
 code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>87: What do scripts placed in the <body> part of an HTML document do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Scripts placed in the <body> part of a document can do everything that
 those placed in a <head> section of the document do. They can also
 manipulate document elements that appear before the script.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>88: When does browser trigger the onload event?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The browser triggers the onload event and executes any registered
 JavaScript code under the following scenarios:
 a) Once the document has been parsed,
@@ -817,7 +820,7 @@ the event is triggered only when the page is loaded.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>89: When does the onunload event trigger and what does it do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The onunload event triggers after the user navigates away from the web
 page giving the code on that page a final chance to run; the onunload event
 enables the possibility to undo effects of your onload handler or scripts in
@@ -825,7 +828,7 @@ the web page.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>90: How can we read or write a file in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Client-side JavaScript does not provide any way to read, write or delete
 files or directories on the client computer. This is also a security aspect –
 with no File object and no file access functions, a JavaScript program
@@ -833,7 +836,7 @@ cannot delete a user's data.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>91: Explain about “cross-site scripting”.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Cross Site Scripting (XSS) is called as the name of a security issue where
 the hacker or attacker injects the scripts or HTML tags into a website.
 Even though defending XSS attack is a job for server-side script developers,
@@ -842,7 +845,7 @@ defend against this attack.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>92: What are JavaScript timers? Give examples and explain one of them.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 It is very important for any programming environment to have the ability to
 schedule code to be executed at some point in the future. Client-side
 JavaScript provides some global functions like: setTimeout(),
@@ -852,7 +855,7 @@ elapses.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>93: Explain the history property in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The history property of the Window object refers to the History object for
 the window. The History object supports three methods: back(), forward()
 and go(). The first 2 methods are similar with what happens when the user
@@ -861,7 +864,7 @@ integer argument and can skip any number of pages
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>94: What is the “Screen” object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The screen property of the Window object refers to a Screen object that
 provides information about the size of the user's display, the number of
 colors available on it. The “width” and “height” properties can be used to
@@ -869,7 +872,7 @@ specify the size of the display in pixels.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>95: What is the “Navigator” object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The navigator property of a Window object refers to a Navigator object that
 contains important information about the web browser, such as the version
 and the list of data formats it can display. In the past Navigator object was
@@ -878,7 +881,7 @@ Netscape web browser.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>96: What is “onreset” in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Onreset is an event handler of a form object in JavaScript. It gets executed
 when the reset button in the form is clicked and resets the fields when it
 receives true value otherwise prevent the form elements from being reset.
@@ -887,7 +890,7 @@ onreset=”alert(‘AABBCC’)”
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>97: What is void 0 in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) JavaScript files can be executed directly in the web browsers by placing
 “JavaScript:” before the code
 b) Web browsers attempt to load the page when any value returning
@@ -896,7 +899,7 @@ c) void 0 is used to prevent the unwanted action
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>98: What is the best practice to place the JavaScript codes?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Place all JavaScript codes in one place. So it can be placed,
 a) At the end of html tag
 b) Below second header tag
@@ -904,11 +907,11 @@ c) Before the closing of bod tag
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>99: How to prevent caching of web pages in temporary internet files folder?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Caching of web pages in temporary internet files folder can be prevented by
 adding <META HTTP-EQUIP=”PRAGMA” CONTENT=”NO-CACHE” >
 in the second header tag which is placed before the html’s end tag(&lt;/html&gt;).
-<p><b>Example:</b></p>
+<h4>Example:</h4></p>
 <pre>
 &lt;html&gt;
 &lt;head&gt;
@@ -926,7 +929,7 @@ in the second header tag which is placed before the html’s end tag(&lt;/html&g
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>100: Why adding of meta tag in first header will not prevent caching of the Web page?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The browsing page gets cached only when the buffer is half filled. So when
 the meta tag is added in first header, the internet explorer search for that
 page in cache at that instant. Most of the time, buffer won't get half filled at
@@ -934,16 +937,16 @@ the beginning of parsing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>101: What is the purpose of meta tag?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 When this tag is read while parsing the html code, internet explorer
 searches for this page in cache at that instant. If it is found, it will be
 removed from the cache.</p>
-<p><b>Syntax:</b></p>
+<h4>Syntax:</h4></p>
 <pre>&lt;META Http-equiv="PRAGMA" Content="NO-CACHE"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>102: How will you resolve looping problem in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 
 Using closures which combines the function with its referencing
 environment, looping can be resolved. It keeps the local variable of the
@@ -952,7 +955,7 @@ function within the function, Closure is created.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>103: Give any example for resolving looping problem.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 <pre>
 var method1={};
   for(var k=0;k<5;k++){
@@ -979,7 +982,7 @@ method1[i]=function(n){
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>104: When is the Execution context created and what are the primary components?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 During execution of JavaScript function, the execution context is created. It
 keeps track of the execution of its related code. Global execution context is
 created when executing the application.
@@ -990,14 +993,14 @@ c) ThisBinding: value of “this” keyword related with execution context
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>105: When is the Execution context stack created?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) Global execution context: Created when executing the application<br>
 b) New execution context: Created when the new functions are created<br>
 c) Collection of this execution context form the execution context stack.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>106: How is the outer scope environment references maintained?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using LexicalEnvironment, the outer scope environment references are
 maintained. It contains two components:</p>
 <p>a) Environment Record: Identifier bindings are stored for the execution context<br>
@@ -1005,13 +1008,13 @@ b) Outer Refernces: Points to the declaration of execution context in lexical En
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>107: How will you read or write in a file using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 An I/O operation such as reading or writing is not possible. However, “Java
 Applet” can be implemented to read files for script.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>108: How will you create rich, responsive display and editor user interface?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using knockout we can create rich, responsive display and editor user
 interface. It is JavaScript library which implements the model view-
 viewmodel pattern. It is used to create UI and allows dynamic updation and
@@ -1019,7 +1022,7 @@ can be used with any server or client.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>109: Which is the new JavaScript engine developed for internet explorer9 by Microsoft?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Chakra is the new JavaScript engine for IE9. A distinct feature is that its JIT
 compiles scripts on separate “CPUcore”, parallel to web browsers. The
 engine also accesses the computer’s graphic processing unit for 3D videos
@@ -1028,18 +1031,18 @@ JavaScript runtime and libraries, a new interpreter was included.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>110: What is Node.js?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Node.js is a software designed for creating server side JavaScript
 application which is not executed in client browser. It is event based and
 runs asynchronously to provide scalability and reduce overhead.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>111: Which is alternative to XML for data exchange in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 JSON (JavaScript Object Notation). Light weighted, text-based data
 exchange format. Web data is imported into JavaScript applications using
 JSON.</p>
-<p><b>Example:</b> JSON Object creation</p>
+<h4>Example:</h4> JSON Object creation</p>
 <pre>
 var obj_json1={“Company_name”:”ABC”,”Experiance”:”5”};
 document.write(“Co Name:” + obj_json1.Company_name); //Co Name:ABC
@@ -1047,7 +1050,7 @@ document.write(“Co Name:” + obj_json1.Company_name); //Co Name:ABC
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>112: What are the sub-components of dynamic component in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) Dynamic typing: Based on values; not associated on variable<br>
 b) Obj-based: Properties of an object can be modified at run-time; Built-in
 functions are used for properties to maintain dynamicity<br>
@@ -1058,7 +1061,7 @@ take dynamic arguments at run time.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>113: How can you open a new window using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 We can open a new web browser window using “open()” method of the
 Window object.Window.open() has four optional arguments and returns a
 window object that represents the new open window. The first argument is
@@ -1070,13 +1073,13 @@ the second argument is mentioned.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>114: How can you close a window using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 We can close a created window object using “close()” method. The syntax
 is: Window.close()</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>115: What does the “location” function do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The location property of a window is a reference to a location object and
 represents the URL of the document that is displayed in the window. The
 Href property of the location object is a string that contains all the text of
@@ -1084,31 +1087,31 @@ the URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>116: What other properties besides Href can we find in the “location” function in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Other properties that we can use are: protocol, host, pathname and search.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>117: What happens when a string value is added to the location function in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The browser interprets the string as a URL and tries to load it and display
 the document and that URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>118: What is the history object in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The history object refers to the History of the browser window. The
 multitudes of elements that the history object incorporates are never
 accessible to scripts.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>119: Which are the methods supported by the history object in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 There are three methods supported by the history object: the back(), the
 forward() and the go().</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>120: How many and which are the coordinates of a browser within the HTML document?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 There are three types of coordinates and these are: screen, window and
 document coordinates.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1116,41 +1119,41 @@ document coordinates.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>121: Name the properties of Navigator in JavaScript.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 There are five properties for the navigator object and these are: appName,
 appVersion, userAgent, appCodeName and platform.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>122: What happens when confirm() or prompt() methods are used in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 When these boxes are initialized the code stops running and the currently
 loading document stops loading until the user response with the requested
 input.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>123: What happens when the mouse is moved over a hyperlink in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 JavaScript code evaluates the onmouseover attribute and sets the status
 property of the window, thus returning the “true” value telling the browser
 not to take any actions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>124: What does the “defaultStatus” property do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The “defaultStatus” property enables text to be displayed in the status line
 when the browser does not find anything to display. Newer versions of the
 current browser have this property deprecated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>125: What is the “onerror” property in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The “onerror” property has a special status: the function the user assigns
 becomes an error handler for the window; the function assigned to the
 property is invoked when an error occurs in that window.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>126: What arguments does the error handler receive when an error occurs in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The error handler receives three arguments: the first is the message that
 describes the error; the second is the string that contains the URL of the
 document containing the JavaScript code that caused the error and the third
@@ -1158,14 +1161,14 @@ argument is line number within the document where the error occurred.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>127: In addition to the three arguments that the error handler receives, is its return value of any importance?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The return value of the error handler is significant: if the onerror handler
 returns True then the browser does not display its own error message having
 been told that the handler has taken care of the error.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>128: How can JavaScript code refer to a window or frame object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 In JavaScript we can refer in any window or frame to its own window or
 frame using “window” or “self”. They are necessary to use when the
 programmer needs to refer to this global object itself. In case the
@@ -1175,14 +1178,14 @@ is not necessary to prefix the property or method name with “window” or
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>129: What is a DOM (Document Object Model)?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 DOM (Document Object Model) is an API that defines the way to access
 the objects that compose a document. W3C defines a standard DOM that is
 reasonably well supported in all modern browsers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>130: What does the method write() of the Document object do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The write() method allows users to write content into the document. The
 write() method is part of DOM and it can be used in two ways. First of all,
 it can be used within a script to output HTML into the document being
@@ -1192,10 +1195,10 @@ windows or frames.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>131: How will you determine an object type?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
-Using “Instanceof and isprototypeof” by checking its instance and
+<h4>Answer:</h4>
+<p>Using “Instanceof and isprototypeof” by checking its instance and
 prototype respectively.</p>
-<p><b>Example:</b>
+<h4>Example:</h4>
 <pre>
 document.writeln(book1 instanceof Book);
 var Book = function() {...};
@@ -1204,7 +1207,7 @@ Book.prototype.constructor == Book; //return true
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>132: What is alert and confirm box in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) Alert and confirm both are pop ups in JavaScript and take the focus of
 the user from the current page to pop ups<br>
 b) Alert provides the user with “ok” button whereas confirm provides with
@@ -1213,8 +1216,8 @@ c) When “ok” is selected, confirm returns true else false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>133: What are the properties of array object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b><br>
-a) Index property<br>
+<h4>Answer:</h4>
+<p>a) Index property<br>
 b) Input property<br>
 c) Length property<br>
 d) Constructor property<br>
@@ -1222,7 +1225,7 @@ e) Prototype property</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>134: What are the sub objects of the windows object in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) Document object: Work with DOM and provides interface to XML and
 Html documents and allow CSS manipulations<br>
 b) Frame object: Represents &lt;frame&gt; HTML frames. Frame object will be
@@ -1233,12 +1236,12 @@ d) History object: Contains the URL history visited by the user</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>135: What is the use of userAgent of navigator object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) Identifies the operating system of the client’s machine<br>
 b) “appVersion” and “userAgent” can also be used<br>
 c) “userAgent” property of navigator object returns the value of the user
-agent header sent by the browser to server<br></p>
-<p><b>Syntax:</b></p>
+agent header sent by the browser to server</p>
+<h4>Syntax:</h4>
 <pre>
 document.write(navigator.userAgent);
 document.write(navigator.appVersion);
@@ -1246,31 +1249,36 @@ document.write(navigator.appVersion);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>136: What are the ways to delete the property of an object and how?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
-It can be deleted in two ways.</p>
-<p><b>Example:</b></p>
+<h4>Answer:</h4>
+<p>It can be deleted in two ways.</p>
+<h4>Example:</h4>
 <pre>
 oven=new Object();
 oven.name=”LG”;
 oven.color=”Black”;
 </pre>
-<p>a) using object name and property<br>
-<p><b>example:</b> delete oven.color;</p>
+<p>a) using object name and property</p>
+
+<h4><b>Example:</h4>
+<pre>delete oven.color;</pre>
 <p>b) using object name and property with “with”statement</p>
-<p><b>example:</b> with(oven)<br>
-delete color;</p>
+<h4>example:</h4>
+<pre>
+with(oven)
+delete color;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>137: What is the use of eval() in JSON?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
-JSON can be parsed using the built-in function eval() and JSON data is
+<h4>Answer:</h4>
+<p>JSON can be parsed using the built-in function eval() and JSON data is
 executed to generate native JavaScript object.</p>
-<p><b>Example:</b></p>
+<h4>Example:</h4>
 <pre>obj_json2=eval(‘(‘ + JSON_text+’)’);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>138: What are the advantages of JSON over XML?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) JSON provides array and object type and also some scalar data types
 whereas XML does not provide any data types<br>
 b) Formatting is done by direct mapping in JSON whereas it is complex in Xml<br>
@@ -1292,7 +1300,7 @@ also grows whereas documents are compact in JSON</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>139: How can the properties of JavaScript objects be accessed?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The properties of JavaScript objects be accessed in the two ways shown
 below:</p>
 <h4>Syntax:</h4>
@@ -1302,7 +1310,7 @@ b) obj_name[“prop1”];</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>140: What are the objects of navigator objects?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b><br>
+<h4>Answer:</h4>
 a) Window object: gets created for every frame and web browser<br>
 b) Mime type object: using enabledplugin, gets information about the
 plugin<br>
@@ -1310,7 +1318,7 @@ c) Plugin object: gives information about an installed plug-in</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>141: How to access the properties of main window from the secondary window?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 This can be done using Opener property. The properties of the main
 window can be accessed from secondary window.</p>
 <h4>Example:</h4>
@@ -1320,7 +1328,7 @@ window.opener.document.bgColor=”my_color_value”; //give color name or hex co
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>142: How will you load the previous and next url from the history list?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The previous and next url from the history list can be loaded using back and
 forward function of history object.</p>
 
@@ -1330,7 +1338,7 @@ forward function of history object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>143: How will you determine whether the browser has cookies enabled?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The browser status can be determined using cookieEnabled
 function of navigator object. If cookies are enabled returns true, else false.</p>
 <h4>Example:</h4>
@@ -1343,49 +1351,48 @@ document.write(“Not Enabled”);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>144: How can you change the font size of an Element in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Give an example.
-<p><b>Answer:</b>
-document.getElementById(elementId).style.fontSize = “12”;
-In this case, JavaScript and CSS are very similar, because the CSS style
-rules are laid on top of the DOM.
+<h4>Answer:</h4>
+<pre>document.getElementById(elementId).style.fontSize = “12”;</pre>
+<p>In this case, JavaScript and CSS are very similar, because the CSS style
+rules are laid on top of the DOM.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>145: How can you submit a form using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
-This can be done using document.form[0].submit(), where 0 represent the
+<h4>Answer:</h4>
+<p>This can be done using document.form[0].submit(), where 0 represent the
 index of the form in the page. If there are more than one form in the page,
 then the first form has index 0, the second form has index 1 and so on.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>146: How can you set the background color of an HMTL document?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 This can be easily done using document.bgcolor = “color”, where color can
 be the name of a color – e.g. red, black, or it can represent the code of the
 color – e.g. #00FF34.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>147: Name the Boolean operators in JavaScript.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The Boolean operators in JavaScript are: ‘&&’ - AND operator, ‘||’ – OR operator ‘!’ - 
 NOT operator.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>148: How can we determine the state of a checkbox in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b><br>
-var isChecked = window.document.getElementById(elementId).checked – isChecked<br>
-is the name of the variable where the true or false value will be
+<h4>Answer:</h4>
+<pre>var isChecked = window.document.getElementById(elementId).checked – isChecked</pre>
+<p>is the name of the variable where the true or false value will be
 stored. ElementId represents the id of the checkbox element. If the
 checkbox is checked this will return true, otherwise false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>149: How can you create an HTML button and what is the event called when the button is pressed?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 An HTML button can be created like this: &lt;input type=”button”&gt; or
 &lt;button type=”button”&gt; and the event is “onclick”</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>150: How will you make loading of JavaScript code after Html by the browser?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 By “defer” script we can load JavaScript code after Html. It informs the
 browser to load all html codes before JavaScript. So the code inside the
 defer script gets executed only when the page is entirely parsed. It can use
@@ -1396,7 +1403,7 @@ on both external and inline scripts.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>151: Which popup allows the user to enter the input?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Prompt box allows the user to enter the input. It provides the user with text
 box for input and two buttons (“ok and cancel”). On selecting “Ok”, it
 returns true otherwise false.
@@ -1405,7 +1412,7 @@ var a1= prompt(“content1”,”myDefault_val”);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>152: What are the ways to display the message on screen?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) Using write method.
 Eg: document.write(“hello”);
 b) Using getElementById.
@@ -1417,7 +1424,7 @@ return true;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>153: How will you reload the page from server using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using reload() we can reload a page. It is a function of location object that
 contains the details of present url. It takes either true or false as argument.
 Default argument is false. When set to false, reloads the page from cache.
@@ -1427,18 +1434,19 @@ Otherwise ask the browser to load the page from server.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>154: How will you display large tables effectively in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using fixed width table we can display large tables effectively. Fixed width
 tables are provided by the browser based on the width of the columns in the
 first row, ensuring faster display.
-<p><b>Advantage:</b> No need for the browser to wait till all data is received to infer
+<h4>Advantage:</h4>
+<p>No need for the browser to wait till all data is received to infer
 the best width.</p>
 <h4>Syntax:</h4>
 <p>In css,set “table-layout:fixed”</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>155: How will you create pop window using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 It can be created as below:
 a) window.open(): opens a new browser window
 
@@ -1451,7 +1459,7 @@ window.showDialogBox(page_url,window_name,properties);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>156: How will you fix the errors that make the JavaScript engines difficult to perform optimization?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using “Strict Mode” which makes the code run faster than the code without
 strict mode such errors could be fixed. To enable strict mode, insert ‘use
 strict mode’ before the code. It takes care of following functions:
@@ -1462,7 +1470,7 @@ d) Assign to read-only variables are not allowed
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>157: How will you make secure JavaScript code?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) Using Strict Mode. The value passed with the “this” (keyword) to a
 function will not be changed in strict mode
 
@@ -1471,7 +1479,7 @@ fn_name.caller throws error when tried to get or set
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>158: How will you add the external JavaScript file?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 External JavaScript file should be saved with an extension ”.js” and needs
 to be imported to the html file by adding that file’s path to the “src”
 attribute of &lt;script&gt; tag.</p>
@@ -1487,7 +1495,7 @@ attribute of &lt;script&gt; tag.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>159: Is it possible to break up a string in a JavaScript code?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Yes. Using backslash”\”, a text can break up in a code.</p>
 <h4>Example:</h4>
 <pre>
@@ -1497,7 +1505,7 @@ document.write (“Cannot break like this”); // This is not possible.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>160: What is the use of “wait” property in cursor style?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Wait sets the cursor in wait state when the request is on process. Type of
 cursor can be set or returned by using “cursor property”. Some of the type
 of cursor are:<br>
@@ -1513,7 +1521,7 @@ eg: myobject-window,document, my_value-wait,auto,help...
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>161: What are the properties that can be set in the background properties?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b><br>
+<h4>Answer:</h4>
 a) color: sets the bgcolor<br>
 b) image: sets the bgimage<br>
 c) repeat: repeats the bgimage<br>
@@ -1528,7 +1536,7 @@ my_object.style.background=”my_value”;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>162: What are the ways to set the background color?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The background color can be set in the following two ways:</p>
 <ol>
   <li>a) Using bgColor
@@ -1550,7 +1558,7 @@ my_value=color,image,reappear,attachment,position
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>163: How will you add JavaScript files dynamically?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 By creating a new script element file and append it to the document, we can
 add JavaScript files dynamically.
 Example:
@@ -1563,7 +1571,7 @@ head_elemt.appendChild(my_script);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>164: How will you get the current “x and y” co-ordinate value of the window when it is scrolled?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b><br>
+<h4>Answer:</h4>
 a) Using onscroll. It executes when the window is scrolled<br>
 b) pageXOffset and pageYOffset are used to get the co-ordinate value</p>
 <h4>Example:</h4>
@@ -1575,7 +1583,7 @@ document.write(xvalue);}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>165: What are the methods to create remote window?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b><br>
+<h4>Answer:</h4>
 a) Using custom property<br>
 Secondary window:<p>
 <pre>
@@ -1599,7 +1607,7 @@ window.opener.location=link;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>166: How will you get the height of the browser window?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b><br>
+<h4>Answer:</h4>
 a) Using availHeight property of the screen object.<br>
 b) Gives the height of the browser window excluding the taskbar
 height,etc..</p>
@@ -1608,7 +1616,7 @@ height,etc..</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>167: How will you get the language code of the linked page?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using hreflang property of the anchor object we can get the language code
 of the linked page. Anchor object creates a link to another page or
 document.</p>
@@ -1617,7 +1625,7 @@ document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>168: How would you input a file?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using FileUpload Object we can input a file. The type should be specified
 as “file” in the <input> tag. It creates the fileupload object that opens the
 file dialog box on clicking the button.</p>
@@ -1628,7 +1636,7 @@ file dialog box on clicking the button.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>169: What is the importance of the “name” attribute of a <form> tag?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 When a Form object is created, the name attribute is stored as an element in
 the form[] array of the Document object, and it is also stored in the
 properties of the Document objects. So, after defining a <form
@@ -1638,13 +1646,13 @@ nothing to do with submitting the form.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>170: What are the event handlers of the form element?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The following event handlers are supported by form elements: onclick,
 onchange, onfocus, onblur.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>171: What does “onchange” event handler do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 This event handler is triggered when the user enters text or selects an
 option, changing in this way the value represented by the element. Button
 and other related elements do not support this event handler because they
@@ -1653,7 +1661,7 @@ focus is lost and it is moved to another form element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>172: What is a “cookie”?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 A cookie is a named data stored by the web browser and associated with a
 particular web page or web site. They were originally designed for the
 server-side programming and they are implemented as an extension to the
@@ -1664,7 +1672,7 @@ property of the Document object.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>173: What does the “new” operator do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The “new” operator creates a new object, that has no properties, and then it
 invokes the function passing the new objected created as the value of “this”
 keyword. The function that uses the “new” operator is called “constructor
@@ -1672,7 +1680,7 @@ function” or just simply “constructor”.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>174: What does <optgroup> tag do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 It is used with select statement to group the related options in the drop
 down list. It will be useful to display long list.</p>
 <h4>Example:</h4>
@@ -1691,11 +1699,11 @@ down list. It will be useful to display long list.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>175: Compare between session state and view state.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>176: Which function is better for fast execution: window.onload or window.onDocumentReady?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 window.onDocumentReady is better for fast execution because it executes
 the code once DOM is loaded by the browser and will not wait for the
 object such as images to be loaded whereas onLoad executes only when the
@@ -1703,7 +1711,7 @@ browser loads DOM and all other resources such as images gets loaded.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>177: What is the purpose of “visibility” property in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b><br>
+<h4>Answer:</h4>
 a) “Visibility”: Makes the element either visible or invisible<br>
 b) ”collapse”: Used to hide the elements in a table<br>
 c) ”inherit”: Takes the values from the parent element</p>
@@ -1716,7 +1724,7 @@ visible,hidden,collapse,inherit
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>178: What are the ways to make an element visible/hidden?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) Using display property</p>
 <pre>
 my_elemt.style.display=” ”; //visible
@@ -1730,22 +1738,22 @@ my_elemt.style.visibility=”hidden”; //hidden
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>179: How will you disable the html form fields, for instance password field?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using disabled property of a password object.
 Example:
 document.getElementById(“Field_Id”).disabled=true;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>180: How will you select the contents in the text field, say password?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using select function of password object, we can select the contents in text
 field.
-Example:</b>
+<h4>Example:</h4>
 document.getElementById(“Field_Id”).select();
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>181: How will you display the id of the form and the name attribute of the hidden element?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using “form” and name property of hidden object, we can display the id of
 the form and the name attribute of the hidden element.</p>
 <h4>Example:</h4>
@@ -1756,7 +1764,7 @@ var name_id2= document.getElementById(“my_elemt_id”).name;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>182: How will you get the last row from a table in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using tFoot property of a table object we can get the last row from a table.
 The last rows of tables in Html can be combined using the tfoot element.</p>
 <h4>Example:</h4>
@@ -1768,7 +1776,7 @@ document object,getElementById property
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>183: How will you create and delete caption to a table?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 Using createCaption and deleteCaption function of the table object.</p>
 <h4>Example:</h4>
 <pre>
@@ -1781,7 +1789,7 @@ property
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>184: How will you create a text area and make it read-only?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 a) Using textarea object</p>
 
 <h4>Example:</h4>
@@ -1801,10 +1809,10 @@ true
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>185: How will you change the caption display position of a table?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<h4>Answer:
 Using captionSide property of the style object we can change the caption
 display position of a table.</p>
-<p><b>Example:</b></p>
+<h4>Example:</h4>
 <pre>
 my_obj1.style.captionSide=”values”;
 my_obj1
@@ -1816,7 +1824,7 @@ values top/bottom</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>186: What does a JavaScript constructor do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<h4>Answer:</h4>
 The constructor initializes the newly created object and sets any properties
 that need to be set before that object is used. You can easily define a
 constructor function, by writing a function that adds properties to “this”
