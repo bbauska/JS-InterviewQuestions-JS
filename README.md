@@ -100,6 +100,10 @@ be cautious of potential method conflicts and unintended overwrites when using m
 objects to take on multiple forms. In JavaScript, polymorphism can be achieved using function 
 overloading, where a function can have multiple implementations based on the number and
 type of arguments it receives.</p>
+<p>Polymorphism: Polymorphism is the ability of objects from different
+classes to respond to the same method call differently. It allows treating
+objects from different classes as if they were objects of the same base
+class, simplifying design and interaction between objects.</p>
 
 <h4>Here's a simple example illustrating how function overloading can be implemented in JavaScript:</h4>
 <pre>
@@ -108,13 +112,15 @@ function greet(name, language
   if (language === 'English') {
     console.log(`Hello ${name}`);
   } else if (language === 'Spanish') {
-    console.log(`Hola
-    ${name}`);
-  }
+    console.log(`Hola ${name}`);
+  } else if (language === 'German') {
+    console.log(`Hey Nazi Fucker... ${name}`);
+  } else if (language === 'French') {
+    console.log(`Hey French Turd... ${name}`);
 }
-greet('John'); // Hello John
-greet('Juan', 'Spanish'); //
-Hello Juan
+
+greet('John');  // Hello John
+greet('Juan', 'Spanish');  // Hello Juan
 </pre>
 <h4>Solution:</h4> In this example, the greet function accepts two arguments: name and language. 
 The default value for language is set to English. If you call the function with only one argument, 
