@@ -1424,9 +1424,9 @@ return true;
 Using reload() we can reload a page. It is a function of location object that
 contains the details of present url. It takes either true or false as argument.
 Default argument is false. When set to false, reloads the page from cache.
-Otherwise ask the browser to load the page from server.
-Syntax:
-Window.location.reload(value);
+Otherwise ask the browser to load the page from server.</p>
+<h4>Syntax:</h4>
+<p>Window.location.reload(value);</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>154: How will you display large tables effectively in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1434,10 +1434,10 @@ Window.location.reload(value);
 Using fixed width table we can display large tables effectively. Fixed width
 tables are provided by the browser based on the width of the columns in the
 first row, ensuring faster display.
-Advantage: No need for the browser to wait till all data is received to infer
-the best width.
-Syntax:
-In css,set “table-layout:fixed”
+<p><b>Advantage:</b> No need for the browser to wait till all data is received to infer
+the best width.</p>
+<h4>Syntax:</h4>
+<p>In css,set “table-layout:fixed”</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>155: How will you create pop window using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1445,7 +1445,7 @@ In css,set “table-layout:fixed”
 It can be created as below:
 a) window.open(): opens a new browser window
 
-Syntax:
+<h4>Syntax:</h4>
 Window.open(page_Url, window_ name,properties,replace);
 For pop window,replace is always set to false.
 b) window.showDialogBox(): creates a modal dialog box
@@ -1477,71 +1477,79 @@ fn_name.caller throws error when tried to get or set
 <p><b>Answer:</b>
 External JavaScript file should be saved with an extension ”.js” and needs
 to be imported to the html file by adding that file’s path to the “src”
-attribute of <script> tag.
-Example:
-```
-<html>
-<head>
-<script src=”aa.js”></script>
-</head>
-<body>...</body>
-</html>
-```
+attribute of &lt;script&gt; tag.</p>
+<h4>Example:</h4>
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;script src=”aa.js”&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>159: Is it possible to break up a string in a JavaScript code?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
-Yes. Using backslash”\”, a text can break up in a code.
-Example:
-document.write(“Break \
-up a code”);
-
-document.write \
-(“Cannot break like this”); // This is not possible.
+Yes. Using backslash”\”, a text can break up in a code.</p>
+<h4>Example:</h4>
+<pre>
+document.write(“Break up a code”);
+document.write (“Cannot break like this”); // This is not possible.
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>160: What is the use of “wait” property in cursor style?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 Wait sets the cursor in wait state when the request is on process. Type of
 cursor can be set or returned by using “cursor property”. Some of the type
-of cursor are:
-a) default: default cursor
-b) wait: loading symbol or hourglass
-c) auto: browser default cursor
-d) help: arrow with a question mark symbol
-Syntax:
+of cursor are:<br>
+a) default: default cursor<br>
+b) wait: loading symbol or hourglass<br>
+c) auto: browser default cursor<br>
+d) help: arrow with a question mark symbol</p>
+<h4>Syntax:</h4>
+<pre>
 myobject.style.cursor=”my_value”;
 eg: myobject-window,document, my_value-wait,auto,help...
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>161: What are the properties that can be set in the background properties?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
-a) color: sets the bgcolor
-b) image: sets the bgimage
-c) repeat: repeats the bgimage
-
-d) attachment: makes the image fixed or scrolls with the page
-e) position: sets the starting position of an image
-Syntax:
+<p><b>Answer:</b><br>
+a) color: sets the bgcolor<br>
+b) image: sets the bgimage<br>
+c) repeat: repeats the bgimage<br>
+d) attachment: makes the image fixed or scrolls with the page<br>
+e) position: sets the starting position of an image</p>
+<h4>Syntax:</h4>
+<pre>
 my_object.style.background=”my_value”;
 // my_object=>window,document,..
 // my_value=>color,image,reappear,attachment,position
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>162: What are the ways to set the background color?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-The background color can be set in the following two ways:
-a) Using bgColor
+<p><b>Answer:</b>
+The background color can be set in the following two ways:</p>
+<ol>
+  <li>a) Using bgColor
+<pre>
 my_obj.bgcolor=”my_color”
 my_obj
 document
 my_color
 colors,color value
-b) Using background
+</pre></li>
+  <li>b) Using background
+<pre>
 my_obj.style.backgroundColor=”my_value”;
 my_obj
 document
 my_value=color,image,reappear,attachment,position
+</pre></li>
+</ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>163: How will you add JavaScript files dynamically?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
