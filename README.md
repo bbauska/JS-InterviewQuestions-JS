@@ -907,20 +907,22 @@ c) Before the closing of bod tag
 <p><b>Answer:</b>
 Caching of web pages in temporary internet files folder can be prevented by
 adding <META HTTP-EQUIP=”PRAGMA” CONTENT=”NO-CACHE” >
-in the second header tag which is placed before the html’s end tag(</html>).
-Example:
-\<html\>
-\< head \>
-\<META HTTP-EQUIV="REFRESH" CONTENT="3"\>
-\</ head \>
-\<body\>
-\<p>Hellllo\</p\>
-\</body\>
-\< head \>
+in the second header tag which is placed before the html’s end tag(&lt;/html&gt;).
+<p><b>Example:</b></p>
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;META HTTP-EQUIV="REFRESH" CONTENT="3"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;Hello&lt;/p&gt;
+&lt;/body&gt;
+&lt;head&gt;
 
-\<META Http-equiv="PRAGMA" Content="NO-CACHE"\>
-\</head\>
-\</ html \>
+&lt;META Http-equiv="PRAGMA" Content="NO-CACHE"&gt;
+&lt;/head&gt;
+&lt;/html&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>100: Why adding of meta tag in first header will not prevent caching of the Web page?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -928,16 +930,16 @@ Example:
 The browsing page gets cached only when the buffer is half filled. So when
 the meta tag is added in first header, the internet explorer search for that
 page in cache at that instant. Most of the time, buffer won't get half filled at
-the beginning of parsing.
+the beginning of parsing.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>101: What is the purpose of meta tag?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 When this tag is read while parsing the html code, internet explorer
 searches for this page in cache at that instant. If it is found, it will be
-removed from the cache.
-Syntax:
-<META Http-equiv="PRAGMA" Content="NO-CACHE">
+removed from the cache.</p>
+<p><b>Syntax:</b></p>
+<pre>&lt;META Http-equiv="PRAGMA" Content="NO-CACHE"&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>102: How will you resolve looping problem in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -946,31 +948,34 @@ Syntax:
 Using closures which combines the function with its referencing
 environment, looping can be resolved. It keeps the local variable of the
 function alive even after the function returned the value. When there is
-function within the function, Closure is created.
+function within the function, Closure is created.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-103: Give any example for resolving looping problem.
+<h3>103: Give any example for resolving looping problem.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
+<pre>
 var method1={};
-for(var k=0;k<5;k++){
-method1[i]=function(){
-document.write(“Iteration:” + k + “<&nbsp>”);
-};
+  for(var k=0;k<5;k++){
+    method1[i]=function(){
+      document.write(“Iteration:” + k + “<&nbsp>”);
+    };
+  }
+  for(var m=0;m<5;m++){
+  method1[j]();
 }
-for(var m=0;m<5;m++){
-method1[j]();
-}
-Output:
-4 4 4 4 4 instead of 0 1 2 3 4
-By adding closure,this can be rectified.
+// Output:
+// 4 4 4 4 4 instead of 0 1 2 3 4
+</pre>
+<p>By adding closure,this can be rectified.</p>
+<pre>
 method1[i]=function(n){
-return function(){
-
-document.write(“Iteration:” + n + “<&nbsp>”);
-}
+  return function(){
+    document.write(“Iteration:” + n + “<&nbsp>”);
+  }
 })(k);
-Output:
-0 1 2 3 4
+// Output:
+// 0 1 2 3 4
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>104: When is the Execution context created and what are the primary components?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -986,25 +991,23 @@ c) ThisBinding: value of “this” keyword related with execution context
 <h3>105: When is the Execution context stack created?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
-a) Global execution context: Created when executing the application
-b) New execution context: Created when the new functions are created
-c) Collection of this execution context form the execution context stack
+a) Global execution context: Created when executing the application<br>
+b) New execution context: Created when the new functions are created<br>
+c) Collection of this execution context form the execution context stack.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>106: How is the outer scope environment references maintained?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 Using LexicalEnvironment, the outer scope environment references are
-maintained. It contains two components:
-a) Environment Record: Identifier bindings are stored for the execution
-context
-b) Outer Refernces: Points to the declaration of execution context in
-lexicalEnvironment
+maintained. It contains two components:</p>
+<p>a) Environment Record: Identifier bindings are stored for the execution context<br>
+b) Outer Refernces: Points to the declaration of execution context in lexical Environment</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>107: How will you read or write in a file using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 An I/O operation such as reading or writing is not possible. However, “Java
-Applet” can be implemented to read files for script.
+Applet” can be implemented to read files for script.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>108: How will you create rich, responsive display and editor user interface?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1012,7 +1015,7 @@ Applet” can be implemented to read files for script.
 Using knockout we can create rich, responsive display and editor user
 interface. It is JavaScript library which implements the model view-
 viewmodel pattern. It is used to create UI and allows dynamic updation and
-can be used with any server or client.
+can be used with any server or client.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>109: Which is the new JavaScript engine developed for internet explorer9 by Microsoft?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1021,34 +1024,35 @@ Chakra is the new JavaScript engine for IE9. A distinct feature is that its JIT
 compiles scripts on separate “CPUcore”, parallel to web browsers. The
 engine also accesses the computer’s graphic processing unit for 3D videos
 and graphics. To execute scripts on traditional web pages and to improve
-JavaScript runtime and libraries, a new interpreter was included.
+JavaScript runtime and libraries, a new interpreter was included.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>110: What is Node.js?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 Node.js is a software designed for creating server side JavaScript
 application which is not executed in client browser. It is event based and
-runs asynchronously to provide scalability and reduce overhead.
+runs asynchronously to provide scalability and reduce overhead.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>111: Which is alternative to XML for data exchange in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 JSON (JavaScript Object Notation). Light weighted, text-based data
 exchange format. Web data is imported into JavaScript applications using
-JSON.
-Example: JSON Object creation
+JSON.</p>
+<p><b>Example:</b> JSON Object creation</p>
+<pre>
 var obj_json1={“Company_name”:”ABC”,”Experiance”:”5”};
-document.write(“Co Name:” + obj_json1.Company_name); //Co
-Name:ABC
+document.write(“Co Name:” + obj_json1.Company_name); //Co Name:ABC
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>112: What are the sub-components of dynamic component in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
-a) Dynamic typing: Based on values; not associated on variable
+a) Dynamic typing: Based on values; not associated on variable<br>
 b) Obj-based: Properties of an object can be modified at run-time; Built-in
-functions are used for properties to maintain dynamicity
+functions are used for properties to maintain dynamicity<br>
 c) Run-time evaluation: eval() is used for run time evaluation and will
-take dynamic arguments at run time
+take dynamic arguments at run time.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>OPENING AND MANIPULATING WINDOWS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1062,238 +1066,247 @@ the URL of the document to display in the new window (if it is null or
 empty string, the window will be empty), the second argument is the name
 of the window; the third parameter is a list of features that specify the
 window size and GUI decoration. The fourth argument is useful only when
-the second argument is mentioned.
+the second argument is mentioned.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>114: How can you close a window using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 We can close a created window object using “close()” method. The syntax
-is: Window.close()
+is: Window.close()</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>115: What does the “location” function do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The location property of a window is a reference to a location object and
 represents the URL of the document that is displayed in the window. The
 Href property of the location object is a string that contains all the text of
-the URL.
+the URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>116: What other properties besides Href can we find in the “location” function in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-Other properties that we can use are: protocol, host, pathname and search.
+<p><b>Answer:</b>
+Other properties that we can use are: protocol, host, pathname and search.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>117: What happens when a string value is added to the location function in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The browser interprets the string as a URL and tries to load it and display
-the document and that URL.
+the document and that URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>118: What is the history object in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The history object refers to the History of the browser window. The
 multitudes of elements that the history object incorporates are never
-accessible to scripts.
+accessible to scripts.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>119: Which are the methods supported by the history object in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 There are three methods supported by the history object: the back(), the
-forward() and the go().
+forward() and the go().</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>120: How many and which are the coordinates of a browser within the HTML document?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 There are three types of coordinates and these are: screen, window and
-document coordinates.
+document coordinates.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>OBJECTS AND THEIR PROPERTIES IN JAVASCRIPT</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>121: Name the properties of Navigator in JavaScript.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 There are five properties for the navigator object and these are: appName,
-appVersion, userAgent, appCodeName and platform.
+appVersion, userAgent, appCodeName and platform.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>122: What happens when confirm() or prompt() methods are used in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 When these boxes are initialized the code stops running and the currently
 loading document stops loading until the user response with the requested
-input.
+input.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>123: What happens when the mouse is moved over a hyperlink in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 JavaScript code evaluates the onmouseover attribute and sets the status
 property of the window, thus returning the “true” value telling the browser
-not to take any actions.
+not to take any actions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>124: What does the “defaultStatus” property do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The “defaultStatus” property enables text to be displayed in the status line
 when the browser does not find anything to display. Newer versions of the
-current browser have this property deprecated.
+current browser have this property deprecated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>125: What is the “onerror” property in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The “onerror” property has a special status: the function the user assigns
 becomes an error handler for the window; the function assigned to the
-property is invoked when an error occurs in that window.
+property is invoked when an error occurs in that window.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>126: What arguments does the error handler receive when an error occurs in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The error handler receives three arguments: the first is the message that
 describes the error; the second is the string that contains the URL of the
 document containing the JavaScript code that caused the error and the third
-argument is line number within the document where the error occurred.
+argument is line number within the document where the error occurred.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>127: In addition to the three arguments that the error handler receives, is its return value of any importance?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The return value of the error handler is significant: if the onerror handler
 returns True then the browser does not display its own error message having
-been told that the handler has taken care of the error.
+been told that the handler has taken care of the error.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>128: How can JavaScript code refer to a window or frame object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 In JavaScript we can refer in any window or frame to its own window or
 frame using “window” or “self”. They are necessary to use when the
 programmer needs to refer to this global object itself. In case the
 programmer wants to refer to a method or property of the window/frame, it
 is not necessary to prefix the property or method name with “window” or
-“self”.
+“self”.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>129: What is a DOM (Document Object Model)?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 DOM (Document Object Model) is an API that defines the way to access
 the objects that compose a document. W3C defines a standard DOM that is
-reasonably well supported in all modern browsers.
+reasonably well supported in all modern browsers.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>130: What does the method write() of the Document object do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The write() method allows users to write content into the document. The
 write() method is part of DOM and it can be used in two ways. First of all,
 it can be used within a script to output HTML into the document being
 parsed. Second, write() can be used (in conjunction with open() and close()
 methods of the Document object) to create entirely new documents in other
-windows or frames.
+windows or frames.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>131: How will you determine an object type?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 Using “Instanceof and isprototypeof” by checking its instance and
-prototype respectively.
-Example: document.writeln(book1 instanceof Book);
+prototype respectively.</p>
+<p><b>Example:</b>
+<pre>
+document.writeln(book1 instanceof Book);
 var Book = function() {...};
-Book.prototype.constructor == Book; //return true.
+Book.prototype.constructor == Book; //return true
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>132: What is alert and confirm box in JavaScript?</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b>Answer:</b>
 a) Alert and confirm both are pop ups in JavaScript and take the focus of
-the user from the current page to pop ups
+the user from the current page to pop ups<br>
 b) Alert provides the user with “ok” button whereas confirm provides with
-“ok” and “cancel” button where user can select any one of the options
-c) When “ok” is selected, confirm returns true else false
+“ok” and “cancel” button where user can select any one of the options<br>
+c) When “ok” is selected, confirm returns true else false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>133: What are the properties of array object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-a) Index property
-b) Input property
-c) Length property
-
-d) Constructor property
-e) Prototype property
+<p><b>Answer:</b><br>
+a) Index property<br>
+b) Input property<br>
+c) Length property<br>
+d) Constructor property<br>
+e) Prototype property</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>134: What are the sub objects of the windows object in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 a) Document object: Work with DOM and provides interface to XML and
-Html documents and allow CSS manipulations
-b) Frame object: Represents <frame> HTML frames. Frame object will be
-created for each <frame> tag
+Html documents and allow CSS manipulations<br>
+b) Frame object: Represents &lt;frame&gt; HTML frames. Frame object will be
+created for each &lt;frame&gt; tag<br>
 c) Location object: Contains the current URL information
-“window.location”
-d) History object: Contains the URL history visited by the user
+“window.location”<br>
+d) History object: Contains the URL history visited by the user</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>135: What is the use of userAgent of navigator object?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-a) Identifies the operating system of the client’s machine
-b) “appVersion” and “userAgent” can also be used
+<p><b>Answer:</b>
+a) Identifies the operating system of the client’s machine<br>
+b) “appVersion” and “userAgent” can also be used<br>
 c) “userAgent” property of navigator object returns the value of the user
-agent header sent by the browser to server
-Syntax:
+agent header sent by the browser to server<br></p>
+<p><b>Syntax:</b></p>
+<pre>
 document.write(navigator.userAgent);
 document.write(navigator.appVersion);
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>136: What are the ways to delete the property of an object and how?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-It can be deleted in two ways.
-Example:
+<p><b>Answer:</b>
+It can be deleted in two ways.</p>
+<p><b>Example:</b></p>
+<pre>
 oven=new Object();
 oven.name=”LG”;
 oven.color=”Black”;
-a) using object name and property
-example: delete oven.color;
-b) using object name and property with “with”statement
-example: with(oven)
-delete color;
+</pre>
+<p>a) using object name and property<br>
+<p><b>example:</b> delete oven.color;</p>
+<p>b) using object name and property with “with”statement</p>
+<p><b>example:</b> with(oven)<br>
+delete color;</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>137: What is the use of eval() in JSON?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 JSON can be parsed using the built-in function eval() and JSON data is
-executed to generate native JavaScript object.
-Example:
-obj_json2=eval(‘(‘ + JSON_text+’)’);
+executed to generate native JavaScript object.</p>
+<p><b>Example:</b></p>
+<pre>obj_json2=eval(‘(‘ + JSON_text+’)’);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>138: What are the advantages of JSON over XML?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-
+<p><b>Answer:</b>
 a) JSON provides array and object type and also some scalar data types
-whereas XML does not provide any data types
-b) Formatting is done by direct mapping in JSON whereas it is complex in
-Xml
+whereas XML does not provide any data types<br>
+b) Formatting is done by direct mapping in JSON whereas it is complex in Xml<br>
 c) Document size is too large in XML. When the data grows, amount of xml
-also grows whereas documents are compact in JSON
-XML:
-<Record>
-<First_Name>abcd</First_Name>
-<Age>25</Age>
-</Record>
-JSON:
+also grows whereas documents are compact in JSON</p>
+<h4>XML:</h4>
+<pre>
+&lt;Record&gt;
+&lt;First_Name&gt;abcd&lt;/First_Name&gt;
+&lt;Age&gt;25&lt;/Age&gt;
+&lt;/Record&gt;
+</pre>
+<h4>JSON:</h4>
+<pre>
 {
-“Record”:{“First_Name”:”abcd”,”Age”:”25”}
+  “Record”:{“First_Name”:”abcd”,”Age”:”25”}
 }
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>139: How can the properties of JavaScript objects be accessed?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
+<p><b>Answer:</b>
 The properties of JavaScript objects be accessed in the two ways shown
-below:
-Syntax:
-a) obj_name.prop1;
-b) obj_name[“prop1”];
+below:</p>
+<h4>Syntax:</h4>
+<p>
+a) obj_name.prop1;<br>
+b) obj_name[“prop1”];</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>140: What are the objects of navigator objects?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:
-a) Window object: gets created for every frame and web browser
+<p><b>Answer:</b>
+a) Window object: gets created for every frame and web browser<br>
 b) Mime type object: using enabledplugin, gets information about the
-plugin
-c) Plugin object: gives information about an installed plug-in
+plugin<br>
+c) Plugin object: gives information about an installed plug-in</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>141: How to access the properties of main window from the secondary window?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
