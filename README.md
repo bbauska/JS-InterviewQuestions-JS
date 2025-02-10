@@ -1302,7 +1302,7 @@ b) obj_name[“prop1”];</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>140: What are the objects of navigator objects?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
+<p><b>Answer:</b><br>
 a) Window object: gets created for every frame and web browser<br>
 b) Mime type object: using enabledplugin, gets information about the
 plugin<br>
@@ -1312,33 +1312,32 @@ c) Plugin object: gives information about an installed plug-in</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 This can be done using Opener property. The properties of the main
-window can be accessed from secondary window.
-Example:
-In the secondary window:
-window.opener.document.bgColor=”my_color_value”; //give color name or
-hex code
-It changes the background color of the primary window to the given color.
+window can be accessed from secondary window.</p>
+<h4>Example:</h4>
+<p>In the secondary window:<br>
+window.opener.document.bgColor=”my_color_value”; //give color name or hex code</p>
+<p>It changes the background color of the primary window to the given color.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>142: How will you load the previous and next url from the history list?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 The previous and next url from the history list can be loaded using back and
-forward function of history object.
+forward function of history object.</p>
 
-Example:
-“history.back()”;
-“history.forward()”;
+<h4>Example:</h4>
+<pre>“history.back()”;
+“history.forward()”;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>143: How will you determine whether the browser has cookies enabled?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 The browser status can be determined using cookieEnabled
-function of navigator object. If cookies are enabled returns true, else false.
-Example:
-If(navigator.cookieEnabled)
+function of navigator object. If cookies are enabled returns true, else false.</p>
+<h4>Example:</h4>
+<pre>If(navigator.cookieEnabled)
 document.write(“Enabled”);
 else
-document.write(“Not Enabled”);
+document.write(“Not Enabled”);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JAVASCRIPT AND HTML</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1355,35 +1354,34 @@ rules are laid on top of the DOM.
 <p><b>Answer:</b>
 This can be done using document.form[0].submit(), where 0 represent the
 index of the form in the page. If there are more than one form in the page,
-then the first form has index 0, the second form has index 1 and so on.
+then the first form has index 0, the second form has index 1 and so on.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>146: How can you set the background color of an HMTL document?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
 This can be easily done using document.bgcolor = “color”, where color can
 be the name of a color – e.g. red, black, or it can represent the code of the
-color – e.g. #00FF34.
+color – e.g. #00FF34.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>147: Name the Boolean operators in JavaScript.</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
-
-The Boolean operators in JavaScript are: ‘&&’ - AND operator, ‘||’ – OR
-operator ‘!’ - NOT operator.
+The Boolean operators in JavaScript are: ‘&&’ - AND operator, ‘||’ – OR operator ‘!’ - 
+NOT operator.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>148: How can we determine the state of a checkbox in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b>Answer:</b>
-var isChecked = window.document.getElementById(elementId).checked –
-isChecked is the name of the variable where the true or false value will be
+<p><b>Answer:</b><br>
+var isChecked = window.document.getElementById(elementId).checked – isChecked<br>
+is the name of the variable where the true or false value will be
 stored. ElementId represents the id of the checkbox element. If the
-checkbox is checked this will return true, otherwise false.
+checkbox is checked this will return true, otherwise false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>149: How can you create an HTML button and what is the event called when the button is pressed?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p><b>Answer:</b>
-An HTML button can be created like this: <input type=”button”> or
-<button type=”button”> and the event is “onclick”
+An HTML button can be created like this: &lt;input type=”button”&gt; or
+&lt;button type=”button”&gt; and the event is “onclick”</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>150: How will you make loading of JavaScript code after Html by the browser?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1391,11 +1389,10 @@ An HTML button can be created like this: <input type=”button”> or
 By “defer” script we can load JavaScript code after Html. It informs the
 browser to load all html codes before JavaScript. So the code inside the
 defer script gets executed only when the page is entirely parsed. It can use
-on both external and inline scripts.
-Example:
-
-<script type=’text/javascript’ src=’a1.js‘ defer=’defer’></script>
-Here loading of a1.js takes place after all html code has been parsed.
+on both external and inline scripts.</p>
+<h4>Example:</h4>
+<pre>&lt;script type=’text/javascript’ src=’a1.js‘ defer=’defer’&gt;&lt;/script&gt;</pre>
+<p>Here loading of a1.js takes place after all html code has been parsed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>151: Which popup allows the user to enter the input?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
