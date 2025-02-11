@@ -1526,18 +1526,21 @@ document.write(navigator.appVersion);
 <h4>Answer:</h4>
 
 <p>It can be deleted in two ways.</p>
+
 <h4>Example:</h4>
 <pre>
 oven=new Object();
 oven.name=”LG”;
 oven.color=”Black”;
 </pre>
+
 <p>a) using object name and property</p>
 
-<h4><b>Example:</h4>
+<h4>Example:</h4>
 <pre>delete oven.color;</pre>
 <p>b) using object name and property with “with”statement</p>
-<h4>example:</h4>
+
+<h4>Example:</h4>
 <pre>
 with(oven)
 delete color;
@@ -1549,6 +1552,7 @@ delete color;
 
 <p>JSON can be parsed using the built-in function eval() and JSON data is
 executed to generate native JavaScript object.</p>
+
 <h4>Example:</h4>
 <pre>obj_json2=eval(‘(‘ + JSON_text+’)’);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1561,6 +1565,7 @@ whereas XML does not provide any data types<br>
 b) Formatting is done by direct mapping in JSON whereas it is complex in Xml<br>
 c) Document size is too large in XML. When the data grows, amount of xml
 also grows whereas documents are compact in JSON</p>
+
 <h4>XML:</h4>
 <pre>
 &lt;Record&gt;
@@ -1568,6 +1573,7 @@ also grows whereas documents are compact in JSON</p>
 &lt;Age&gt;25&lt;/Age&gt;
 &lt;/Record&gt;
 </pre>
+
 <h4>JSON:</h4>
 <pre>
 {
@@ -1581,6 +1587,7 @@ also grows whereas documents are compact in JSON</p>
 
 <p>The properties of JavaScript objects be accessed in the two ways shown
 below:</p>
+
 <h4>Syntax:</h4>
 <p>
 a) obj_name.prop1;<br>
