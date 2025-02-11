@@ -72,7 +72,7 @@ allows you to create encapsulated modules with private and public members.</p>
 
 <h4>Array: An ordered collection of values.</h4>
 <pre>
-let myArray = [1, 2, 3];
+let myArray = &lbrack;1, 2, 3&rbrack;;
 null:
 </pre>
 
@@ -202,7 +202,7 @@ and values can be strings, numbers, Booleans, arrays, or other JSON objects.</p>
   "key1": "value1",
   "key2": 123,
   "key3": true,
-  "key4": ["item1", "item2"],
+  "key4": &lbrack;"item1", "item2"&rbrack;,
   "key5": {
     "nestedKey": "nestedValue"
   }
@@ -300,7 +300,7 @@ console.log(a === b); // false
 
 <p>Some simple equality rules: If either value (also known as side) in a comparison could be the 
 true or false value, avoid == and use ===.</p>
-<p>If either value in a comparison could be of these specific values (0, "", or [] — empty array), 
+<p>If either value in a comparison could be of these specific values (0, "", or &lbrack;&rbrack; — empty array), 
 avoid == and use ===.</p>
 <p>In all other cases, you’re safe to use ==. Not only is it safe, but in many cases, it simplifies 
 your code in a way that improves readability.</p>
@@ -379,13 +379,13 @@ var count=100;
 typeof count;  // (returns “number”)
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>23: What is the difference in evaluating [“8”+5+2] and [8+5+”2”]?</h3>
+<h3>23: What is the difference in evaluating &lbrack;“8”+5+2&rbrack; and &lbrack;8+5+”2”&rbrack;?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Answer:</h4>
 
-<p>In [“8”+5+2],”8” is a String. So anything that trail the string will be changed to string.<br>
+<p>In &lbrack;“8”+5+2&rbrack;,”8” is a String. So anything that trail the string will be changed to string.<br>
 Hence the result will be ”852”.<br>
-In [8+5+”2”], 8 and 5 are integer, so it gets added up (13).And “2” is treated as String.<br>
+In &lbrack;8+5+”2”&rbrack;, 8 and 5 are integer, so it gets added up (13).And “2” is treated as String.<br>
 Hence the concatenation takes place and the result will be “132”.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>24: Is it possible to assign a string to a floating point variable?</h3>
@@ -724,7 +724,7 @@ P==3 //true P===3 //true
 a) an object<br>
 Syntax: delete obj_name1;<br>
 b) particular element in an array<br>
-Syntax: delete arr_ele1[index];<br>
+Syntax: delete arr_ele1&lbrack;index&rbrack;;<br>
 c) property of an object<br>
 Syntax: delete obj_name2.prop_name;</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1194,12 +1194,12 @@ function within the function, Closure is created.</p>
 <pre>
 var method1={};
   for(var k=0;k<5;k++){
-    method1[i]=function(){
+    method1&lbrack;i&rbrack;=function(){
       document.write(“Iteration:” + k + “<&nbsp>”);
     };
   }
   for(var m=0;m<5;m++){
-  method1[j]();
+  method1&lbrack;j&rbrack;();
 }
 // Output:
 // 4 4 4 4 4 instead of 0 1 2 3 4
@@ -1208,7 +1208,7 @@ var method1={};
 <p>By adding closure,this can be rectified.</p>
 
 <pre>
-method1[i]=function(n){
+method1&lbrack;i&rbrack;=function(n){
   return function(){
     document.write(“Iteration:” + n + “<&nbsp>”);
   }
@@ -1591,7 +1591,7 @@ below:</p>
 <h4>Syntax:</h4>
 <p>
 a) obj_name.prop1;<br>
-b) obj_name[“prop1”];</p>
+b) obj_name&lbrack;“prop1”&rbrack;;</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>140: What are the objects of navigator objects?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1653,7 +1653,7 @@ rules are laid on top of the DOM.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Answer:</h4>
 
-<p>This can be done using document.form[0].submit(), where 0 represent the
+<p>This can be done using document.form&lbrack;0&rbrack;.submit(), where 0 represent the
 index of the form in the page. If there are more than one form in the page,
 then the first form has index 0, the second form has index 1 and so on.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1957,10 +1957,10 @@ file dialog box on clicking the button.</p>
 <h4>Answer:</h4>
 
 <p>When a Form object is created, the name attribute is stored as an element in
-the form[] array of the Document object, and it is also stored in the
+the form&lbrack;&rbrack; array of the Document object, and it is also stored in the
 properties of the Document objects. So, after defining a <form
 name=”formName”>, it will be easy to refer the Form object using
-document.formName instead of document.form[0]. This attribute has
+document.formName instead of document.form&lbrack;0&rbrack;. This attribute has
 nothing to do with submitting the form.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>170: What are the event handlers of the form element?</h3>
@@ -2137,7 +2137,9 @@ a) Using textarea object</p>
 My_text
 &lt;/textarea&gt;
 </pre>
+
 <p>b) Using readOnly property of textarea object</p>
+
 <h4>Example:</h4>
 <pre>
 my_table_objects.readOnly=”my_value1”; //delete
@@ -2149,7 +2151,7 @@ true
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>185: How will you change the caption display position of a table?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Answer:
+<h4>Answer:</h4>
 
 <p>Using captionSide property of the style object we can change the caption
 display position of a table.</p>
@@ -2167,7 +2169,7 @@ values top/bottom
 <h3>186: What does a JavaScript constructor do?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Answer:</h4>
-The constructor initializes the newly created object and sets any properties
+<p>The constructor initializes the newly created object and sets any properties
 that need to be set before that object is used. You can easily define a
 constructor function, by writing a function that adds properties to “this”
 operator.</p>
@@ -2215,8 +2217,8 @@ document.implementation.createDocument() which is a DOM Level 2 method.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>192: How are images accessed from JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Images can be referred using document.images[0] // for the first images,
-document.images[1] and so one for the next images. Once the image is
+<p>Images can be referred using document.images&lbrack;0&rbrack; // for the first images,
+document.images&lbrack;1&rbrack; and so one for the next images. Once the image is
 accessed, you can perform different tasks on them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>193: Where is the arguments() array placed in JavaScript?</h3>
@@ -2408,16 +2410,17 @@ infinity.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>227: What does the setYear() function do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>It sets the year field of a specified date object with a special behavior for
-years between 1900 and 1999.</p>
+<p>It sets the year field of a specified date object with a special behavior for years between 
+1900 and 1999.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>228: What does the join() method do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Put in all the elements of the array into a string separated by the specified
-separator. Default separartor is comma “,”.</p>
+<p>Put in all the elements of the array into a string separated by the specified separator. 
+Default separartor is comma “,”.</p>
+
 <h4>Example:</h4>
 <pre>
-var fourwheelers = [“Car”,”Bus”,”Lorry”] ;
+var fourwheelers = &lbrack;“Car”,”Bus”,”Lorry”&rbrack; ;
 document.write(fourwheelers.join(“-”));
 ”Car-Bus-Lorry”
 </pre>
@@ -2427,9 +2430,10 @@ document.write(fourwheelers.join(“-”));
 <p>Using pop() function we can pop the last element from an existing array. It
 removes and returns the last element of an array. Length of the array will
 decrease by 1.</p>
+
 <h4>Example:</h4>
 <pre>
-var no=[1,2,3];
+var no=&lbrack;1,2,3&rbrack;;
 document.write(no);
 ”1,2,3”
 document.write.(no.pop() +”<br>”);
@@ -2444,9 +2448,10 @@ document.write(no);
 <p>Using shift() function we can pop the first element from an existing array. It
 removes and returns the first element of an array. Length of the array will
 decrease by 1.</p>
+
 <h4>Example:</h4>
 <pre>
-var no=[1,2,3];
+var no=&lbrack;1,2,3&rbrack;;
 document.write(no);
 ”1,2,3”
 document.write.(no.shift() +”<br>”);
@@ -2459,9 +2464,10 @@ document.write(no);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Using push() function we can add more elements. It adds the new items to
 the end of the array and returns its length.</p>
+
 <h4>Example:</h4>
 <pre>
-var no=[1,2,3];
+var no=&lbrack;1,2,3&rbrack;;
 document.write(no);
 ”1,2,3”
 document.write(no.push(5));
@@ -2472,10 +2478,12 @@ document.write(no);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>232: How will you add one or more elements to the beginning of the existing array?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Using unshift() function we can add more elements. It adds the new items
-to the beginning of the array and returns its length.
-Example:
-var no=[1,2,3];
+<p>Using unshift() function we can add more elements. It adds the new items
+to the beginning of the array and returns its length.</p>
+
+<h4>Example:</h4>
+<pre>
+var no=&lbrack;1,2,3&rbrack;;
 document.write(no);
 ”1,2,3”
 document.write(no. unshift (5));
@@ -2483,128 +2491,138 @@ document.write(no. unshift (5));
 
 document.write(no);
 ”5,1,2,3”
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>233: How will you reverse the elements in an array?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Using reverse() function without creating new array.
-Example:
-var no=[1,2,3];
+<p>Using reverse() function without creating new array.</p>
+
+<h4>Example:</h4>
+<pre>
+var no=&lbrack;1,2,3&rbrack;;
 document.write(no);
 ”1,2,3”
 document.write(no.reverse());
 ”3,2,1”
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>234: What does the Array.slice(start,end) method do in JavaScript and how to retrieve 
 the elements within the selected position in an array?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Its returns the array object containing the elements starting from the
+<p>Its returns the array object containing the elements starting from the
 specified start value till the element before the end value. When a negative
 value is used for the start or end values, that gets added to the length of the
-array and returns the elements within that position.
+array and returns the elements within that position.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>235: What does the Array.sort() method do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-a) Default sort(): used to sort the alphabets in ascending order
-b) reverse() is used with the sort(): Used to sort the alphabets in
-descending order
-c) To sort the numbers, some functions are passed as arguments in sort()
+<p>a) Default sort(): used to sort the alphabets in ascending order<br>
+b) reverse() is used with the sort(): Used to sort the alphabets in descending order<br>
+c) To sort the numbers, some functions are passed as arguments in sort()</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>236: What is encodeURI( ) and encodeURIComponent( )?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-a) Used to encode the given uri
-b) encodeURI() encodes the special characters except “ : @ $ # = & / + ? “
-c) encodeURIComponent encodes all the special characters including “ :
-@ $ # = & / + ? “
+<p>a) Used to encode the given uri<br>
+b) encodeURI() encodes the special characters except “ : @ $ # = & / + ? “<br>
+c) encodeURIComponent encodes all the special characters including “ : @ $ # = & / + ? “</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>237: What is decodeURI( ) and decodeURIComponent( )?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-a) Used to decode the given encoded uri. decodeURI() decodes the special
-characters except “ : @ $ # = & / + ? “
-b) decodeURIComponent denotes all the special characters including “ : @
-$ # = & / + ? “
+<p>a) Used to decode the given encoded uri. decodeURI() decodes the special characters 
+except “ : @ $ # = & / + ? “<br>
+b) decodeURIComponent denotes all the special characters including “ : @ $ # = & / + ? “</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>238: What does the splice( ) function do in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Adds or remove elements to/from an existing array and return the removed
-elements.
-array.splice(index,no of items to be removed,new items1,new items2...new
-itemn);
-Example:
-var no=[1,2,3,4,5];
+<p>Adds or remove elements to/from an existing array and return the removed elements.</p>
+<pre>array.splice(index,no of items to be removed,new items1,new items2...new itemn);</pre>
+<h4>Example:</h4>
+<pre>
+var no=&lbrack;1,2,3,4,5&rbrack;;
 document.write(no);
 ”1,2,3,4,5”
+
 document.write(no. splice (1,2,9,10));
 ”2,3”
 document.write(no);
 ”1,9,10,4,5”
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>239: How will you print the current window using JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Answer:
-Using window.print() function to print the contents of the specified window.
+<h4>Answer:</h4>
+<p>Using window.print() function to print the contents of the specified window.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>240: How will you get default value when an argument is not passed in calling function?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By Shorthand assignment. It checks whether the passed argument contains a
-value.
+<p>By Shorthand assignment. It checks whether the passed argument contains a value.</p>
 
-Example:
+<h4>Example:</h4>
+<pre>
 function add1(a1,a2){
-var b1=a1 || 1;
-b1=5
-var b2=a2 || 2;
-b2=2
-return b1+b2;
-7
+  var b1=a1 || 1;
+  b1=5
+  var b2=a2 || 2;
+  b2=2
+  return b1+b2;
+  7
 }
 add1(5);
-Here, since the first argument is only passed, it is treated as true hence”5”
+</pre>
+<p>Here, since the first argument is only passed, it is treated as true hence”5”
 gets assigned to b1. Since the Second argument is not passed, it is treated as
-undefined value (i.e.) false hence the default value gets assigned.
+undefined value (i.e.) false hence the default value gets assigned.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>241: How will you encode and decode a string?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-a) Using escape() and unescape()
+<p>a) Using escape() and unescape()<br>
 b) escape(): Encodes the string and special characters except “ + * - _ . @ /
-” . It converts the non Ascii codes to two or four digit hex format
-c) unescape(): decodes the encoded string
+” . It converts the non Ascii codes to two or four digit hex format<br>
+c) unescape(): decodes the encoded string</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>242: How will you pass a function as argument to another function?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Using callback. A function that is passed as a argument to another function
+<p>Using callback. A function that is passed as a argument to another function
 gets a reference called “Callback”. The callback functions gets executed
-only after the execution of called function.
-Example:
+only after the execution of called function.</p>
+<h4>Example:</h4>
+<pre>
 function oven(time,callback){
-document.write(“Started at” +time+ “<br>”);
-callback();
+  document.write(“Started at” +time+ “<br>”);
+  callback();
 }
 oven(5,function(){
-document.write(“Stopped”);});
+  document.write(“Stopped”);});
+}
+</pre>
+<pre>
 Output:
 Started at 5
 Stopped
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>243: What is the need for callback function?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-When a function is called, execution of the function takes place which will
-return some value. If the execution time will be longer for the function to
-return a value, for instance, when it may have to wait for some input from
-another function or user, it needs to be implemented asynchronously using
-callback function.
+<p>When a function is called, execution of the function takes place which will return some 
+value. If the execution time will be longer for the function to return a value, for instance, 
+when it may have to wait for some input from another function or user, it needs to be implemented 
+asynchronously using callback function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>244: How will you get a substring from a string in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-a) substring(): Retrieves the string starting from the start value till end
-value. White space are included
+<p>a) substring(): Retrieves the string starting from the start value till end value. 
+White space are included<br>
+
 Syntax: substring(start_value,end_value);
-b) substr(): Retrieves the string starting from the start value till the length
-specified
+b) substr(): Retrieves the string starting from the start value till the length specified
+
 Syntax: substr(start_value,leng);
 Example:
+<pre>
 var a=”color my world”;
 document.write(substring(3,7); // r my
 document.write(substr(3,7); // o my wo
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>245: How will you get the function (fn1) which recently called the current function (fn2)?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2612,7 +2630,8 @@ Using “fn2.caller” we can get the fn1 info. If the control of the program is
 in the fn2(), it will return the function (fn1) by which fn2 is recently called
 by using fn2.caller.
 “fn2.arguments” gives the arguments passed to the fn2.
-Example:
+<h4>Example:</h4>
+<pre>
 function fn_2(){
 use strict mode;
 
@@ -2622,6 +2641,7 @@ fn_2.arguments;
 function fn_1(){
 fn_2();
 }
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>246: How will you execute the page that is about to be unloaded, before the execution of onload()?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2629,33 +2649,40 @@ Using onbeforeunload we can execute the page that is about to be unloaded.
 The “onunload” function occurs when the page is closed or navigating to
 another page. Hence onbeforeunload alerts the user about navigation before
 “onunload”.
-Example:
+<h4>Example:</h4>
+<pre>
 window.onbeforeunload=alert_msg();
-function alert_msg(){
-return “Message to be displayed to the user.”;
+  function alert_msg(){
+  return “Message to be displayed to the user.”;
 }
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>247: How will you find whether the window is closed or not?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Using closed property we can check the status of the window. It returns
-“true” if the window is closed else returns “false”.
-Example:
+<p>Using closed property we can check the status of the window. It returns “true” if the window 
+is closed else returns “false”.</p>
+<h4>Example:</h4>
+<pre>
 if(window.opener.closed)
-document.write(“closed”);
+  document.write(“closed”);
 else
-document.write(“open”);
+  document.write(“open”);
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>248: How will you call a function repeatedly for a particular interval of time?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Using setInterval function we can repeatedly call a function for a period of
 time.. It also clears the timer by returning unique id which will be passed as
 a parameter for clearTimer.
-Example:
+
+<h4>Example:</h4>
+<pre>
 setInterval(my_funct_1(),444);
 my_funct_1
 function to be called
 444
 specified_ interval
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>249: What is the difference between test and exec function?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2707,22 +2734,25 @@ name collisions and namespace pollution.
 <h3>253: How will you create singleton in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We can create Singleton by creating a simple object using the object literal.
-For Example:
-var mySingletonObj = {
-myProp: 'My Value'
 
+<h4>For Example:</h4>
+<pre>
+var mySingletonObj = {
+  myProp: 'My Value'
 };
+</pre>
 In the above code snippet,
 mySingletonObj is the simple object created and
 myProp: ‘My Value’ is the object literal.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>254: How will you create 2 equal objects in JavaScript?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-We could create 2 equal objects with the help of new keyword. For
-example:
+We could create 2 equal objects with the help of new keyword. For example:
+<pre>
 var myObject1 = new Mars();
 var myObject2 = new Mars();
 myObject1 === myObject2 //This returns true
+</pre>
 In the above code snippet, myObject1 is created only the first time when the
 constructor Mars is called. The second time (and third, fourth, and so on)
 the same myObject1 object is returned. This is why myObject1 ===
@@ -2741,8 +2771,10 @@ compile time
 <h3>256: How will you create a Factory pattern?</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In JavaScript, Factory pattern could be created as follows:
+<pre>
 var myCorolla = MakeCar.factory('Compact');
 var myIkon = MakeCar.factory('SUV');
+</pre>
 In the above code snippet, we have a method that accepts a string at runtime
 and then creates and returns objects of the requested type. There are no
 constructors used with new or any object literals, but just a function that
@@ -2754,11 +2786,12 @@ In Iterator pattern, the object holds aggregate data. The data could be stored
 in a complex structure, and we have to provide access to each element. The
 object consumer does not need to know the data structure.
 For Example:
+<pre>
 var myElement;
 while (myElement = myData.next()) {
 console.log(myElement);
 }
-
+</pre>
 In the above code, myData has collection of data and each element of them
 could be accessed by simply calling the next() method in a loop.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2769,9 +2802,11 @@ object dynamically during runtime. Objects are mutable in JavaScript, so
 adding a functionality to an object could be done quite easily.
 The main feature of the decorator pattern is configuration and
 customization of the existing object.
+<pre>
 var mySale = new Sale(1000); // the price is 1000 Rupees
 mySale = mySale.decorate('tax'); // add tax
 mySale.getModifiedPrice(); // "Rs1012.88"
+</pre>
 In the above code, we decorate the code (add additional
 functionality) with a tax for the mySale object and then get the
 modified price.
@@ -3668,7 +3703,7 @@ with a company that supports it.
 14: How many statements types can we find in JavaScript? Give some examples?
 15: What are conditional statements and how are they implemented in JavaScript?
 16: How will you determine a variable type in JavaScript?
-17: What is the difference in evaluating [“8”+5+2] and [8+5+”2”]?
+17: What is the difference in evaluating &lbrack;“8”+5+2&rbrack; and &lbrack;8+5+”2”&rbrack;?
 18: Is it possible to assign a string to a floating point variable?
 19: Will variable redeclaration affect the value of that variable?
 20: How will you search a matching pattern globally in a string?
